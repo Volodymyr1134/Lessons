@@ -1,0 +1,35 @@
+@import url(reset.css);
+
+.header-block {
+}
+.list {
+   color:rgba(48, 66, 207, 0.939)
+}
+
+.header-block span {
+   color: rgb(235, 235, 3);
+}
+
+.header-block .title-color {
+   color: blue;
+}
+.subtitle {
+}
+
+/* ================================= */
+
+.block2-title {
+   color: rgb(196, 0, 0);
+}
+.block2-subtitle {
+   color: rgb(159, 1, 173);
+}
+/* ================================= */
+
+.block4-title{
+   color: rgb(196, 0, 0);
+}
+
+.block4 > p {
+   color: rgb(4, 89, 4);
+}
