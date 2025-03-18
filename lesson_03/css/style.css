@@ -7,11 +7,11 @@
 }
 
 .header-block span {
-   color: rgb(235, 235, 3);
+   color: blue;
 }
 
 .header-block .title-color {
-   color: blue;
+   color: rgb(243, 230, 0);
 }
 .subtitle {
 }
