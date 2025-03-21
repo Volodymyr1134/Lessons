@@ -78,6 +78,26 @@ body{
    line-height: 1.7;
 }
 
+.title-rock{
+   font-family: "Sad_Rocky",sans-serif;
+   font-size: 70px;
+   text-align: center;
+   color: #450404;
+   letter-spacing: 30px;
+   text-shadow: -1px -5px 5px 
+}
+
+.title-rock span{
+   font-size: 50px;
+   color: #03241d;
+   text-decoration: underline;
+   text-underline-offset: 30px;
+   text-decoration-style:solid ;
+   text-decoration-thickness: 5px;
+   text-decoration-color: rgba(69, 5, 5, 0.696);
+}
+
+
 /* ===============ecobazar========================= */
 
 .ecobazar-title {
