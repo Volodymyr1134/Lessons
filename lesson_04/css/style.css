@@ -19,8 +19,6 @@ body{
    text-align: center;
    text-shadow: 2px 1px 7px;
    line-height: 1.7;
-   
-   
 }
 
 .block2-subtitle{
@@ -47,11 +45,8 @@ body{
    text-transform: uppercase;
    text-decoration: underline;
    text-decoration-style:dotted;
-   align-items:1.7;
    text-underline-offset: 3px;
    text-decoration-thickness: 7px;
-   
-
 }
 
 .text3{
@@ -61,7 +56,6 @@ body{
    font-weight: 600;
    text-transform: capitalize;
    word-spacing: 10px;
-   
 }
 
 .text3 span{
@@ -69,7 +63,6 @@ body{
    text-decoration-color: #ce23af;
    text-transform: uppercase;
    text-decoration-style:wavy;
-   
 }
 
 .block2-title2{
@@ -83,7 +76,6 @@ body{
    letter-spacing: 3px;
    white-space: nowrap;
    line-height: 1.7;
-   
 }
 
 /* ===============ecobazar========================= */
