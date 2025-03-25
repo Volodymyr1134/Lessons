@@ -11,7 +11,7 @@ body{
 }
 
 .container {
-   max-width: 1050px;
+   max-width: 1035px;
    padding: 112px 12px;
    margin: 0 auto;
 }
@@ -71,7 +71,7 @@ body{
    display:inline-block;
    vertical-align: top;
    max-width: 230px;
-   margin-inline-end: 35px;
+   margin-inline-end: 30px;
    padding: 35px 40px;
    background-color: white;
    overflow: hidden;
