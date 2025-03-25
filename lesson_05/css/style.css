@@ -1,22 +1,23 @@
-
 @import url("reset.css");
 
 body{
    font-family: "Montserrat", sans-serif;
-   /*background-color:#231F8B;  Так само можна зробити синій фон в якомусь блоці, наприклад - section, або body  на всю сторінку))) */
    font-size: 14px;
    font-weight: 400;
-}
+} 
 
-.container {
-   max-width: 1500px;
-   padding: 112px 0px;
-   margin: 0 auto;
+section {
    background-color:#231F8B;
 }
 
+.container {
+   max-width: 1050px;
+   padding: 112px 12px;
+   margin: 0 auto;
+}
+
 .block1 {
-   padding-left: 235px;
+   padding-left: 0px;
 }
 
 .title {
@@ -61,7 +62,7 @@ body{
 .items {
    width: 100%;
    margin: 0 auto;
-   padding: 70px 220px 0px 235px ;
+   padding: 70px 0px 0px 0px ;
    font-size: 0;
    overflow: hidden;
 } 
@@ -70,7 +71,7 @@ body{
    display:inline-block;
    vertical-align: top;
    max-width: 230px;
-   margin-inline-end: 30px;
+   margin-inline-end: 35px;
    padding: 35px 40px;
    background-color: white;
    overflow: hidden;
