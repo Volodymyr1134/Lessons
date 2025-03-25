@@ -1,0 +1,207 @@
+
+@import url("reset.css");
+
+body{
+   font-family: "Montserrat", sans-serif;
+   /* background-color:#231F8B; Так само можна зробити синій фон, на всю сторінку))) */
+   font-size: 14px;
+   font-weight: 400;
+}
+
+.container {
+   max-width: 1500px;
+   padding: 112px 0px;
+   margin: 0 auto;
+   background-color:#231F8B;
+}
+
+.block1 {
+   padding-left: 235px;
+}
+
+.title {
+   color: #5A54F2;
+   font-weight: 700;
+   font-size: 14px;
+   font-style: normal;
+   font-weight: 700;
+   line-height: 171.429%;
+   letter-spacing: 0.2px;
+   padding-bottom: 10px;
+}
+
+.subtitle { 
+   font-family: "CircularStd-Bold", sans-serif;
+   color: #FFF;
+   font-size: 36px;
+   font-style: normal;
+   line-height: normal;
+   padding-bottom: 10px;
+}
+
+.text {
+   font-family: "CircularStd-book" sans-serif;
+   color: #FFF;
+   font-size: 14px;
+   font-style: normal;
+   font-weight: 450;
+   line-height: 142.857%;
+   letter-spacing: 0.2px;
+   max-width: 765px;
+   padding-right: 70px;
+}
+
+/* ======================Items==================================== */
+
+.item > img{
+   width: 72px;
+   height: 72px;
+}
+
+.items {
+   padding: 70px 220px 0px 235px ;
+   font-size: 0;
+   overflow: hidden;
+} 
+
+.item {
+   display:inline-block;
+   vertical-align: top;
+   max-width: 230px;
+   margin-inline-end: 30px;
+   padding: 35px 40px;
+   background-color: white;
+   overflow: hidden;
+   min-height: 288px;
+   box-shadow: 0px 13px 19px 0px rgba(0, 0, 0, 0.07);
+}
+
+.item2, .item4 {
+   margin-top: 48px;
+}
+
+.item4{
+   margin-inline-end: 0;
+}
+
+.item3{
+   background-color: #5A54F2;
+}
+
+.item3 > h3,
+.item3 > p {
+   color: #FFF;
+}
+
+.item3 > div {
+   background-color: #FFF;
+}
+
+.item-title {
+   color: #252B42;
+   font-family: "CircularStd-Bold", sans-serif;
+   font-size: 16px;
+   font-style: normal;
+   font-weight: 700;
+   line-height: 150%;
+   letter-spacing: 0.1px;
+   padding: 20px 0px;
+}
+
+.item-decor {
+   width: 50px;
+   height: 2px;
+   background-color:#E74040 ;
+}
+
+.item-subtitle {
+   color: #737373;
+   font-size: 14px;
+   font-style: normal;
+   font-weight: 400;
+   line-height: 142.857%;
+   letter-spacing: 0.2px;
+   padding-top: 20px;
+}
+
+/* ==========block2================ */
+
+.block2 {
+   padding: 100px 15px 50px ;
+}
+.block2-items {
+   max-width: 1000px;
+   margin: 0 auto;
+}
+
+.block2-item > p{
+   display:inline-block;
+   width: 49%;
+   vertical-align: middle;
+}
+
+.block2-title {
+   font-family: "CircularStd-Bold", sans-serif;
+   font-size: 700;
+   font-size: 40px;
+   text-align: center;
+   color: #140888;
+   text-shadow: 1px 7px 7px;
+   padding-bottom: 30px;
+}
+.block2-subtitle {
+   height: 100px;
+   writing-mode: sideways-lr;
+   inline-size: 150px;
+   color: red;
+   text-shadow: 1px 7px 5px black;
+   line-height: 1.3;
+   text-align: right;
+}
+.block2-text1 {
+   height: 150px;
+   overflow: auto;
+   font-family: "CircularStd-book" sans-serif;
+   line-height: 1.3;
+   color: #abb005;
+}
+
+.block2-text2{ 
+   padding-top: 30px;
+   color: #3b35e3;
+   line-height: 1.5;
+   font-weight: 600;
+   text-align: center;
+   white-space: nowrap;
+   overflow: auto;
+   min-height: 80px;
+}
+/* ================footer==================== */
+
+.footer-img img{
+   width: 100%;
+   height: 180px;
+   padding: 50px 0;
+}
+
+footer{
+   text-align: right;
+   margin-top: 40px;
+}
+
+footer > address{
+   padding: 0px 30px 30px 0px;
+}
+
+.button {
+   margin: 0 auto;
+   width: 200px;
+   height: 40px;
+   text-align: center;
+   color: white;
+   background-color:#231F8B;
+   text-shadow: 2px 5px 5px white; 
+   font-size: 20px;
+   padding-top: 7px;
+   font-weight: 500;
+}
