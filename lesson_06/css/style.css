@@ -173,9 +173,15 @@ body{
    background-image: url(../img/hydra-icon-01.svg);
    background-repeat: no-repeat;
    background-position: left;
+   background-size: auto;
    max-width: 385px;
    width: 100%;
    transition: all 0.3s;font-size: 0;
+   font-size: 0;
+}
+
+.hydra-contact-link{
+   min-height: 56px;
 }
 
 .item-tel{
