@@ -175,6 +175,7 @@ body{
    background-position: left;
    max-width: 380px;
    width: 100%;
+   transition: all 0.3s;
 }
 
 .item-tel{
@@ -205,7 +206,7 @@ body{
 }
 
 .hydra-contact-item:hover{
-   scale: 1.1;
+   scale: 1.02;
 }
 
 /* ===============footer=========================== */
