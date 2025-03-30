@@ -17,13 +17,36 @@ body{
 	max-width: 678px; /* 678px + 30px */
 	margin: 0 auto;
 	padding: 0px 15px;
-   
 }
 
 .header {
-   margin: 30px 0px;
+   margin: 30px auto;
    text-align: center;
    font-size: 34px;
+   background-color: gray;
+   width: 200px;
+   height: 200px;
+   vertical-align:middle;
+   border-radius: 50%;
+   padding-top: 75px;
+   color: #ffffff;
+   opacity: 0.8;
+   letter-spacing: 3px;
+   text-shadow:2px 5px 10px black;
+   box-shadow: 2px 7px 10px 0 black;
+   transition: all 03s;
+}
+
+/* ====================експеремент=================== */
+
+.header:hover{                          
+   box-shadow: 5px 7px 10px 3px black;
+   width: 250px;
+   height: 250px;
+   padding-top: 100px;
+   font-size: 40px;
+   letter-spacing: 7px;
+   color: #00B207;
 }
 
 /* .page {
@@ -61,8 +84,9 @@ body{
 }
 
 .bazar-line{
-   margin:80px 0;
-   border: dashed 2px  #410505;
+   margin:80px 0px;
+   width:100%;
+   border: dashed 3px  #410505;
 }
 
 /* ==============hydra========================== */
