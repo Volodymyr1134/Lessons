@@ -169,11 +169,7 @@ body{
 .hydra-contact-item {   
    font-size: 0;
    padding: 57px 0px 60px 70px;
-   background-image: url(../img/hydra-icon-01.svg);
-   background-size: 70px;
-   background-repeat: no-repeat;
-   background-position: left;
-   background-position: -3%;
+   background: url(../img/hydra-Icon-01.svg)-3% no-repeat;
    max-width: 385px;
    width: 100%;
    transition: all 0.3s;
