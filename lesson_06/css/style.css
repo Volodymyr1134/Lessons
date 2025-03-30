@@ -103,6 +103,7 @@ body{
    display:inline-block;
    padding-top: 100px;
    padding-bottom: 110px;
+   font-size: 0;
 }
 
 .hydra-container {
@@ -132,7 +133,6 @@ body{
 }
 
 .hydra-item{
-   font-size: 0;
    display: inline-block;
    max-width: 630px;
    vertical-align: middle;
@@ -191,11 +191,10 @@ body{
    padding: 0px 52px;
    background: radial-gradient(circle, rgba(58, 52, 86, 0.95) 0%, #211E2E 100%);
    box-shadow: 0px 4px 4px 0px rgba(192, 183, 232, 0.01);
-
+   font-size: 0;
 }
 
 .hydra-contact-item {   
-   font-size: 0;
    padding: 57px 0px 60px 70px;
    background-image: url(../img/hydra-Icon-01.svg);
    background-position: -3% center;
