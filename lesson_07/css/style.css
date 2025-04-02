@@ -90,7 +90,6 @@ li:active{
    min-height: 476px;
    vertical-align: top;
    transition: all 0.3s ease;
-   cursor: pointer;
 }
 
 .meet-item:hover{
