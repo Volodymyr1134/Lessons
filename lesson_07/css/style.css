@@ -165,7 +165,7 @@ body{
    margin: 0 auto;
 }
 
-.best-faculty-body > :not(:first-child){
+.best-faculty-body :not(:first-child){
    margin-top: 20px;
 }
 
@@ -183,22 +183,20 @@ body{
    color: #412672;
 }
 
-.list li {
+.list * p {
+   display:inline-block;
    color: #4F4F4F;
    font-size: 20px;
-   margin-left: 29px;
-   margin-top: 20px;
+   padding-left: 44px;
 }
 
 .list li::before {
+   display: block;
+   margin-bottom: -27px;
    content: "";
    width: 29px;
    height: 29px;
    background:url(../img/icon.svg) left center no-repeat;
-   margin-left: -29px;
-   vertical-align: middle;
-   margin-right: 15px;
-
 }
 
 
