@@ -191,7 +191,6 @@ body{
 }
 
 .list li::before {
-   display:inline-block;
    content: "";
    width: 29px;
    height: 29px;
