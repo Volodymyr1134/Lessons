@@ -91,13 +91,13 @@ body{
    display: inline-block;
    padding: 10px 10px;
    width: 33.333%;
+   vertical-align: top;
 }
 
 .meet-card-inner{
    background-color: #FFF;
    padding: 20px;
    height: 476px;
-   vertical-align: top;
    transition: all 0.3s ease;
 }
 
