@@ -84,12 +84,12 @@ body{
 
 .meet-items {
    font-size: 0;
-   margin: 0px -10px; 
+   margin: -10px -10px; 
 }
 
 .meet-card{
    display: inline-block;
-   padding: 0px 10px;
+   padding: 10px 10px;
    width: 33.333%;
 }
 
