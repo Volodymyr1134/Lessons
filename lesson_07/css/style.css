@@ -181,20 +181,21 @@ body{
    color: #412672;
 }
 
-.list * p {
-   display:inline-block;
+.list > li {
+   display: block;
    color: #4F4F4F;
    font-size: 20px;
-   padding-left: 44px;
+   margin-left: 44px;
 }
 
 .list li::before {
    display: block;
-   margin-bottom: -27px;
+   margin-bottom: -25px;
+   margin-left: -44px;
    content: "";
    width: 29px;
    height: 29px;
-   background:url(../img/icon.svg) left center no-repeat;
+   background:url(../img/icon.svg) left no-repeat;
 }
 
 
