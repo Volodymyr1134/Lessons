@@ -99,6 +99,7 @@ body{
    padding: 20px;
    height: 476px;
    transition: all 0.3s ease;
+   overflow: auto;
 }
 
 .meet-card-inner:hover{
@@ -147,11 +148,8 @@ body{
    color: #ae5252;
 } 
 
-.meet-card-inner > :not(:last-child){
+.meet-card-inner > :not(:first-child){
    margin-top: 16px;
-}
-.meet-card-inner > :first-child{
-   margin: 0;
 }
 
 /* ============best-faculty================= */
