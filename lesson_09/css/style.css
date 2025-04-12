@@ -292,8 +292,11 @@ body{
 .gallery-store__img-1 {
    vertical-align: top;
    margin-right: 24px;
+   border-radius: 8px;
 }
+
 .gallery-store__img-2 {
+   border-radius: 8px;
 }
 
 .foode-store__content {
