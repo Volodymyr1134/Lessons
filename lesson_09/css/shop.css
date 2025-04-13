@@ -1,5 +1,4 @@
 
-
 .cards-shop {
    font-size: 0;
 }
@@ -33,7 +32,8 @@
 
 .cards-shop__link{
    width: 200px;
-   padding: 32px 0px;
+   height: 213px;
+   padding: 32px 0px  24px 0px;
    border-radius: 6px;
    border: 1px solid #EDEDED;
    background:#FFF;
