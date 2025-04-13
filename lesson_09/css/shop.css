@@ -68,3 +68,35 @@
 }
 
 /* ================================================== */
+.shop-background {
+}
+.shop {
+
+		&__container {
+		}
+}
+.card-header {
+
+		&__title {
+		}
+
+		&__buttom {
+		}
+}
+.cards-shop {
+
+		&__item {
+		}
+
+		&__link {
+		}
+
+		&__img {
+		}
+
+		&__title {
+		}
+
+		&__text {
+		}
+}
