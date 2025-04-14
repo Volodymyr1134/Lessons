@@ -16,43 +16,43 @@
             <a target="_blank" href="https://github.com/Volodymyr1134/Lessons/blob/main/lesson_09/index.html">Код HTML (Методологія БEM )</a>
          </header>
          <main class="page">
-            <section class="ecobazar-info info">
-               <div class="info__container">
-                  <div class="info__items">
-                     <div class="info__item">
-                           <a class="info__inner-link" href="#">
-                              <div class="info__img">
+            <section class="ecobazar-info">
+               <div class="ecobazar-info__container">
+                  <div class="ecobazar-info__items info-card">
+                     <div class="info-card__item">
+                           <a class="info-card__inner-link" href="#">
+                              <div class="info-card__img">
                                  <img src="img/Icon-01.svg" alt="icon" >
                               </div>
-                              <h2 class="info__title">Free Shipping</h2>
-                              <p class="info__sub-title">Free shipping with discount</p>
+                              <h2 class="info-card__title">Free Shipping</h2>
+                              <p class="info-card__sub-title">Free shipping with discount</p>
                            </a>
                      </div>
-                        <div class="info__item">
-                        <a href="#" class="info__inner-link">
-                           <div class="info__img">
+                        <div class="info-card__item">
+                        <a href="#" class="info-card__inner-link">
+                           <div class="info-card__img">
                               <img src="img/Icon-02.svg" alt="icon" >
                            </div>
-                           <h2 class="info__title">Great Support 24/7</h2>
-                           <p class="info__sub-title">Instant access to Contact</p>
+                           <h2 class="info-card__title">Great Support 24/7</h2>
+                           <p class="info-card__sub-title">Instant access to Contact</p>
                         </a>
                         </div>
-                        <div class="info__item">
-                        <a href="#" class="info__inner-link">
-                           <div class="info__img">
+                        <div class="info-card__item">
+                        <a href="#" class="info-card__inner-link">
+                           <div class="info-card__img">
                               <img src="img/Icon-03.svg" alt="icon" >
                            </div>
-                           <h2 class="info__title">100% Sucure Payment</h2>
-                           <p class="info__sub-title">We ensure your money is save</p>
+                           <h2 class="info-card__title">100% Sucure Payment</h2>
+                           <p class="info-card__sub-title">We ensure your money is save</p>
                         </a>
                         </div>
-                        <div class="info__item">
-                        <a href="#" class="info__inner-link">
-                           <div class="info__img">
+                        <div class="info-card__item">
+                        <a href="#" class="info-card__inner-link">
+                           <div class="info-card__img">
                               <img src="img/Icon-04.svg" alt="icon" >
                            </div>
-                           <h2 class="info__title">Money-Back Guarantee</h2>
-                           <p class="info__sub-title">30 days money-back</p>
+                           <h2 class="info-card__title">Money-Back Guarantee</h2>
+                           <p class="info-card__sub-title">30 days money-back</p>
                         </a>
                         </div>
                   </div>
@@ -60,145 +60,143 @@
             </section>
             <section class="products">
                <div class="products__container">
-                  <div class="card-header">
-                     <h3 class="card-header__title">Featured Products</h3>
-                        <div class="card-header__buttom">
-                           <a href="#" >View All <img src="img/arrow.svg" alt="arrow"></a>
+                  <div class="cards-header">
+                     <h3 class="cards-header__title">Featured Products</h3>
+                        <div class="cards-header__buttom">
+                           <a class="cards-header__link" href="#" >View All <img src="img/arrow.svg" alt="arrow"></a>
                         </div>
                   </div>
-                  <div class="cards-products">
-                     <div class="cards-products__items">
-                        <div class="cards-products__item">
-                           <div class="cards-products__inner">
-                              <div class="cards-products__discount"></div>
-                              <a class="cards-products__link-img" href="#">
-                                 <img class="cards-products__img" src="img/products-01.jpg" alt="Green Apple">
+                     <div class="products__items card-products">
+                        <div class="card-products__item">
+                           <div class="card-products__inner">
+                              <div class="card-products__discount card-products__discount--other-discounts "><!--Sale-50%--></div> 
+                              <a class="card-products__link-img" href="#">
+                                 <img class="card-products__img" src="img/products-01.jpg" alt="Green Apple">
                               </a>
-                              <div class="cards-products__block">
-                                 <a href="#"><h3 class="cards-products__title">Green Apple</h3></a>
-                                 <div class="cards-products__pricу">
+                              <div class="card-products__content content-products">
+                                 <a class="content-products__title-link" href="#"><h3 class="content-products__title">Green Apple</h3></a>
+                                 <div class="content-products__pricу">
                                     <p>$14.99 <span>$20.99</span></p>
-                                       <div class="cards-products__basket">
-                                       <a href="#"  title="Кошик тимчасово не працює : )">
+                                       <div class="content-products__basket">
+                                       <a href="#" title="Кошик тимчасово не працює : )">
                                           <img src="img/basket.svg" alt="basket">
                                        </a>
                                        </div>
-                                    <img class="cards-products__rating" src="img/feedback.jpg" alt="Reviews, rating">
+                                    <img class="content-products__rating" src="img/feedback.jpg" alt="Reviews, rating">
                                  </div>
                               </div>
                            </div>
                         </div>
-                        <div class="cards-products__item">
-                           <div  class="cards-products__inner">
-                              <a class="cards-products__link-img" href="#">
-                                 <img class="cards-products__img" src="img/products-02.jpg" alt="Chanise Cabbage">
+                        <div class="card-products__item">
+                           <div  class="card-products__inner">
+                              <a class="card-products__link-img" href="#">
+                                 <img class="card-products__img" src="img/products-02.jpg" alt="Chanise Cabbage">
                               </a>
-                              <div class="cards-products__block">
-                                 <a href="#"><h3 class="cards-products__title">Chanise Cabbage</h3></a>
-                                 <div class="cards-products__pricу">
+                              <div class="card-products__content content-products">
+                                 <a class="content-products__title-link" href="#"><h3 class="content-products__title">Chanise Cabbage</h3></a>
+                                 <div class="content-products__pricу">
                                     <p>$14.99 <span>$20.99</span></p>
-                                       <div class="cards-products__basket">
+                                       <div class="content-products__basket">
                                        <a href="#"  title="Кошик тимчасово не працює : )">
                                           <img src="img/basket.svg" alt="basket">
                                        </a>
                                        </div>
-                                    <img class="cards-products__rating" src="img/feedback.jpg" alt="Reviews, rating">
+                                    <img class="content-products__rating" src="img/feedback.jpg" alt="Reviews, rating">
                                  </div>
                               </div>
                            </div>
                         </div>
-                        <div class="cards-products__item">
-                           <div class="cards-products__inner">
-                              <a class="cards-products__link-img" href="#">
-                                 <img class="cards-products__img" src="img/products-03.jpg" alt="Green Capsicum">
+                        <div class="card-products__item">
+                           <div class="card-products__inner">
+                              <a class="card-products__link-img" href="#">
+                                 <img class="card-products__img" src="img/products-03.jpg" alt="Green Capsicum">
                               </a>
-                              <div class="cards-products__block">
-                                 <a href="#"><h3 class="cards-products__title">Green Capsicum</h3></a>
-                                 <div class="cards-products__pricу">
+                              <div class="card-products__content content-products">
+                                 <a class="content-products__title-link" href="#"><h3 class="content-products__title">Green Capsicum</h3></a>
+                                 <div class="content-products__pricу">
                                     <p>$14.99 <span>$20.99</span></p>
-                                       <div class="cards-products__basket">
+                                       <div class="content-products__basket">
                                        <a href="#"  title="Кошик тимчасово не працює : )">
                                           <img src="img/basket.svg" alt="basket">
                                        </a>
                                        </div>
-                                    <img class="cards-products__rating" src="img/feedback.jpg" alt="Reviews, rating">
+                                    <img class="content-products__rating" src="img/feedback.jpg" alt="Reviews, rating">
                                  </div>
                               </div>
                            </div>
                         </div>
-                        <div class="cards-products__item">
-                           <div class="cards-products__inner">
-                              <a class="cards-products__link-img" href="#">
-                                 <img class="cards-products__img" src="img/products-04.jpg" alt="Ladies Finger">
+                        <div class="card-products__item">
+                           <div class="card-products__inner">
+                              <a class="card-products__link-img" href="#">
+                                 <img class="card-products__img" src="img/products-04.jpg" alt="Ladies Finger">
                               </a>
-                              <div class="cards-products__block">
-                                 <a href="#"><h3 class="cards-products__title">Ladies Finger</h3></a>
-                                 <div class="cards-products__pricу">
+                              <div class="card-products__content content-products">
+                                 <a class="content-products__title-link" href="#"><h3 class="content-products__title">Ladies Finger</h3></a>
+                                 <div class="content-products__pricу">
                                     <p>$14.99 <span>$20.99</span></p>
-                                       <div class="cards-products__basket">
+                                       <div class="content-products__basket">
                                        <a href="#"  title="Кошик тимчасово не працює : )">
                                           <img src="img/basket.svg" alt="basket">
                                        </a>
                                        </div>
-                                    <img class="cards-products__rating" src="img/feedback.jpg" alt="Reviews, rating">
+                                    <img class="content-products__rating" src="img/feedback.jpg" alt="Reviews, rating">
                                  </div>
                               </div>
                            </div>
                         </div>
                      </div>
                   </div>
-               </div>
             </section>
             <div class="background-shop" >
                <section class="shop">
                   <div class="shop__container">
-                     <div class="card-header">
-                        <h3 class="card-header__title">Shop by Top Categories</h3>
-                           <div class="card-header__buttom">
-                              <a href="#" >View All <img src="img/arrow.svg" alt="arrow"></a>
+                     <div class="cards-header">
+                        <h3 class="cards-header__title">Shop by Top Categories</h3>
+                           <div class="cards-header__buttom">
+                              <a class="cards-header__link" href="#" >View All <img src="img/arrow.svg" alt="arrow"></a>
                            </div>
                      </div>
-                     <div class="cards-shop">
-                        <div class="cards-shop__item">
-                           <a href="#" class="cards-shop__link">
-                              <img src="img/shop-01.jpg" alt="Vegetables" class="cards-shop__img">
-                              <h4 class="cards-shop__title">Vegetables</h4>
-                              <p class="cards-shop__text">165 Products</p>
+                     <div class="shop__cards card-shop">
+                        <div class="card-shop__item">
+                           <a href="#" class="card-shop__link">
+                              <img class="card-shop__img" src="img/shop-01.jpg" alt="Vegetables" >
+                              <h4 class="card-shop__title">Vegetables</h4>
+                              <p class="card-shop__text">165 Products</p>
                            </a>
                         </div>
-                        <div class="cards-shop__item">
-                           <a href="#" class="cards-shop__link">
-                              <img src="img/shop-02.jpg" alt="Vegetables" class="cards-shop__img">
-                              <h4 class="cards-shop__title">Fresh Fruit</h4>
-                              <p class="cards-shop__text">137 Products</p>
+                        <div class="card-shop__item">
+                           <a href="#" class="card-shop__link">
+                              <img class="card-shop__img" src="img/shop-02.jpg" alt="Vegetables" >
+                              <h4 class="card-shop__title">Fresh Fruit</h4>
+                              <p class="card-shop__text">137 Products</p>
                            </a>
                         </div>
-                        <div class="cards-shop__item">
-                           <a href="#" class="cards-shop__link">
-                              <img src="img/shop-03.jpg" alt="Fish" class="cards-shop__img">
-                              <h4 class="cards-shop__title">Fish</h4>
-                              <p class="cards-shop__text">34 Products</p>
+                        <div class="card-shop__item">
+                           <a href="#" class="card-shop__link">
+                              <img class="card-shop__img" src="img/shop-03.jpg" alt="Fish" >
+                              <h4 class="card-shop__title">Fish</h4>
+                              <p class="card-shop__text">34 Products</p>
                            </a>
                         </div>
-                        <div class="cards-shop__item">
-                           <a href="#" class="cards-shop__link">
-                              <img src="img/shop-04.jpg" alt="Meat" class="cards-shop__img">
-                              <h4 class="cards-shop__title">Meat</h4>
-                              <p class="cards-shop__text">165 Products</p>
+                        <div class="card-shop__item">
+                           <a href="#" class="card-shop__link">
+                              <img class="card-shop__img" src="img/shop-04.jpg" alt="Meat" >
+                              <h4 class="card-shop__title">Meat</h4>
+                              <p class="card-shop__text">165 Products</p>
                            </a>
                         </div>
-                        <div class="cards-shop__item">
-                           <a href="#" class="cards-shop__link">
-                              <img src="img/shop-05.jpg" alt="Water and Drinks" class="cards-shop__img">
-                              <h4 class="cards-shop__title">Water and Drinks</h4>
-                              <p class="cards-shop__text">48 Products</p>
+                        <div class="card-shop__item">
+                           <a href="#" class="card-shop__link">
+                              <img class="card-shop__img" src="img/shop-05.jpg" alt="Water and Drinks" >
+                              <h4 class="card-shop__title">Water and Drinks</h4>
+                              <p class="card-shop__text">48 Products</p>
                            </a>
                         </div>
-                        <div class="cards-shop__item">
-                           <a href="#" class="cards-shop__link">
-                              <img src="img/shop-06.jpg" alt="Snacks" class="cards-shop__img">
-                              <h4 class="cards-shop__title">Snacks</h4>
-                              <p class="cards-shop__text">165 Products</p>
+                        <div class="card-shop__item">
+                           <a href="#" class="card-shop__link">
+                              <img class="card-shop__img" src="img/shop-06.jpg" alt="Snacks" >
+                              <h4 class="card-shop__title">Snacks</h4>
+                              <p class="card-shop__text">165 Products</p>
                            </a>
                         </div>
                      </div>
@@ -214,21 +212,21 @@
                      </div>
                      <div class="foode-store__content content-store">
                         <h4 class="content-store__title">100% Trusted <br>Organic Food Store</h4>
-                           <div>
-                           <div class="content-store__subtitle">
-                              Healthy & natural food for lovers of healthy food.
+                           <div class="content-store__box" >
+                              <div class="content-store__sub-title">
+                                 Healthy & natural food for lovers of healthy food.
+                              </div>
+                              <p class="content-store__text">
+                                 Ut quis tempus erat. Phasellus euismod bibendum magna non tristique. Pellentesque semper vestibulum elit sed condimentum. Nunc pretium fermentum interdum. 
+                              </p>
                            </div>
-                           <p class="content-store__text">
-                              Ut quis tempus erat. Phasellus euismod bibendum magna non tristique. Pellentesque semper vestibulum elit sed condimentum. Nunc pretium fermentum interdum. 
-                           </p>
-                           </div>
-                           <div>
-                           <div class="content-store__subtitle">
-                              Every day fresh and quality products for you.
-                           </div>
-                           <p class="content-store__text">
-                              Maecenas vehicula a justo quis laoreet. Sed in placerat nibh, a posuere ex. Morbi sem neque, aliquam sed orci et, rhoncus lobortis felis. Sed vestibulum nisl sit amet sapien.
-                           </p>
+                           <div class="content-store__box">
+                              <div class="content-store__sub-title">
+                                 Every day fresh and quality products for you.
+                              </div>
+                              <p class="content-store__text">
+                                 Maecenas vehicula a justo quis laoreet. Sed in placerat nibh, a posuere ex. Morbi sem neque, aliquam sed orci et, rhoncus lobortis felis. Sed vestibulum nisl sit amet sapien.
+                              </p>
                            </div>
                            <div class="content-store__buttom">
                               <a href="#">Shop Now</a>
