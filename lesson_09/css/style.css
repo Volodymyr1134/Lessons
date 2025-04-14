@@ -407,12 +407,17 @@ footer{
 }
 
 .footer-content > span{
-   color: #FFF;
+   visibility:hidden;
+   color: white;
+}
+.footer-content:hover > span{
+   visibility: visible;
 }
 
 .footer-content:hover{
    color: #00B207;
 }
+
 .footer-content:hover{
    background: url(../img/ukraine.png) 50% center no-repeat;
    background-color: #00B207;
