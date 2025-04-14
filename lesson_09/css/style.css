@@ -66,13 +66,14 @@ body{
 }
 
 .header > a:hover {
-   background-color:#2C742F;
+   background: #2C742F;
    color: white;
    font-size: 18px;
-   box-shadow: 0px 4px 7px 1px black;
+   box-shadow: 0px 3px 7px 1px black;
 }
 .header > a:active {
-   box-shadow: 0px 0px 2px 1px black;
+   background-color:#00B207;
+   box-shadow: 0px 0px 5px 0px black;
 }
 
 
