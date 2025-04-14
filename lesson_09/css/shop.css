@@ -68,3 +68,27 @@
 }
 
 /* ================================================== */
+
+.slider-shop::before{
+   content: "";
+   border-radius: 50%;
+   border: solid 1px #E6E6E6;
+   width: 45px;
+   height: 45px;
+   background: url(../img/Aoorw-01.svg) center no-repeat;
+   background-color: #ffffff;
+   margin-left: -85px;
+   margin-bottom: -132px;
+}
+
+.slider-shop::after{
+   content: "";
+   border-radius: 50%;
+   border: solid 1px #E6E6E6;
+   width: 45px;
+   height: 45px;
+   background: url(../img/Aoorw-02.svg) center no-repeat;
+   background-color: #ffffff;
+   margin-left: 1355px;
+   margin-bottom: -132px;
+}
