@@ -109,3 +109,49 @@
    width: 55px;
    box-shadow: inset green 0px 0px 10px 10px;
 }
+
+/* ============ */
+
+.products {
+
+   &__items {
+   }
+
+   &__item {
+   }
+}
+
+.item-products {
+
+   &__inner {
+   }
+
+   &__discount {
+   }
+
+   &__link-img {
+   }
+
+   &__img {
+   }
+
+   &__content {
+   }
+}
+.content-products {
+
+   &__title-link {
+   }
+
+   &__title {
+   }
+
+   &__pricу {
+   }
+
+   &__basket {
+   }
+
+   &__rating {
+   }
+}

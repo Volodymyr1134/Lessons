@@ -88,22 +88,25 @@ body{
 /* =====================ecobazar-info======================= */
 
 .ecobazar-info {
-}
-
-.ecobazar-info {
    padding: 0px 0px 40px 0px;
    font-size: 0;
    margin: 0px -12px;
 }
 
-.info-card__item{
+.ecobazar-info__items{
+}
+
+.ecobazar-info__item{
    display: inline-block;
    width: 25%;
    vertical-align: top;
    padding: 0px 12px;
 }
 
-.info-card__inner-link{
+.card-info{
+}
+
+.card-info__inner-link{
    display: block;
    text-align: center;
    padding: 40px 0px;
@@ -111,15 +114,15 @@ body{
    transition: all 0.3s;
 }
 
-.info-card__inner-link:hover{
+.card-info__inner-link:hover{
    box-shadow: 0px -4px 0px 0px #00B207 inset;
 } 
 
-.info-card__icon {
+.card-info__icon {
    margin-bottom: 16px;
 }
 
-.info-card__title {
+.card-info__title {
    margin-bottom: 8px;
    color: #1A1A1A;
    font-size: 18px;
@@ -127,7 +130,7 @@ body{
    line-height: 1.5;
 }
 
-.info-card__sub-title {
+.card-info__sub-title {
    color: #999;
    font-size: 14px;
    line-height: 1.5;
@@ -185,41 +188,40 @@ body{
    margin: 0px -24px;
 }
 
-.card-products {
-}
-
-.card-products__item {
+.products__item {
    display: inline-block;
    vertical-align: top;
    padding: 0px 12px;
    padding-bottom: 20px;
 }
 
-.card-products__inner {
+.item-products {
+}
+
+.item-products__inner {
    border-radius: 8px;
    border: 1px solid  #E6E6E6;
    transition: all 0.3s;
 }
 
-.card-products__link-img{
+.item-products__link-img{
    width:314px;
    height: 312px;
    text-align: center;
-
 }
 
-.card-products__discount{
+.item-products__discount{
 }
 
-.card-products__inner:hover{
+.item-products__inner:hover{
    box-shadow: 0px 0px 12px 0px rgba(32, 181, 38, 0.32);
 }
 
-.card-products__img {
+.item-products__img {
    padding: 5px;
 }
 
-.card-products__content {
+.item-products__content {
    padding: 16px;
    max-width: 312px;
    overflow: auto;
@@ -277,7 +279,6 @@ body{
 .content-products__rating {
    display: block;
 }
-
 
 /* =======shop============= */
 
