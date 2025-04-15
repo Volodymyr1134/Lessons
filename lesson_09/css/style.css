@@ -103,10 +103,10 @@ body{
    padding: 0px 12px;
 }
 
-.card-info{
+.item-info{
 }
 
-.card-info__inner-link{
+.item-info__inner-link{
    display: block;
    text-align: center;
    padding: 40px 0px;
@@ -114,15 +114,15 @@ body{
    transition: all 0.3s;
 }
 
-.card-info__inner-link:hover{
+.item-info__inner-link:hover{
    box-shadow: 0px -4px 0px 0px #00B207 inset;
 } 
 
-.card-info__icon {
+.item-info__icon {
    margin-bottom: 16px;
 }
 
-.card-info__title {
+.item-info__title {
    margin-bottom: 8px;
    color: #1A1A1A;
    font-size: 18px;
@@ -130,7 +130,7 @@ body{
    line-height: 1.5;
 }
 
-.card-info__sub-title {
+.item-info__sub-title {
    color: #999;
    font-size: 14px;
    line-height: 1.5;
