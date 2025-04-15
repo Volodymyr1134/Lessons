@@ -6,6 +6,9 @@
 .card-shop__items {
 }
 
+.shop__list-cards{
+}
+
 .shop__card-item {
    display: inline-block;
    margin-right: 24px;
