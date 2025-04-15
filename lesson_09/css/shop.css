@@ -1,27 +1,29 @@
 
-.card-shop {
+.shop__cards {
    font-size: 0;
 }
 
 .card-shop__items {
 }
 
-.card-shop__item {
+.shop__card-item {
    display: inline-block;
    margin-right: 24px;
    margin-bottom: 10px;
 }
+.card-shop{
+}
 
-.card-shop__item:nth-child(6){
+.card-shop:nth-child(6){
    margin-right: 0px;
 }
-.card-shop__item:nth-child(12){
+.card-shop:nth-child(12){
    margin-right: 0px;
 }
-.card-shop__item:nth-child(18){
+.card-shop:nth-child(18){
    margin-right: 0px;
 }
-.card-shop__item:nth-child(24){
+.card-shop:nth-child(24){
    margin-right: 0px;
 }
 
@@ -112,46 +114,32 @@
 
 /* ============ */
 
-.products {
+.shop {
 
-   &__items {
+   &__container {
    }
 
-   &__item {
+   &__cards {
+   }
+
+   &__cards-list {
+   }
+
+   &__card-item {
    }
 }
 
-.item-products {
+.card-shop {
 
-   &__inner {
-   }
-
-   &__discount {
-   }
-
-   &__link-img {
+   &__link {
    }
 
    &__img {
    }
 
-   &__content {
-   }
-}
-.content-products {
-
-   &__title-link {
-   }
-
    &__title {
    }
 
-   &__pricу {
-   }
-
-   &__basket {
-   }
-
-   &__rating {
+   &__text {
    }
 }
