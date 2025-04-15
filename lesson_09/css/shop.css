@@ -114,32 +114,3 @@
 
 /* ============ */
 
-.shop {
-
-   &__container {
-   }
-
-   &__cards {
-   }
-
-   &__cards-list {
-   }
-
-   &__card-item {
-   }
-}
-
-.card-shop {
-
-   &__link {
-   }
-
-   &__img {
-   }
-
-   &__title {
-   }
-
-   &__text {
-   }
-}
