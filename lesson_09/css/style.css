@@ -76,6 +76,14 @@ body{
    box-shadow: 0px 0px 5px 0px black;
 }
 
+.header mark{
+   writing-mode: sideways-lr;
+   margin-bottom:-130px ;
+   padding: 7px 10px;
+   font-size: 18px;
+   font-weight: 600;
+}
+
 
 /* =====================ecobazar-info======================= */
 
@@ -107,15 +115,13 @@ body{
    box-shadow: 0px -4px 0px 0px #00B207 inset;
 } 
 
-.info-card__img {
+.info-card__icon {
    margin-bottom: 16px;
-   text-align: center;
 }
 
 .info-card__title {
    margin-bottom: 8px;
    color: #1A1A1A;
-   text-align: center;
    font-size: 18px;
    font-weight: 600;
    line-height: 1.5;
@@ -123,7 +129,6 @@ body{
 
 .info-card__sub-title {
    color: #999;
-   text-align: center;
    font-size: 14px;
    line-height: 1.5;
 }
@@ -132,7 +137,6 @@ body{
 
 .cards-header {
    font-size: 0;
-   margin-bottom: 40px;
 }
 
 .cards-header__title {
@@ -161,6 +165,10 @@ body{
 
 .cards-header__link:hover {
    box-shadow: 0px 2px 0px 0px #00B207;
+}
+
+.cards-header--margin{
+   margin-bottom: 40px;
 } 
 
 /* ===========products=================== */
