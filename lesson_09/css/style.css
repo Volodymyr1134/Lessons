@@ -401,11 +401,11 @@ body{
 
 /* ==============footer=========================== */
 
-footer{
+.footer{
    padding: 40px 0px;
 }
 
-.footer-content{
+.content-footer{
    font-family: Georgia, 'Times New Roman', Times, serif;
    font-size: 24px;
    padding: 30px;
@@ -416,19 +416,19 @@ footer{
    transition: all 3s;
 }
 
-.footer-content > span{
+.content-footer > span{
    visibility:hidden;
    color: white;
 }
-.footer-content:hover > span{
+.content-footer:hover > span{
    visibility: visible;
 }
 
-.footer-content:hover{
+.content-footer:hover{
    color: #00B207;
 }
 
-.footer-content:hover{
+.content-footer:hover{
    background: url(../img/ukraine.png) 50% center no-repeat;
    background-color: #00B207;
    padding-left: 770px;
