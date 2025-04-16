@@ -94,7 +94,6 @@ body{
 }
 
 .ecobazar-info__items{
-   box-shadow: 0px -0.5px 0px 0px #CCC inset;
 }
 
 .ecobazar-info__item{
@@ -105,6 +104,7 @@ body{
 }
 
 .item-info{
+   transition: all 0.3s;box-shadow: 0px -0.5px 0px 0px #CCC inset;
 }
 
 .item-info__inner-link{
@@ -112,10 +112,9 @@ body{
    text-align: center;
    padding: 40px 0px;
    overflow: clip;
-   transition: all 0.3s;
 }
 
-.item-info__inner-link:hover{
+.item-info:hover{
    box-shadow: 0px -4px 0px 0px #00B207 inset;
 } 
 
