@@ -52,7 +52,7 @@ body{
 .header > p {
    line-height: 1.5;
    font-size: 18px;
-   padding-bottom: 20px;
+   margin-bottom: 20px;
 }
 
 .header > a {
@@ -78,7 +78,7 @@ body{
 
 .header mark{
    writing-mode: sideways-lr;
-   margin-bottom:-130px ;
+   margin-bottom:-100px ;
    padding: 7px 10px;
    font-size: 18px;
    font-weight: 600;
