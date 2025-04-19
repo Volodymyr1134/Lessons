@@ -1,0 +1,118 @@
+
+.products__holder {
+	max-width: 1350px; /*1320px + 30px */
+	margin: 0 auto;
+	padding: 0px 15px;
+}
+
+.products {
+   font-family: "Poppins", sans-serif;
+   font-weight: 400;
+   padding: 80px 0px 150px 0px;
+}
+
+.products__items {
+   margin: 0px -4px;
+   font-size: 0;
+}
+
+.products__item {
+   display: inline-block;
+   width: 25%;
+   padding: 0px 12px;
+   vertical-align: top;
+   padding-bottom: 20px;
+}
+
+.products__title {
+   color: #1A1A1A;
+   font-size: 40px;
+   font-weight: 600;
+   line-height: 1.2;
+   margin-bottom: 40px;
+}
+
+.card-producs__inner {
+   display: inline-block;
+   position: relative;
+   border-radius: 8px;
+   border: 1px solid #E6E6E6;
+   transition: all 0.3s;
+}
+.card-producs__inner:hover {
+   border: 1px solid #2C742F;
+   box-shadow: 0px 0px 12px 0px rgba(32, 181, 38, 0.32);
+}
+
+.card-products__image img {
+   width: 302px;
+   height: 302px;
+   padding: 5px;
+}
+
+
+.card-products__like {
+   position: absolute;
+   top: 20px;
+   right: 20px;
+   height: 40px;
+   border: solid 1px #F2F2F2;
+   padding: 10px;
+   border-radius: 50%;
+}
+.card-products__eye {
+   position: absolute;
+   top: 66px;
+   right: 20px;
+   border: solid 1px #F2F2F2;
+   padding: 10px;
+   border-radius: 50%;
+}
+
+.content-products {
+   padding: 16px;
+}
+
+.content-products__title {
+   color: #4D4D4D;
+   line-height: 1.5;
+   font-size: 14px;
+}
+
+.content-products__basket svg{
+   position: absolute;
+   width: 42px;
+   height: 42px;
+   bottom: 27px;
+   right: 16px;
+   color: black;
+   fill: white;
+   border: solid 1px #F2F2F2;
+   background-color: #F2F2F2;
+   padding: 8px 10px 10px 10px;
+   border-radius: 50%;
+   transition: all 0.3s;
+}
+.content-products__basket svg:hover{
+   background-color: #00B207;
+   fill: #00B207;
+   color: white;
+}
+
+.content-products__price {
+   color: #1A1A1A;
+   font-size: 16px;
+   font-weight: 500;
+   line-height: 1.5;
+   
+}
+
+.content-products__price span{
+   color: #999;
+   font-size: 16px;
+   line-height: 1.5;
+   text-decoration-line: line-through;
+}
+
+.content-products__rating {
+}
