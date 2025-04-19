@@ -24,12 +24,32 @@
    padding-bottom: 20px;
 }
 
-.products__title {
+.heading {
+   position: relative;
+}
+
+.heading__title {
    color: #1A1A1A;
    font-size: 40px;
    font-weight: 600;
    line-height: 1.2;
    margin-bottom: 40px;
+}
+
+.heading__bottom{
+   position: absolute;
+   padding: 3px;
+   top: 10px;
+   right: 0;
+   color: #00B207;
+   font-size: 16px;
+   font-weight: 500;
+   line-height: 1.5;
+   transition: all 0.3s;
+}
+
+.heading__bottom:hover{
+   border-bottom: solid 2px #00B207;
 }
 
 .card-products__inner {
@@ -76,6 +96,7 @@
    overflow: hidden;
    opacity: 0;
 }
+
 .card-products__eye svg {
    position: absolute;
    width: 42px;
@@ -91,8 +112,10 @@
    opacity: 0;
 }
 
+
 .card-products__inner:hover .card-products__like svg, 
-.card-products__inner:hover .card-products__eye svg {
+.card-products__inner:hover .card-products__eye svg
+{
    overflow: visible;
    opacity: 1;
 }
@@ -107,13 +130,16 @@
    color: white;
 }
 
+.content-products__title:hover{
+   color: #00B207;
+}
+
 .card-products__like svg:active{
    background-color: #ffffff;
    border: solid 1px #F2F2F2;
-   fill: #ad0000;
+   fill: #00B207;
    color: white;
    box-shadow: 0px 0px 12px 0px #F2F2F2;
-   transition: ease 1s;
 }
 
 
@@ -141,6 +167,7 @@
    border-radius: 50%;
    transition: all 0.3s;
 }
+
 .content-products__basket svg:hover{
    background-color: #00B207;
    fill: #00B207;
@@ -153,7 +180,7 @@
    font-size: 16px;
    font-weight: 500;
    line-height: 1.5;
-   
+   margin-bottom: 6px;
 }
 
 .content-products__price span{
