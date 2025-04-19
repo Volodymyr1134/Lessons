@@ -32,14 +32,14 @@
    margin-bottom: 40px;
 }
 
-.card-producs__inner {
+.card-products__inner {
    display: inline-block;
    position: relative;
    border-radius: 8px;
    border: 1px solid #E6E6E6;
    transition: all 0.3s;
 }
-.card-producs__inner:hover {
+.card-products__inner:hover {
    border: 1px solid #2C742F;
    box-shadow: 0px 0px 12px 0px rgba(32, 181, 38, 0.32);
 }
@@ -50,24 +50,72 @@
    padding: 5px;
 }
 
+.card-products__sale{
+   position: absolute;
+   color: white;
+   font-size: 14px;
+   padding: 3px 8px;
+   top: 11px;
+   left: 11px;
+   border-radius: 4px;
+   background: #EA4B48;
+   z-index: 2
+}
 
-.card-products__like {
+.card-products__like svg{
    position: absolute;
    top: 20px;
    right: 20px;
+   width: 42px;
    height: 40px;
+   fill: #ffffff;
+   color: black;
    border: solid 1px #F2F2F2;
    padding: 10px;
    border-radius: 50%;
+   overflow: hidden;
+   opacity: 0;
 }
-.card-products__eye {
+.card-products__eye svg {
    position: absolute;
-   top: 66px;
+   width: 42px;
+   height: 42px;
+   top: 68px;
    right: 20px;
+   fill: #ffffff;
+   color: black;
    border: solid 1px #F2F2F2;
    padding: 10px;
    border-radius: 50%;
+   overflow: hidden;
+   opacity: 0;
 }
+
+.card-products__inner:hover .card-products__like svg, 
+.card-products__inner:hover .card-products__eye svg {
+   overflow: visible;
+   opacity: 1;
+}
+
+.card-products__like svg:hover,
+.card-products__eye svg:hover{
+   transition: all 0.5s;
+   background-color: #00B207;
+   fill: #00B207;
+   box-shadow: 0px 0px 12px 0px rgba(32, 181, 38, 0.32);
+   border: 1px solid #2C742F;
+   color: white;
+}
+
+.card-products__like svg:active{
+   background-color: #ffffff;
+   border: solid 1px #F2F2F2;
+   fill: #ad0000;
+   color: white;
+   box-shadow: 0px 0px 12px 0px #F2F2F2;
+   transition: ease 1s;
+}
+
 
 .content-products {
    padding: 16px;
@@ -97,6 +145,7 @@
    background-color: #00B207;
    fill: #00B207;
    color: white;
+   border: 1px solid #2C742F;
 }
 
 .content-products__price {
