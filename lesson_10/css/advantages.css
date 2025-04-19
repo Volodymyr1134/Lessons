@@ -1,0 +1,146 @@
+
+.advantages {
+   margin-top: -60px;
+   background-color:#231F8B;
+   padding: 172px 0px 92px 0px;
+}
+
+.advantages-container {
+   max-width: 1070px;
+   margin:0px auto;
+   padding: 0px 15px;
+}
+
+.advantages__title {
+   color: #5A54F2;
+   font-weight: 700;
+   font-size: 14px;
+   font-weight: 700;
+   line-height: 171.429%;
+   letter-spacing: 0.2px;
+   margin-bottom: 10px;
+}
+
+.advantages__sub-title {
+   font-family: "CircularStd-Bold", sans-serif;
+   color: #FFF;
+   font-size: 36px;
+   margin-bottom: 10px;
+}
+
+.advantages__text {
+   font-family: "CircularStd-book", sans-serif;
+   color: #FFF;
+   font-size: 14px;
+   font-weight: 450;
+   line-height: 1.42;
+   letter-spacing: 0.2px;
+   max-width: 695px;
+}
+
+
+/* ======================items==================================== */
+
+.advantages__items {
+   padding: 70px 0px 20px 0px ;
+   font-size: 0;
+   margin: 0px 0px;
+}
+.advantages__item > img {
+   width: 72px;
+   height: 72px;
+}
+
+.advantages__item {
+padding: 0px 15px;
+display: inline-block;
+vertical-align: top;
+}
+
+.item-advantages__link{
+   display:inline-block;
+   vertical-align: top;
+   max-width: 230px;
+   padding: 35px 40px;
+   background-color: white;
+   overflow: hidden;
+   min-height: 288px;
+   box-shadow: 0px 13px 19px 0px rgba(0, 0, 0, 0.07);
+   transition: all 0.5s;
+}
+
+.item-advantages__img {
+}
+
+.item-advantages__title {
+   color: #252B42;
+   font-family: "CircularStd-Bold";
+   font-size: 16px;
+   font-weight: 700;
+   line-height: 1.5;
+   letter-spacing: 0.1px;
+}
+
+.item-advantages__line {
+   width: 50px;
+   height: 2px;
+   background: #E74040;
+}
+
+.item-advantages__text {
+   color:  #737373;
+   font-family: "Montserrat";
+   font-size: 14px;
+   font-style: normal;
+   font-weight: 400;
+   line-height: 1.43;
+   letter-spacing: 0.2px;
+}
+
+.advantages__items > .advantages__item:nth-child(even){
+   margin-top: 48px;
+}
+
+.item-advantages__link *:not(:last-child){
+   margin-bottom: 20px;
+}
+
+/* ==========sprites==================== */
+.item-advantages__svg{
+   width: 72px;
+   height: 72px;
+   transition: all 0.3s;
+}
+
+.item-advantages__svg--svg-color-01{
+   fill: #8D5CF6;
+}
+.item-advantages__svg--svg-color-02{
+   fill: #2DC071;
+}
+.item-advantages__svg--svg-color-03{
+   fill:  #5A54F2;
+}
+.item-advantages__svg--svg-color-04{
+   fill: #FF7B52;
+}
+
+.item-advantages__link:hover * {
+   fill: white;
+   color:white;
+}
+
+.item-advantages__link:hover{
+   background-color: #5A54F2;
+   color: white;
+}
+
+.item-advantages__link:hover .item-advantages__line {
+   background-color: white;
+   width: 70%;
+   transition: all 0.7s ease 0.1s;
+}
+
+.item-advantages__link:hover{
+   box-shadow: 0px 0px 10px 1px #0000006f;
+}
