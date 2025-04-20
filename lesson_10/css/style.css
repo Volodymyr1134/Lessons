@@ -31,7 +31,7 @@ body{
 }
 
 .icon-sticky{
-   background: url(../img/favicon2-icon.png) center / 67px no-repeat ;
+   background: url(../img/favicon2-icon.png) center / 67px no-repeat;
    width: 67px;
    height: 67px;
    position: fixed;
@@ -41,10 +41,6 @@ body{
 }
 
 /* ==============header========================= */
-
-.header *{
-   transition: all 0.3s;
-} 
 
 .header{
    position: fixed;
@@ -60,7 +56,6 @@ body{
    height: 27px;
    transition: all 0.3s;
 }
-
 
 .header__list {
    text-align: center;
@@ -80,10 +75,11 @@ body{
 
 .list-menu__link{
    padding: 15px;
+   transition: all 0.3s;
 }
 
 .list-menu__link:hover{
-   text-decoration: underline black;
+   text-decoration: underline rgb(160, 160, 160);
    text-underline-offset: 7px;
 }
 
@@ -107,6 +103,7 @@ body{
    padding: 10px;
    text-underline-offset: 7px;
    font-weight: 400;
+   transition: all 0.3s;
 }
 
 .sub-menu__link:hover { 
@@ -116,6 +113,7 @@ body{
 .list-menu__item:hover .sub-menu{
    opacity: 1;
    visibility: visible;
+   transition: all 0.3s;
 }
 
 .header::after{
@@ -158,6 +156,7 @@ body{
    top: 300px;
    left: calc(50% - 450px);
 }
+
 .box__container::before{
    content: "left: calc(50% - 450px);";
    position: absolute;
@@ -171,6 +170,7 @@ body{
    height: 30px;
    top: 300px;
 }
+
 /* ===========trial-unit====================== */
 
 .trial-unit {
@@ -261,7 +261,7 @@ body{
 }
 
 .item-unit__box--blue{
-   background: url(../img/ja-ja.JPG) 44.5% / contain fixed;
+   background: url(../img/ja-ja.JPG) left / contain fixed;
    position: absolute;
    width: 250px;
    padding: 400px 30px;
@@ -307,12 +307,12 @@ body{
 }
 
 .businnes__items--margin{
-   padding-bottom: 55px;
+   margin-bottom: 55px;
 }
 
 .businnes__image-top {
-   position: relative;
    display: inline-block;
+   position: relative;
    margin-top: -41px;
    margin-right: 70px;
    padding-left: 129px;
@@ -370,7 +370,7 @@ body{
 }
 
 .content-businnes__title {
-   max-width: 602px;
+   max-width: 510px;
    color: #FFF;
    font-family: "CircularStd-Bold";
    font-size: 36px;
@@ -450,7 +450,7 @@ body{
    background: url(../img/ellipse-03.svg) center / 65px  no-repeat; 
    width: 65px;
    height: 65px;
-   z-index: 1;
+   z-index: 3;
 }
 
 .businnes__image-bottom::after{

@@ -16,7 +16,7 @@
    font-weight: 700;
    font-size: 14px;
    font-weight: 700;
-   line-height: 171.429%;
+   line-height: 1.7;
    letter-spacing: 0.2px;
    margin-bottom: 10px;
 }
@@ -38,7 +38,6 @@
    max-width: 695px;
 }
 
-
 /* ======================items==================================== */
 
 .advantages__items {
@@ -52,19 +51,15 @@
 }
 
 .advantages__item {
-padding: 0px 15px;
-display: inline-block;
-vertical-align: top;
+   padding: 0px 15px;
+   display: inline-block;
+   width: 25%;
+   vertical-align: top;
 }
 
 .item-advantages__link{
-   display:inline-block;
-   vertical-align: top;
-   max-width: 230px;
    padding: 35px 40px;
    background-color: white;
-   overflow: hidden;
-   min-height: 288px;
    box-shadow: 0px 13px 19px 0px rgba(0, 0, 0, 0.07);
    transition: all 0.5s;
 }
@@ -132,7 +127,6 @@ vertical-align: top;
 
 .item-advantages__link:hover{
    background-color: #5A54F2;
-   color: white;
 }
 
 .item-advantages__link:hover .item-advantages__line {
