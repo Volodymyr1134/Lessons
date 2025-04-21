@@ -69,11 +69,26 @@
 .card-products__image {
    height: 314px;
    overflow: hidden;
+   position: relative;
 }
 .card-products__image img {
    padding: 5px;
 }
 
+.card-products__image::after {
+   content: "";
+   position: absolute;
+   top: 0;
+   left: 0;
+   right: 0;
+   bottom: 0;
+   transition: all 0.3s;
+}
+
+.card-products__image:hover::after {
+   background: rgba(0, 141, 5, 0.044);
+   border-radius: 8px; 
+}
 
 .card-products__sale{
    position: absolute;
@@ -96,10 +111,12 @@
    fill: #ffffff;
    color: black;
    border: solid 1px #F2F2F2;
+   background-color: white;
    padding: 10px;
    border-radius: 50%;
    overflow: hidden;
    opacity: 0;
+   z-index: 2;
 }
 
 .card-products__eye svg {
@@ -111,10 +128,12 @@
    fill: #ffffff;
    color: black;
    border: solid 1px #F2F2F2;
+   background-color: white;
    padding: 10px;
    border-radius: 50%;
    overflow: hidden;
    opacity: 0;
+   z-index: 2;
 }
 
 .card-products__inner:hover .card-products__like svg, 
