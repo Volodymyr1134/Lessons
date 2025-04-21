@@ -196,7 +196,7 @@
 }
 
 .content-products__basket svg:hover{
-   background-color: #2C742F !important; /*Потрібно колись спробувати !important, ось є така можливість.*/
+   background-color: #2C742F !important; /*Потрібно колись спробувати - !important, ось є така можливість.*/
    fill: #2C742F !important;
    border: 1px solid #2C742F;
 }
