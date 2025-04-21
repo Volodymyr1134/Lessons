@@ -74,6 +74,7 @@ body{
 }
 
 .list-menu__link{
+   width: 130px;
    padding: 15px;
    transition: all 0.3s;
 }
@@ -83,16 +84,17 @@ body{
    text-underline-offset: 7px;
 }
 
-.list-menu__item {
-   margin: 0px 10px;
+.list-menu__item:not(:last-child) {
+   margin-right: 10px;
 }
 
 .sub-menu {
    position: absolute;
    opacity: 0;
    visibility: hidden;
+   width: 100%;
    top: 100%;
-   left: -20px;
+   left: 0px;
 }
 
 .sub-menu__item {
@@ -119,10 +121,12 @@ body{
 .header::after{
    content: "";
    position: absolute;
+   margin: 0 auto;
    opacity: 1;
    z-index: 23;
    top: 0;
-   left: 44.7%;
+   left: 50%;
+   transform: translateX(-50%);
    border-left: 70px solid transparent;
 	border-right: 70px solid transparent;
 	border-top: 20px solid rgba(43, 45, 91, 0.702);
