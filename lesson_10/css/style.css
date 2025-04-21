@@ -99,6 +99,8 @@ body{
 
 .sub-menu__item {
    background-color: #0d485a;
+   border-radius: 12px ;
+   box-shadow: 0px 0px 23px 3px  #0d485a;
 }
 
 .sub-menu__link {
@@ -106,6 +108,7 @@ body{
    text-underline-offset: 7px;
    font-weight: 400;
    transition: all 0.3s;
+   
 }
 
 .sub-menu__link:hover { 
@@ -325,9 +328,12 @@ body{
    margin-top: -41px;
    margin-right: 70px;
    padding-left: 129px;
+   max-width: 560px;
 }
 
 .businnes__image-top img {
+   width: 100%;
+   height: 100%;
    font-size: 18px;
    color: white;
    position: relative;
@@ -444,6 +450,7 @@ body{
    display: inline-block;
    position: relative;
    padding-right: 129px;
+   max-width: 560px;
 }
 
 .businnes__image-bottom img {
