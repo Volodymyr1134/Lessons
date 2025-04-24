@@ -345,11 +345,12 @@ body{
 .businnes__image-top::before{
    content: "";
    position: absolute;
-   top: 128px;
-   left: 0;
-   background: url(../img/ellipse-01.svg) center / 65px  no-repeat; 
+   left: 0px;
+   top: 168px;
    width: 65px;
    height: 65px;
+   border-radius: 50%;
+   border: solid 5px  #FFBA49;
    z-index: 1;
 }
 
@@ -357,8 +358,9 @@ body{
    content: "";
    position: absolute;
    bottom: -66px;
-   left: 21px;
-   background: url(../img/ellipse-02.svg) center / 401px  no-repeat; 
+   left: 20px;
+   border-radius: 50%;
+   border: solid 5px  #FFBA49;
    width: 401px;
    height: 401px;
    z-index: 1;
@@ -376,12 +378,13 @@ body{
 .businnes__image-top > span::before {
    content: "";
    position: absolute;
-   z-index: 1;
+   z-index: 0;
    bottom: -390px;
    left: 25px;
    width: 214px;
    height: 472px;
-   background: url(../img/background-01.svg) center no-repeat;
+   background-image: radial-gradient(#70C217 3.5px, transparent 4px);
+   background-size: 44px 44px;
 }
 
 .content-businnes__title {
@@ -430,12 +433,13 @@ body{
 .businnes__items-bottom::after {
    content: "";
    position: absolute;
-   bottom: 10px;
-   right: 77px;
-   width: 213px;
-   height: 472px;
-   transform: rotate(-90deg);
-   background: url(../img/background-02.svg) center no-repeat;
+   bottom: 157px;
+   right: -37px;
+   width: 160px;
+   height: 216px;
+   background-image: radial-gradient(#70C217 3.5px, transparent 4px);
+   background-size: 44px 44px;
+   z-index: 0;
 }
 
 .content-businnes--bottom{
@@ -468,7 +472,8 @@ body{
    position: absolute;
    top: -48px;
    left: 92px;
-   background: url(../img/ellipse-03.svg) center / 65px  no-repeat; 
+   border-radius: 50%;
+   border: solid 5px  #FFBA49;
    width: 65px;
    height: 65px;
    z-index: 3;
@@ -479,7 +484,8 @@ body{
    position: absolute;
    top: -26px;
    right: 0px;
-   background: url(../img/ellipse-04.svg) center / 262px  no-repeat; 
+   border-radius: 50%;
+   border: solid 5px  #FFBA49; 
    width: 262px;
    height: 262px;
    z-index: 1;
