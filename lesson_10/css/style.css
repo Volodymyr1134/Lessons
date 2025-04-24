@@ -296,13 +296,13 @@ body{
    font-size: 23px;
 }
 
-/* -----------businnes----------------- */
+/* -----------business----------------- */
 
-.businnes{
+.business{
    position: relative; 
 }
 
-.businnes svg{
+.business svg{
    position: absolute;
    top: 0;
    right: 0;
@@ -310,19 +310,19 @@ body{
    width: 100%;
 }
 
-.businnes__body {
+.business__body {
    position: relative;
    font-size: 0;
 }
 
-.businnes__items {
+.business__items {
 }
 
-.businnes__items--margin{
+.business__items--margin{
    margin-bottom: 55px;
 }
 
-.businnes__image-top {
+.business__image-top {
    display: inline-block;
    position: relative;
    margin-top: -41px;
@@ -331,7 +331,7 @@ body{
    max-width: 560px;
 }
 
-.businnes__image-top img {
+.business__image-top img {
    width: 100%;
    height: 100%;
    font-size: 18px;
@@ -342,7 +342,7 @@ body{
    box-shadow: -25px 20px 44px 0px rgba(84, 48, 209, 0.40);
 }
 
-.businnes__image-top::before{
+.business__image-top::before{
    content: "";
    position: absolute;
    left: 0px;
@@ -354,7 +354,7 @@ body{
    z-index: 1;
 }
 
-.businnes__image-top::after{
+.business__image-top::after{
    content: "";
    position: absolute;
    bottom: -66px;
@@ -366,7 +366,7 @@ body{
    z-index: 1;
 }
 
-.businnes__content {
+.business__content {
    display: inline-block;
    position: relative;
    z-index: 2;
@@ -375,7 +375,7 @@ body{
    padding: 97px 0px 30px 0px;
 }
 
-.businnes__image-top > span::before {
+.business__image-top > span::before {
    content: "";
    position: absolute;
    z-index: 1;
@@ -387,7 +387,7 @@ body{
    background-size: 44px 44px;
 }
 
-.content-businnes__title {
+.content-business__title {
    max-width: 510px;
    color: #FFF;
    font-family: "CircularStd-Bold";
@@ -396,7 +396,7 @@ body{
    margin-bottom: 13px;
 }
 
-.content-businnes__text {
+.content-business__text {
    max-width: 480px;
    color: #FFF;
    font-size: 18px;
@@ -404,10 +404,10 @@ body{
    margin-bottom: 40px;
 }
 
-.content-businnes__buttom {
+.content-business__buttom {
 }
 
-.content-businnes__link {
+.content-business__link {
    padding: 22px  26px 21px 26px;
    border-radius: 60px;
    background: #F35B09;
@@ -418,19 +418,19 @@ body{
    transition: all 0.3s;
 }
 
-.content-businnes__link:hover {
+.content-business__link:hover {
    background: #c54c0b;
 }
 
-/* ==============businnes__items-bottom========================== */
+/* ==============business__items-bottom========================== */
 
-.businnes__items-bottom {
+.business__items-bottom {
    text-align: right;
    padding-left:69px ;
    position: relative;
 }
 
-.businnes__items-bottom::after {
+.business__items-bottom::after {
    content: "";
    position: absolute;
    bottom: 157px;
@@ -442,23 +442,23 @@ body{
    z-index: 1;
 }
 
-.content-businnes--bottom{
+.content-business--bottom{
    margin-right: 43px;
    padding-top: 30px;
 }
 
-.content-businnes__title--width{
+.content-business__title--width{
    max-width: 420px;
 }
 
-.businnes__image-bottom {
+.business__image-bottom {
    display: inline-block;
    position: relative;
    padding-right: 129px;
    max-width: 560px;
 }
 
-.businnes__image-bottom img {
+.business__image-bottom img {
    font-size: 19px;
    color: white;
    position: relative;
@@ -467,7 +467,7 @@ body{
    box-shadow: -25px 20px 44px 0px rgba(84, 48, 209, 0.40);
 }
 
-.businnes__image-bottom::before{
+.business__image-bottom::before{
    content: "";
    position: absolute;
    top: -48px;
@@ -479,7 +479,7 @@ body{
    z-index: 3;
 }
 
-.businnes__image-bottom::after{
+.business__image-bottom::after{
    content: "";
    position: absolute;
    top: -26px;
