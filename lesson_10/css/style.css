@@ -378,7 +378,7 @@ body{
 .businnes__image-top > span::before {
    content: "";
    position: absolute;
-   z-index: 0;
+   z-index: 1;
    bottom: -390px;
    left: 25px;
    width: 214px;
@@ -439,7 +439,7 @@ body{
    height: 216px;
    background-image: radial-gradient(#70C217 3.5px, transparent 4px);
    background-size: 44px 44px;
-   z-index: 0;
+   z-index: 1;
 }
 
 .content-businnes--bottom{
@@ -502,7 +502,7 @@ body{
    font-family: Georgia, 'Times New Roman', Times, serif;
    font-size: 24px;
    padding: 30px;
-   background: linear-gradient(180deg, #F2F5F3 20.01%, #FFF 100%);;
+   background: linear-gradient(180deg, #F2F5F3 20.01%, #FFF 100%);
    border-radius: 25px 25px;
    color: #342e7c;
    box-shadow: 0px 0px 10px 1px black;
