@@ -2,7 +2,7 @@
 
 .transform {
   padding: 100px 0;
-  background: url(../img/138084.jpg) center / contain fixed;
+  background: url(../img/138084.avif) center / contain fixed;
   color: aliceblue;
 }
 
@@ -337,13 +337,18 @@
 
 /* =================cube====================== */
 
+.block-cube{
+  padding: 100px 0px;
+}
+
 .scene{
-  padding: 150px 0px;
+  margin: 0 auto;
+  max-width: 300px;
+  padding: 50px;
 }
 
 .cube {
-  margin: 0 auto;
-  width: 200px;
+  width: 200px; 
   height: 200px;
   position: relative;
   transform-style: preserve-3d;
@@ -377,16 +382,10 @@
 }
 .bottom { transform: rotateX(-90deg) translateZ(100px); }
 
-.cube:hover {
+.scene:hover .cube {
   transform: rotateX(-360deg) rotateY(360deg) scale(2);
-
 }
 .face:hover{
   background: rgba(255, 255, 255, 0);
   font-size: 0;
 }
-
-.scene:hover .back{
-  transition: all 1s;
-}
-
