@@ -1,0 +1,392 @@
+
+
+.transform {
+  padding: 100px 0;
+  background: url(../img/138084.jpg) center / contain fixed;
+  color: aliceblue;
+}
+
+.transform__title {
+  text-align: center;
+  font-size: 24px;
+  font-weight: 600;
+  margin-bottom: 100px;
+  background-color: #1e817787;
+}
+
+.transform__sub-title {
+}
+
+.transform__items {
+  margin: 0px -25px;
+  font-size: 0;
+  position: relative;
+}
+
+.transform__item {
+  display: inline-block;
+  width: 20%;
+  background-color: rgb(198, 191, 198);
+  padding: 15px;
+  vertical-align: top;
+  border: dashed 1px rgb(128, 12, 12);
+}
+
+.transform__inner{
+  max-width: 200px;
+  height: 200px;
+  color: white;
+  font-size: 18px;
+  padding-top: 80px;
+  background: linear-gradient(207deg,rgba(23, 130, 116, 1) 39%, rgba(120, 53, 111, 1) 81%);
+  text-align: center;
+  border-radius: 10px;
+  transition: all 0.6s;
+}
+
+.transform__inner--translate:hover{
+  background-color: #6871a6;
+  transform: translate(20px -20px);
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.transform__inner--scale-1:hover{
+  background-color: #6871a6;
+  transform: scale(0.5);
+}
+.transform__inner--scale-2:hover{
+  background-color: rgb(104, 113, 166);
+  transform: scale(1.5);
+}
+.transform__inner--scale-3:hover{
+  background-color: #6871a6;
+  transform: scale(-1, 1);
+}
+.transform__inner--rotate-1:hover{
+  background-color: #6871a6;
+  transform: rotate(50deg);
+}
+.transform__inner--rotate-2:hover{
+  background-color: #6871a6;
+  transform: rotate(50deg);
+}
+.transform__inner--skew-1:hover{
+  background-color: #6871a6;
+  transform: skew(10deg, 10deg);
+}
+.transform__inner--skew-scale:hover{
+  background-color: #6871a6;
+  transform: skewX( -50deg) scale(0.5);
+}
+.transform__inner--rotate-origin:hover{
+  background-color: #6871a6;
+  transform: rotate( -50deg) scale(0.7);
+  transform-origin: right top;
+}
+.transform__inner--translate-origin:hover{
+  background-color: #6871a6;
+  transform: translate( -30px) rotate(-10deg) scale(0.5) skew(50deg);
+  transform-origin: left bottom;
+}
+
+
+.perspective{
+  perspective: 300px;
+	perspective-origin:center;
+  box-shadow: 0px 0px 10px 1px black;
+  background: url(../img/it.avif) left / cover;
+}
+.transform__inner--perspective{
+  padding-top: 40px;
+  transform: scale(1.15);
+  border-radius: 0;
+  transition: all 1s;
+}
+.transform__inner--perspective:hover{
+  transform: rotateY( 85deg);
+  transform-origin: left;
+  background-color: rgb(94, 191, 159);
+}
+
+
+
+/* ================transform-3d==================== */
+
+.transform-3d {
+  text-align: center;
+  background-color: #53837edc;
+}
+.transform-3d__title {
+  font-size: 25px;
+  font-weight: 600;
+  letter-spacing: 1.8;
+  padding: 30px 0;
+}
+.transform-3d__text {
+  font-size: 18px;
+}
+
+.transform-3d__text span {
+  font-size: 16px;
+  color: red;
+  padding-left: 20px;
+}
+
+.transform-3d__items {
+  padding: 70px 0;
+  background-color: #53837edc;
+}
+
+.transform-3d__items > div {
+  margin: 25px 32px;
+}
+
+/* ============card-01================= */
+.card-01{
+  display: inline-block;
+  position: relative;
+  z-index: 2;
+  vertical-align: top;
+  width: 300px;
+  height: 400px;
+  background:url(../img/fon-card.jpg) center / cover no-repeat;
+  perspective: 400px;
+	transform-style: preserve-3d;
+  color: white;
+  text-align: center;
+  line-height: 2;
+}
+.card-01__inner{
+  visibility: hidden;
+  opacity: 0;
+  display: block;
+  width: 300px;
+  height: 400px;
+  width: 300px;
+  height: 400px;
+  background-color: rgb(153, 118, 73);
+  transition: all 0.7s ease 0s;
+}
+
+.card-01:hover .card-01__inner{
+  transform: translate3d(120px, 60px, 40px) rotateY(-360deg); 
+  background-color: rgba(63, 40, 9, 0.532);
+  visibility:visible;
+  opacity: 1;
+}
+
+/* ==============card-02======================== */
+
+.card-02 {
+  display: inline-block;
+  vertical-align: top;
+  line-height: 2;
+}
+.card__body {
+  position: relative;
+	perspective: 800px;
+}
+
+.card-02__back,
+.card-02__front {
+	transition: all 0.7s;
+	overflow: hidden;
+}
+
+.card-02__front {
+  width: 300px;
+  height: 400px;
+	backface-visibility: hidden;
+	transform: rotateX(0deg);
+}
+
+.card-02__back {
+  width: 300px;
+  height: 400px;
+  transform: rotateY(180deg);
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+.card__body:hover .card-02__back{
+  transform: rotateX(0deg);
+}
+.card__body:hover .card-02__front{
+  transform: rotateX(-180deg);
+}
+
+/* ===========card-03================= */
+
+.card-03 {
+  display: inline-block;
+  position: relative;
+  z-index: 2;
+  vertical-align: top;
+  perspective: 300px;border-radius: 10px;
+  line-height: 2;
+}
+
+.card-03__item {
+  position: relative;
+  top: 0;
+  left: 0;
+  z-index: 2;
+  width: 300px;
+  height: 400px;
+  text-align: center;
+  background: url(../img/fon-card.jpg) center / cover no-repeat;
+  transition: all 0.7s;
+  transform-origin: left top;
+}
+
+.card-03__inner {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 300px;
+  height: 400px;
+  transition: all 0.3s;
+}
+
+.card-03:hover .card-03__item{
+  transform: rotateY(-100deg);
+} 
+
+.card-03:hover .card-03__inner{
+  scale: 1.7;
+  z-index: 3;
+  transition: all 0.5s ease 0.5s;
+}
+
+/* ===========card-04================== */
+
+.card-04 {
+  display: inline-block;
+  perspective: 200px;
+  transform-style: preserve-3d;
+  overflow: hidden;
+  background:url(../img/star.jpg) center / cover no-repeat;
+  line-height: 2;
+}
+.card-04__item {
+  position: relative;
+  text-align: center;
+  z-index: 1;
+  width: 483px;
+  height: 300px;
+  position: relative;
+  background: url(../img/fon-card.jpg) center / cover no-repeat;
+  transition: all 0.7s;
+}
+.card-04__inner {
+  width: 483px;
+  height: 300px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: all 0.7s ease 0.7s;
+}
+.card-04:hover .card-04__item{
+  transform: translate(-100%);
+}
+.card-04:hover .card-04__inner{
+  transform: translate3d(0px, 0px, -200px) rotate3d(1, 1, 20, 360deg);
+}
+
+/* ==============card-04===================== */
+
+.card-05 {
+  display: inline-block;
+  transform-style: preserve-3d;
+  perspective: 300px;
+  background:url(../img/star.jpg) center / cover no-repeat;
+  line-height: 2;
+}
+.card-05__item {
+  position: relative;
+  z-index: 5;
+  width: 483px;
+  height: 300px;
+  background: url(../img/fon-card.jpg) center / cover no-repeat;
+  transition: all 0.7s;
+}
+.card-05__inner {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  width: 483px;
+  height: 300px;
+  transition: all 1.7s ease 0.3s;
+}
+
+.card-05:hover .card-05__item{
+  transform-origin: bottom;
+  transform: scale3d(1.5,1.5,1);
+  opacity: 0.7;
+  visibility: hidden;
+  transition: all 0.7s;
+}
+
+.card-05:hover .card-05__inner{
+  transform-origin: left;
+  transform: translateX(-400px) translateY(50px) rotate(360deg) scale(1.5);
+}
+
+/* =================cube====================== */
+
+.scene{
+  padding: 150px 0px;
+}
+
+.cube {
+  margin: 0 auto;
+  width: 200px;
+  height: 200px;
+  position: relative;
+  transform-style: preserve-3d;
+  transition: all 2s;
+}
+
+.face {
+  position: absolute;
+  width: 200px;
+  height: 200px;
+  background: rgba(255, 255, 255, 0.88);
+  border: 3px solid #878484;
+  box-sizing: border-box;
+}
+
+.front { 
+  transform: translateZ(100px);
+  color: red;
+  background:url(../img/fon-card.jpg) center / cover no-repeat;
+  text-align: center;
+  font-size: 20px;
+  padding-top: 70px;
+}
+
+.back {background: url(../img/it.avif) center / cover no-repeat; transform: rotateY(180deg) translateZ(100px);
+}
+.right  { transform: rotateY(90deg) translateZ(100px); }
+.left   { transform: rotateY(-90deg) translateZ(100px); }
+.top{
+  transform: rotateX(90deg) translateZ(100px);
+}
+.bottom { transform: rotateX(-90deg) translateZ(100px); }
+
+.cube:hover {
+  transform: rotateX(-360deg) rotateY(360deg) scale(2);
+
+}
+.face:hover{
+  background: rgba(255, 255, 255, 0);
+  font-size: 0;
+}
+
+.scene:hover .back{
+  transition: all 1s;
+}
+

@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="zxx">
+   <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link rel="stylesheet" href="css/fonts.css">
+      <link rel="shortcut icon" href="img/favicon2-icon.png" type="image/svg+xml">
+      <link rel="stylesheet" href="css/style.css">
+      <title>Lesson_11</title>
+   </head>
+   <body>
+   <div class="wrapper">
+      <div class="icon-sticky"></div>
+   <header  class="header">
+               <ul class="header__list list-menu">
+                  <li class="list-menu__item">
+                     <a  class="list-menu__link" href="#">Price</a>
+                     <ul class="sub-menu">
+                        <li class="sub-menu__item">
+                           <a href="#" class="sub-menu__link">Home page</a>
+                        </li>
+                        <li class="sub-menu__item">
+                           <a href="#transform-id" class="sub-menu__link">Transform 2D</a>
+                        </li>
+                        <li class="sub-menu__item">
+                           <a href="#transform-3d-id" class="sub-menu__link">Transform 3D</a>
+                        </li>
+                        <li class="sub-menu__item">
+                           <a href="#alfa-romeo-id" class="sub-menu__link">Alfa Romeo</a>
+                        </li>
+                        <li class="sub-menu__item">
+                           <a href="#footer-id" class="sub-menu__link">Footer</a>
+                        </li>
+                     </ul>
+                  </li>
+                  <li class="list-menu__item">
+                     <a class="list-menu__link" href="#home-page-id">Home page</a>
+                  </li>
+                  <li class="list-menu__item">
+                     <a class="list-menu__link" href="#footer-id">Footer</a>
+                  </li>
+               </ul>
+   </header>
+   <main class="page">
+      <section id="transform-id" class="transform">
+         <div class="transform__container">
+            <h1 class="transform__title">Homework 11 <br>Transform</h1>
+            <p class="transform__sub-title"></p>
+            <div class="transform__items">
+               <div class="transform__item">
+                  <div class="transform__inner transform__inner--translate">
+                     transform: translate(20px, -20px)
+                  </div>
+               </div>
+               <div class="transform__item">
+                  <div class="transform__inner transform__inner--scale-1">
+                     transform:  scale(0.5);
+                  </div>
+               </div>
+               <div class="transform__item">
+                  <div class="transform__inner transform__inner--scale-2">
+                     transform: scale(1.5);
+                  </div>
+               </div>
+               <div class="transform__item">
+                  <div class="transform__inner transform__inner--scale-3">
+                     Дзеркало transform: scale(-1, 1);
+                  </div>
+               </div>
+               <div class="transform__item">
+                  <div class="transform__inner transform__inner--rotate-1">
+                     transform: rotate(50deg);
+                  </div>
+               </div>
+               <div class="transform__item">
+                  <div class="transform__inner transform__inner--skew-1">
+                     transform: skew(10deg, 10deg);
+                  </div>
+               </div>
+               <div class="transform__item">
+                  <div class="transform__inner transform__inner--skew-scale">
+                     transform: skewX( -50deg) scale(0.5);
+                  </div>
+               </div>
+               <div class="transform__item">
+                  <div class="transform__inner transform__inner--rotate-origin">
+                     transform: rotate( -50deg) scale(0.7);
+                     transform-origin: right top;
+                  </div>
+               </div>
+               <div class="transform__item">
+                  <div class="transform__inner transform__inner--translate-origin">
+                     transform: translate( -30px) rotate(-10deg) scale(0.5) skew(50deg);
+                     transform-origin: left bottom;
+                  </div>
+               </div>
+               <div class="transform__item perspective">
+                  <div class="transform__inner transform__inner--perspective">
+                     perspective: 200px;
+	                  perspective-origin:center;
+                     transform: rotateY( 70deg);
+                     transform-origin: left;
+                  </div>
+               </div>
+            </div>
+            <div id="transform-3d-id" class="transform-3d">
+               <h2 class="transform-3d__title">3D Трансформації</h2>
+               <p class="transform-3d__text">Переміщення елемента в <mark>3D-просторі</mark>. 
+                  Крім осі <mark>X</mark> та <mark>Y</mark> додається вісь <mark>Z</mark>. Вісь Z працює лише з <span> perspective</span></p>
+            </div>
+            <div class="transform-3d__items">
+               <div class="card-01">transform: translate3d(120px, 60px, 40px) rotate(360deg) scale3d(1, 1, 1);
+                  <div>
+                     <img class="card-01__inner" src="img/it-01.jpg" alt="it">
+                  </div>
+               </div>
+               <div class="card-02 card">
+                  <div class="card__body">
+                     <div class="card-02__back">
+                        <img src="img/it-01.jpg" alt="image">
+                     </div>
+                     <div class="card-02__front">
+                        <img src="img/it-02.jpg" alt="image">
+                     </div>
+                  </div>
+               </div>
+               <div class="card-03">
+                  <div class="card-03__item">transform: rotateY(-100deg);scale: 1.7;transform-origin: left top;</div>
+                  <img class="card-03__inner" src="img/it-01.jpg" alt="image">
+               </div>
+               <div class="card-04">
+                  <div class="card-04__item"> item - transform: translate(-100%);inner -  transform: translate3d(0px, 0px, -200px) rotate3d(1, 1, 20, 360deg);</div>
+                  <img class="card-04__inner" src="img/cat-02.avif" alt="image">
+               </div>
+               <div class="card-05">
+                  <div class="card-05__item"></div>
+                  <img class="card-05__inner" src="img/cat-01.avif" alt="image">
+               </div>
+               <div class="scene">
+                  <div class="cube">
+                     <div class="face front">hover</div>
+                     <div class="face back"></div>
+                     <div class="face right"></div>
+                     <div class="face left"></div>
+                     <div class="face top"></div>
+                     <div class="face bottom"></div>
+                  </div>
+               </div>
+      </section>
+   <section id="alfa-romeo-id" class="alfa-romeo">
+      <div class="alfa-romeo__container">
+         <h2 class="alfa-romeo__title">
+            <img src="img/alfa-01.avif" alt="alfa-romeo">
+         </h2>
+            <div class="alfa-romeo__text">
+               <p>
+                  Alfa Romeo 147 - Вперше автомобіль був представлений на автошоу в Турині 8 червня 2000 року з трьох-дверним кузовом. Європейське журі привласнило моделі титул «Автомобіль 2001 року». У 2001 році представлена п'ятидверна модифікація.
+               </p>
+               <p>
+                  Можливі три варіанти 4-циліндрових 16-клапанних бензинових двигунів з системою twin spark (по дві свічки на кожен циліндр, призначених для збільшення спалювання суміші): 1,6-літровий потужністю 105 к.с., 1,6 л - 120 к.с., 2,0 л - 150 к.с., а також 1,9-літровий фіатівський дизельний мотор покоління JTD потужністю від 100 до 170 к.с. Дизель оснащений системою Common-Rail і турбонаддувом зі змінною геометрією.
+               </p>
+               <div class="alfa-romeo__sun">
+                  <div class="line-sun"><p>Hover</p>
+                        <div class="line-sun__01"></div>
+                        <div class="line-sun__02"></div>
+                        <div class="line-sun__03"></div>
+                        <div class="line-sun__04"></div>
+                        <div class="line-sun__05"></div>
+                  </div>
+               </div>
+            </div>
+         <div class="alfa-romeo__picture picture-147">
+            <div class="picture-147__left-body-machines"></div>
+            <div class="picture-147__right-body-machines"></div>
+            <div class="picture-147__body-center"></div>
+            <div class="picture-147__car-doors"></div>
+            <div class="picture-147__trunk"></div>
+            <div class="picture-147__car-decor decor-inner">
+               <div class="decor-inner__01"></div>
+            </div>
+            <div class="picture-147__wheel wheel">
+               <div class="wheel__line-01"></div>
+               <div class="wheel__line-02"></div>
+               <div class="wheel__line-03"></div>
+            </div>
+         </div>
+      </div>
+   </section> 
+   </main>
+   <footer id="footer-id" class="footer">
+      <div class="footer__container">
+         <div class="content-footer" >
+            Наведіть курсор. Дякую : ) <img src="img/icon-html-css.png" alt="icon"><span> 27.04.2025</span>
+         </div>
+      </div>
+   </footer>
+   </div>
+   </body>
+</html>
