@@ -430,7 +430,7 @@ body{
    background-color: #3432323d;
    box-shadow: 0px 0px 23px 0px;
    transform: rotate(-3deg);
-   transform: rotate3d(2 2 2 20deg);
+   transform: rotate3d(2 2 20deg);
 }
 .picture-147__car-doors::before{
    position: absolute;
