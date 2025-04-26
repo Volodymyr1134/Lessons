@@ -113,9 +113,8 @@ body{
    z-index: 1;
    top: 0;
    left: -200px;
-   transform: translate(90deg, 30deg);
    margin-top: -250px;
-   perspective: 90px;
+   perspective: 100px;
    perspective-origin: right;
 }
 .line-sun p{
@@ -126,7 +125,6 @@ body{
 }
 
 .line-sun{
-   position: relative;
    background-color: yellow;
    width: 100px;
    height: 100px;
@@ -139,65 +137,46 @@ body{
 .line-sun div{
    opacity: 0.5;
    box-shadow: 0px 0px 20px 1px yellow;
+   background-color: yellow;
+   position: absolute;
+   top: 50px;
+   height: 2px;
+
 }
 
 .line-sun__01{
-   position: absolute;
-   top: 50px;
    left: -100%;
    width: 300px;
-   height: 2px;
-   background-color: yellow;
    transform: rotate(107deg);
 } 
 .line-sun__02{
-   position: absolute;
-   top: 50px;
    left: -100%;
    width: 300px;
-   height: 2px;
-   background-color: yellow;
    transform: rotate(157deg);
 } 
 .line-sun__03{
-   position: absolute;
-   top: 50px;
    left: -100%;
    width: 300px;
-   height: 2px;
-   background-color: yellow;
    transform: rotate(217deg);
 } 
 .line-sun__04{
-   position: absolute;
-   top: 50px;
    left: -70%;
    width: 250px;
-   height: 2px;
-   background-color: yellow;
    transform: rotate(0deg);
 } 
 .line-sun__05{
-   position: absolute;
-   top: 50px;
    left: -40%;
    width: 170px;
-   height: 2px;
-   background-color: yellow;
    transform: rotate(70deg);
 } 
 
 .line-sun:hover{
-   border-radius: 50%;
    transform: rotateY(-360deg) scale(1.7);
    opacity: 0;
 }
 
 .alfa-romeo__title {
-   color:white;
-   font-size: 25px;
    padding: 20px 0;
-   line-height: 1.7;
    text-align: center;
 }
 .alfa-romeo__title img {
@@ -207,10 +186,9 @@ body{
 .alfa-romeo__text {
    font-size: 16px;
    color:rgb(87, 14, 14);
-   border-radius: 10px;
 }
 
-.alfa-romeo__text p:not(:last-child){
+.alfa-romeo__text > p:not(:last-of-type){
    margin-bottom: 10px;
 }
 
@@ -430,7 +408,6 @@ body{
    background-color: #3432323d;
    box-shadow: 0px 0px 23px 0px;
    transform: rotate(-3deg);
-   transform: rotate3d(2, 2, 2, 20deg);
 }
 .picture-147__car-doors::before{
    position: absolute;
