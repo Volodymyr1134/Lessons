@@ -46,10 +46,7 @@
 
 .transform__inner--translate:hover{
   background-color: #6871a6;
-  transform: translate(20px -20px);
-  position: absolute;
-  top: 0;
-  left: 0;
+  transform: translate(-20px, -20px);
 }
 .transform__inner--scale-1:hover{
   background-color: #6871a6;
@@ -86,12 +83,12 @@
 }
 .transform__inner--translate-origin:hover{
   background-color: #6871a6;
-  transform: translate( -30px) rotate(-10deg) scale(0.5) skew(50deg);
+  transform: translate(40px, -30px) scale(0.7) skew(50deg);
   transform-origin: left bottom;
 }
 
 
-.perspective{
+.transform__item--it-fon{
   perspective: 300px;
 	perspective-origin:center;
   box-shadow: 0px 0px 10px 1px black;
