@@ -4,20 +4,20 @@
       <meta charset="UTF-8">
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <link rel="stylesheet" href="css/fonts.css">
-      <link rel="shortcut icon" href="img/favicon2-icon.png" type="image/svg+xml">
+      <link rel="shortcut icon" href="img/alfa-romeo-1.svg" type="image/svg+xml">
       <link rel="stylesheet" href="css/style.css">
       <title>Lesson_11</title>
    </head>
    <body>
    <div class="wrapper">
       <div class="icon-sticky"></div>
-   <header  class="header">
+   <header class="header">
                <ul class="header__list list-menu">
                   <li class="list-menu__item">
                      <a  class="list-menu__link" href="#">Price</a>
                      <ul class="sub-menu">
                         <li class="sub-menu__item">
-                           <a href="#" class="sub-menu__link">Home page</a>
+                           <a href="#home-id" class="sub-menu__link">Home page</a>
                         </li>
                         <li class="sub-menu__item">
                            <a href="#transform-id" class="sub-menu__link">Transform 2D</a>
@@ -34,18 +34,17 @@
                      </ul>
                   </li>
                   <li class="list-menu__item">
-                     <a class="list-menu__link" href="#home-page-id">Home page</a>
+                     <a class="list-menu__link" href="#home-id">Home page</a>
                   </li>
                   <li class="list-menu__item">
                      <a class="list-menu__link" href="#footer-id">Footer</a>
                   </li>
                </ul>
    </header>
-   <main class="page">
+   <main id="home-id" class="page">
       <section id="transform-id" class="transform">
          <div class="transform__container">
-            <h1 class="transform__title">Homework 11 <br>Transform</h1>
-            <p class="transform__sub-title"></p>
+            <h1  class="transform__title">Homework: Lesson_11<br>Transform</h1>
             <div class="transform__items">
                <div class="transform__item">
                   <div class="transform__inner transform__inner--translate">
@@ -97,8 +96,7 @@
                <div class="transform__item transform__item--it-fon">
                   <div class="transform__inner transform__inner--perspective">
                      perspective: 200px;
-	                  perspective-origin:center;
-                     transform: rotateY( 70deg);
+                     transform: rotateY(80deg);
                      transform-origin: left;
                   </div>
                </div>
@@ -109,7 +107,7 @@
                   Крім осі <mark>X</mark> та <mark>Y</mark> додається вісь <mark>Z</mark>. Вісь Z працює лише з <span> perspective</span></p>
             </div>
             <div class="cards">
-               <div class="card-01">transform: translate3d(120px, 60px, 40px) rotate(360deg) scale3d(1, 1, 1);
+               <div class="card-01"><p>transform: translate3d(120px, 60px, 40px) rotate(360deg) scale3d(1, 1, 1);</p>
                   <div>
                      <img class="card-01__inner" src="img/it-01.jpg" alt="it">
                   </div>
@@ -125,15 +123,17 @@
                   </div>
                </div>
                <div class="card-03">
-                  <div class="card-03__item">transform: rotateY(-100deg);scale: 1.7;transform-origin: left top;</div>
+                  <div class="card-03__item"><p>item - transform: rotateY(-100deg); <br> inner - scale: 1.7;transform-origin: left;</p></div>
                   <img class="card-03__inner" src="img/it-01.jpg" alt="image">
                </div>
                <div class="card-04">
-                  <div class="card-04__item"> item - transform: translate(-100%);inner -  transform: translate3d(0px, 0px, -200px) rotate3d(1, 1, 20, 360deg);</div>
+                  <div class="card-04__item"><p> item - transform: translate(-100%); <br>inner -  transform: translate3d(0px, 0px, -200px) rotate3d(1, 20, 20, 360deg);</p></div>
                   <img class="card-04__inner" src="img/cat-02.avif" alt="image">
                </div>
                <div class="card-05">
-                  <div class="card-05__item"></div>
+                  <div class="card-05__item"><p>item - transform-origin: bottom;
+                     transform: scale3d(1.5,1.5,1);<br>inner - transform-origin: left;
+                     transform: translate3d(-400px, 100px, 0px) scale3d(1.5, 1.5, 1) rotate3d(1, 1, 1, 360deg);</p></div>
                   <img class="card-05__inner" src="img/cat-01.avif" alt="image">
                </div>
                   <div class="block-cube">
@@ -177,15 +177,22 @@
             <div class="picture-147__left-body-machines"></div>
             <div class="picture-147__right-body-machines"></div>
             <div class="picture-147__body-center"></div>
-            <div class="picture-147__car-doors"></div>
-            <div class="picture-147__trunk"></div>
-            <div class="picture-147__car-decor decor-inner">
-               <div class="decor-inner__01"></div>
+            <div class="doors-3d">
+               <div class="doors-3d__item">
+                  <div class="rearview-mirror">
+                     <div class="rearview-mirror__item">
+                        <div class="rearview-mirror__inner"></div>
+                     </div>
+                  </div>
+               </div>
             </div>
+            <div class="picture-147__trunk"></div>
             <div class="picture-147__wheel wheel">
                <div class="wheel__line-01"></div>
                <div class="wheel__line-02"></div>
                <div class="wheel__line-03"></div>
+               <div class="wheel__line-04"></div>
+               <div class="wheel__line-05"></div>
             </div>
          </div>
       </div>

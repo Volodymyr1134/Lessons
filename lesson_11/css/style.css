@@ -141,7 +141,6 @@ body{
    position: absolute;
    top: 50px;
    height: 2px;
-
 }
 
 .line-sun__01{
@@ -228,6 +227,7 @@ body{
    border: solid 10px #343232;
    outline:dashed 2px rgba(90, 90, 90, 0.827);
    background:url(../img/alfa.jpg) center / 107px no-repeat;
+   transition: 2s;
 }
 
 .picture-147__wheel::before {
@@ -246,6 +246,7 @@ body{
    background:url(../img/alfa.jpg) center / 107px no-repeat;
 }
 
+/* ================================================= */
 
 .picture-147__left-body-machines{
    width: 63px;
@@ -275,7 +276,7 @@ body{
    width: 23px;
    height: 17px;
    background-color:rgb(227, 226, 226);
-   box-shadow: -10px 0px 40px 20px rgb(255, 255, 255);
+   box-shadow: -30px 5px 40px 40px rgba(226, 226, 217, 0.647);
    position: absolute;
    z-index: 2;
    border-radius: 100% 0% 100% 0% / 79% 100% 50% 21% ;
@@ -283,6 +284,8 @@ body{
    bottom: 45px;
    transform: rotate(-10deg);
 }
+
+/* =========================================== */
 
 .picture-147__right-body-machines{
    position: absolute;
@@ -307,8 +310,6 @@ body{
    border-radius: 0% 80% 30% 10%;
    z-index: 2;
 }
-
-
 .picture-147__right-body-machines::after{
    position: absolute;
    z-index: 5;
@@ -318,9 +319,11 @@ body{
    width: 50px;
    height: 70px;
    background-color:#d80000;
-   border-radius:0% 100% 28% 72% / 100% 25% 100% 0% ;
+   border-radius:0% 100% 28% 72% / 100% 25% 100% 0%;
    transform: rotate(20deg);
 }
+
+/* ========================================= */
 
 .picture-147__trunk{
    position: absolute;
@@ -347,6 +350,8 @@ body{
    transform: rotate(-7deg);
 }
 
+/* =============================================== */
+
 .picture-147__body-center{
    position: absolute;
    bottom: 0;
@@ -358,18 +363,7 @@ body{
    height: 190px;
 }
 .picture-147__body-center::before{
-   position: absolute; 
-   content: "";
-   z-index: 9;
-   top: 10px;
-   left: 50px;
-   border-radius: 120% 4% 0 0 ;
-   background: linear-gradient(215deg,rgba(0, 7, 17, 0.793) 0%, rgba(176, 179, 228, 1) 100%, rgba(66, 253, 45, 1) 100%);
-   width: 175px;
-   height: 60px;
-   transform: rotate(-0deg);
-   z-index: 34;
-   outline: solid 5px black; 
+
 }
 
 .picture-147__body-center::after{
@@ -385,11 +379,25 @@ body{
    transform: rotate(0deg);
    outline: solid 5px black; 
 }
+/* ================================================= */
 
-.picture-147__car-doors{
+.doors-3d{
+   perspective: 500px;
+   perspective-origin: left;
    position: absolute;
-   left: 0;
+   left: 355px;
    bottom: 20px;
+   z-index: 2;
+   height: 157px;
+   width: 190px;
+   background:url(../img/alfa-romeo_147__428431904s.jpg) center / cover no-repeat;
+   border-radius: 65% 0% 17% 5%;
+}
+
+.doors-3d__item{
+   position: absolute;
+   left:-353px;
+   bottom: 0px;
    transform:translate(354px);
    height: 105px;
    width: 190px;
@@ -397,53 +405,85 @@ body{
    border:solid 2px black;
    border-radius: 0% 0% 17% 5%;
    z-index: 2;
+   transition:all 1s;
 }
-.picture-147__car-doors::after{
-   position: absolute;
-   left: -180px;
-   top: 45px;
+.doors-3d__item::after{
+   position: absolute; 
    content: "";
-   width: 490px;
-   height: 2px;
-   background-color: #3432323d;
-   box-shadow: 0px 0px 23px 0px;
-   transform: rotate(-3deg);
+   z-index: 9;
+   top: -56px;
+   left: 7px;
+   border-radius: 120% 4% 0 0;
+   background: linear-gradient(215deg,rgba(0, 7, 17, 0.793) 0%, rgba(176, 179, 228, 1) 100%, rgba(66, 253, 45, 1) 100%);
+   width: 178px;
+   height: 60px;
+   z-index: 34;
+   outline: solid 5px black; 
 }
-.picture-147__car-doors::before{
+.doors-3d__item::before{
    position: absolute;
    left: 130px;
    top: 38px;
+   z-index: 300;
    content: "";
    width: 40px;
    height: 5px;
-   background-color: #e8e8e8d2;
-   box-shadow: 0px 0px 23px 0px;
+   background: linear-gradient(to bottom, #e8e8e8d2, #cfcfcf);
+   border-radius: 3px;
+   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
    transform: rotate(-3deg);
 }
 
-.picture-147__car-decor{
-   position: absolute;
-   bottom: 120px;
-   left: 340px;
-   z-index: 3;
-   width: 37px;
-   height: 20px;
-   background-color: #313030dd;
-   perspective: 120px;
-	perspective-origin: right top;
-   border-radius: 50% 20% 50% 50%; 
+.doors-3d__item:hover{
+   transform:translate(305px, 5px) rotate3d( 0, 1, 0, -60deg);
+   box-shadow: -10px 5px 20px rgba(0, 0, 0, 0.5);
 }
-.decor-inner__01{
-   width: 40px;
-   height: 14px;
+
+/* ================================================ */
+.rearview-mirror{
+   perspective: 300px;
+   perspective-origin:left;
    position: relative;
-   right: 3px;
-   top: 1.5px;
-   background: linear-gradient(215deg,rgba(153, 132, 132, 0.19) 0%, rgba(167, 161, 190, 1) 58%, rgba(176, 179, 228, 1) 100%, rgba(66, 253, 45, 1) 100%);
-   border-radius: 50% 20% 50% 50%;
-   transform: rotateY(-55deg);
-   box-shadow: #a32107ee 3px 0px 3px 1px;
+   left: -10px;
+   top: -3px;
+   width: 40px;
+   height: 20px;
+   z-index: 222;
 }
+.rearview-mirror__item{
+   width: 30px;
+   height: 25px;
+   background-color: #313030dd;
+   border-radius: 50% 20% 50% 50%;
+   transform-style: preserve-3d;
+   transform: rotateY(30deg) rotateX(5deg);
+   box-shadow: inset 3px 0px 8px rgba(0,0,0,0.6);
+}
+.rearview-mirror__inner{
+   position:relative;
+   z-index: 2;
+   top: 2px;
+   left: 2px;
+   width: 27px;
+   height: 21px;
+   background: linear-gradient(215deg,rgba(153, 132, 132, 0.19) 0%, rgba(167, 161, 190, 1) 58%, rgba(176, 179, 228, 1) 100%);
+   border-radius: 50% 20% 50% 50%;
+   transform: rotateY(-30deg) rotateX(2deg);
+   box-shadow: 2px 2px 6px rgba(0,0,0,0.4);
+}
+.rearview-mirror__inner::after{
+   content: "";
+   position: absolute;
+   bottom: -28px;
+   left: 5px;
+   z-index: 2;
+   width: 188px;
+   height: 1px;
+   background-color: hsla(228, 5%, 20%, 0.422);
+   box-shadow: 0px 0px 3px 0px;
+}
+
+/* ==================================================== */
 .wheel__line-01{
    width: 80px;
    height: 1px;
@@ -479,6 +519,28 @@ body{
    border-radius: 50% 20% 50% 50%;
    transform: rotate(-10deg);
    box-shadow: #090908ee 3px 0px 1px 0px;
+}
+.wheel__line-04{
+   position: absolute;
+   bottom: 72px;
+   left: -35px;
+   z-index: -1;
+   width: 180px;
+   height: 1px;
+   background-color: hsla(228, 5%, 20%, 0.422);
+   box-shadow: 0px 0px 3px 0px;
+   transform: rotate(-2deg);
+}
+.wheel__line-05{
+   position: absolute;
+   bottom: 85px;
+   right: -16px;
+   z-index: 2;
+   width: 210px;
+   height: 1px;
+   background-color: hsla(228, 5%, 20%, 0.422);
+   box-shadow: 0px 0px 3px 0px;
+   transform: rotate(-1deg);
 }
 /* ==============footer=========================== */
 

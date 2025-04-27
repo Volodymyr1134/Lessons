@@ -14,9 +14,6 @@
   background-color: #1e817787;
 }
 
-.transform__sub-title {
-}
-
 .transform__items {
   margin: 0px -25px;
   font-size: 0;
@@ -64,10 +61,6 @@
   background-color: #6871a6;
   transform: rotate(50deg);
 }
-.transform__inner--rotate-2:hover{
-  background-color: #6871a6;
-  transform: rotate(50deg);
-}
 .transform__inner--skew-1:hover{
   background-color: #6871a6;
   transform: skew(10deg, 10deg);
@@ -89,24 +82,20 @@
 
 
 .transform__item--it-fon{
-  perspective: 300px;
-	perspective-origin:center;
-  box-shadow: 0px 0px 10px 1px black;
+  perspective: 200px;
+  box-shadow: 0px 0px 10px 1px rgb(150, 24, 129);
   background: url(../img/it.avif) left / cover;
 }
 .transform__inner--perspective{
   padding-top: 40px;
   transform: scale(1.15);
-  border-radius: 0;
+  border-radius: 0px;
   transition: all 1s;
 }
 .transform__inner--perspective:hover{
-  transform: rotateY( 85deg);
+  transform: rotateY(80deg);
   transform-origin: left;
-  background-color: rgb(94, 191, 159);
 }
-
-
 
 /* ================transform-3d==================== */
 
@@ -124,9 +113,9 @@
 }
 
 .cards-header__text span {
-  font-size: 16px;
+  font-size: 23px;
   color: red;
-  padding-left: 20px;
+  padding-left: 15px;
 }
 
 /* ============card-01================= */
@@ -137,7 +126,7 @@
 }
 
 .cards > div {
-  margin: 25px 32px;
+  margin: 40px 32px;
 }
 
 .card-01{
@@ -148,7 +137,7 @@
   width: 300px;
   height: 400px;
   background:url(../img/fon-card.jpg) center / cover no-repeat;
-  perspective: 400px;
+  perspective: 300px;
 	transform-style: preserve-3d;
   color: white;
   text-align: center;
@@ -160,14 +149,12 @@
   display: block;
   width: 300px;
   height: 400px;
-  width: 300px;
-  height: 400px;
   background-color: rgb(153, 118, 73);
   transition: all 0.7s ease 0s;
 }
 
 .card-01:hover .card-01__inner{
-  transform: translate3d(120px, 60px, 40px) rotateY(-360deg); 
+  transform: translate3d(120px, 60px, 120px) rotateY(360deg); 
   background-color: rgba(63, 40, 9, 0.532);
   visibility:visible;
   opacity: 1;
@@ -182,7 +169,7 @@
 }
 .card__body {
   position: relative;
-	perspective: 800px;
+	perspective: 400px;
 }
 
 .card-02__back,
@@ -221,21 +208,19 @@
   position: relative;
   z-index: 2;
   vertical-align: top;
-  perspective: 300px;border-radius: 10px;
+  perspective: 300px;
   line-height: 2;
 }
 
 .card-03__item {
   position: relative;
-  top: 0;
-  left: 0;
   z-index: 2;
   width: 300px;
   height: 400px;
   text-align: center;
   background: url(../img/fon-card.jpg) center / cover no-repeat;
   transition: all 0.7s;
-  transform-origin: left top;
+  transform-origin: left;
 }
 
 .card-03__inner {
@@ -261,19 +246,18 @@
 
 .card-04 {
   display: inline-block;
-  perspective: 200px;
+  perspective: 300px;
   transform-style: preserve-3d;
   overflow: hidden;
   background:url(../img/star.jpg) center / cover no-repeat;
   line-height: 2;
+  text-align: center;
 }
 .card-04__item {
   position: relative;
-  text-align: center;
   z-index: 1;
   width: 483px;
   height: 300px;
-  position: relative;
   background: url(../img/fon-card.jpg) center / cover no-repeat;
   transition: all 0.7s;
 }
@@ -289,16 +273,19 @@
   transform: translate(-100%);
 }
 .card-04:hover .card-04__inner{
-  transform: translate3d(0px, 0px, -200px) rotate3d(1, 1, 20, 360deg);
+  transform: translate3d(0px, 0px, -200px) rotate3d(1, 20, 20, 360deg);
 }
 
 /* ==============card-04===================== */
 
 .card-05 {
   display: inline-block;
+  vertical-align: top;
   transform-style: preserve-3d;
+  text-align: center;
   perspective: 300px;
-  background:url(../img/star.jpg) center / cover no-repeat;
+  transform-style: preserve-3d;
+  background-color: #0000006f;
   line-height: 2;
 }
 .card-05__item {
@@ -307,7 +294,7 @@
   width: 483px;
   height: 300px;
   background: url(../img/fon-card.jpg) center / cover no-repeat;
-  transition: all 0.7s;
+  transition: all 0.7s ease 2s;
 }
 .card-05__inner {
   position: absolute;
@@ -329,7 +316,7 @@
 
 .card-05:hover .card-05__inner{
   transform-origin: left;
-  transform: translateX(-400px) translateY(50px) rotate(360deg) scale(1.5);
+  transform: translate3d(-400px, 100px, 0px) scale3d(1.5, 1.5, 1) rotate3d(1, 1, 1, 360deg);
 }
 
 /* =================cube====================== */
@@ -363,7 +350,7 @@
 
 .front { 
   transform: translateZ(100px);
-  color: red;
+  color: #c95fe9;
   background:url(../img/fon-card.jpg) center / cover no-repeat;
   text-align: center;
   font-size: 20px;
@@ -372,12 +359,18 @@
 
 .back {background: url(../img/it.avif) center / cover no-repeat; transform: rotateY(180deg) translateZ(100px);
 }
-.right  { transform: rotateY(90deg) translateZ(100px); }
-.left   { transform: rotateY(-90deg) translateZ(100px); }
+.right{
+  transform: rotateY(90deg) translateZ(100px);
+}
+.left{ 
+  transform: rotateY(-90deg) translateZ(100px);
+}
 .top{
   transform: rotateX(90deg) translateZ(100px);
 }
-.bottom { transform: rotateX(-90deg) translateZ(100px); }
+.bottom {
+  transform: rotateX(-90deg) translateZ(100px);
+}
 
 .scene:hover .cube {
   transform: rotateX(-360deg) rotateY(360deg) scale(2);
