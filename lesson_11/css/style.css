@@ -97,11 +97,12 @@ body{
 /* ===============alfa-romeo======================= */
 .alfa-romeo { 
    background: linear-gradient(180deg,rgba(131, 196, 222, 1) 0%, rgba(168, 168, 168, 1) 77%, rgba(110, 109, 109, 1) 23%, rgba(115, 102, 102, 1) 100%);
+   padding: 40px 0;
 }
 
 .alfa-romeo__container {
    max-width: 850px;
-   min-height: 700px;
+   min-height: 800px;
 }
 
 .alfa-romeo__sun{
@@ -111,15 +112,15 @@ body{
    background:url(../img/smiley.avif) center / 100px no-repeat;
    position: relative;
    z-index: 1;
-   top: 0;
+   top: -70px;
    left: -200px;
-   margin-top: -250px;
+   margin-top: -170px;
    perspective: 100px;
    perspective-origin: right;
 }
 .line-sun p{
    position: relative;
-   padding-top: 40px;
+   padding-top: 37px;
    font-weight: 600;
    z-index: 2;
 }
@@ -208,7 +209,7 @@ body{
 }
 
 .picture-147__wheel {
-   margin-top: 450px;
+   margin-top: 380px;
    position: relative;
    z-index: 2;
    top: 0;
@@ -551,36 +552,38 @@ body{
 /* ==============footer=========================== */
 
 .footer{
-   padding: 40px 0px;
+   padding: 50px 0px;
    background-color: rgb(187, 188, 203);
 }
-
+.footer__perspective{
+   perspective: 800px;
+}
 .content-footer{
    font-family: Georgia, 'Times New Roman', Times, serif;
    font-size: 24px;
    padding: 20px;
    background: linear-gradient(180deg, #F2F5F3 20.01%, #FFF 100%);
-   border-radius: 25px 25px;
+   border-radius: 35px 07px 50px 7px;
    color: #342e7c;
    box-shadow: 0px 0px 10px 1px black;
-   transition: all 3s;
+   transition: all 2s;
 }
-
 .content-footer > span{
    visibility:hidden;
+   opacity: 0;
    color: white;
+   display: inline-block;
+   transition: all 0.8s;
 }
 .content-footer:hover > span{
    visibility: visible;
+   opacity: 1;
+   padding-left: 15px;
 }
-
 .content-footer:hover{
-   color: #00B207;
-}
-
-.content-footer:hover{
-   background: url(../img/ukraine.png) 50% center no-repeat;
-   background-color: #00B207;
+   background: url(../img/ukraine.png) 47% center no-repeat;
+   background-color: #1e817787;
+   color: white;
    padding-left: 570px;
+   transform: rotateY(-30deg);
 }
-
