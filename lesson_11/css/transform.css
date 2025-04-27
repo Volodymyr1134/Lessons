@@ -92,7 +92,7 @@
   border-radius: 0px;
   transition: all 1s;
 }
-.transform__inner--perspective:hover{
+.transform__item:hover .transform__inner--perspective{
   transform: rotateY(80deg);
   transform-origin: left;
 }
