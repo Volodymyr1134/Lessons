@@ -331,7 +331,7 @@
   padding: 60px;
 }
 
-.cube {
+.cube{
   width: 200px; 
   height: 200px;
   position: relative;
@@ -339,7 +339,7 @@
   transition: all 2s;
 }
 
-.face {
+.face{
   position: absolute;
   width: 200px;
   height: 200px;
@@ -348,7 +348,7 @@
   box-sizing: border-box;
 }
 
-.front { 
+.front{ 
   transform: translateZ(100px);
   color: #c95fe9;
   background:url(../img/fon-card.jpg) center / cover no-repeat;
@@ -358,7 +358,7 @@
   transition: all 3s;
 }
 
-.back {background: url(../img/it.avif) center / cover no-repeat;
+.back{background: url(../img/it.avif) center / cover no-repeat;
   transform: rotateY(180deg) translateZ(100px);
 }
 .right{
@@ -370,11 +370,11 @@
 .top{
   transform: rotateX(90deg) translateZ(100px);
 }
-.bottom {
+.bottom{
   transform: rotateX(-90deg) translateZ(100px);
 }
 
-.scene:hover .cube {
+.scene:hover .cube{
   transform: rotateX(-360deg) rotateY(360deg) scale(2);
 }
 .scene:hover .front{ 
