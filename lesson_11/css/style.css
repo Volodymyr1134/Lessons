@@ -389,7 +389,7 @@ body{
 /* ================================================= */
 
 .doors-3d{
-   perspective: 500px;
+   perspective: 600px;
    perspective-origin: left;
    position: absolute;
    left: 355px;
@@ -397,7 +397,7 @@ body{
    z-index: 2;
    height: 157px;
    width: 190px;
-   background:url(../img/alfa-romeo_147__428431904s.jpg) center / cover no-repeat;
+   background:url(../img/111.png) left / cover no-repeat;
    border-radius: 65% 0% 17% 5%;
 }
 
@@ -442,7 +442,7 @@ body{
 }
 
 .doors-3d:hover .doors-3d__item{
-   transform:translate(305px, 5px) rotate3d( 0, 1, 0, -60deg);
+   transform:translate(297px, 3px) rotateY(-70deg);
    box-shadow: -10px 5px 20px rgba(0, 0, 0, 0.5);
 }
 
