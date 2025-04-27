@@ -441,7 +441,7 @@ body{
    transform: rotate(-3deg);
 }
 
-.doors-3d__item:hover{
+.doors-3d:hover .doors-3d__item{
    transform:translate(305px, 5px) rotate3d( 0, 1, 0, -60deg);
    box-shadow: -10px 5px 20px rgba(0, 0, 0, 0.5);
 }
