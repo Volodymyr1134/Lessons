@@ -118,7 +118,6 @@
 .wheel--left {
   transition: 3s;
 }
-
 .wheel--right {
   left: 307px;
 }
@@ -139,6 +138,8 @@
 .cars:hover * {
   animation-play-state: paused;
 }
+
+/* =======================cars-3d================================ */
 
 .cars-3d {
   margin-top: 520px;
@@ -193,7 +194,7 @@
   height: 1px;
   background-color: rgba(34, 34, 34, 0.3411764706);
 }
-
+/* =======================doors=================================== */
 .doors {
   position: relative;
   z-index: 2;
@@ -300,6 +301,8 @@
   transition: 1s;
 }
 
+/* ====================left-hand-body========================= */
+
 .left-hand-body__face {
   position: relative;
   z-index: 1;
@@ -377,6 +380,8 @@
   animation-iteration-count: infinite;
 }
 
+/* ===========right-hand-body==================== */
+
 .right-hand-body__face {
   position: absolute;
   right: 60px;
@@ -399,7 +404,7 @@
 .right-hand-body__headlight {
   position: relative;
   left: 40px;
-  top: 67px;
+  top: 66px;
   height: 22px;
   width: 30px;
   border-width: 2px 0px 2px 5px;
@@ -428,6 +433,9 @@
 }
 
 @keyframes alarm-signal {
+  0%{
+    
+  }
   100% {
     background: linear-gradient(to bottom, rgba(215, 211, 197, 0.8235294118), rgba(238, 238, 40, 0.4352941176));
     box-shadow: -4px 0px 10px 1px rgba(184, 163, 25, 0.844);
