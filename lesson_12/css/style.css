@@ -20,7 +20,7 @@ body{
    line-height: 1.2;
    font-weight: 400;
    font-size: 14px;
-   background-color: #cfdbdd;
+   background-color: #d7e7e9;
 }
 
 [class*="__container"] {
@@ -52,17 +52,12 @@ body{
    line-height: 1.6;
 }
 
-.list-menu {
-}
 .list-menu__item {
    display: inline-block;
    width: 100px;
    padding: 10px;
    margin-right: 10px;
    position: relative;
-}
-
-.list-menu__link {
 }
 
 .sub-menu {
@@ -99,7 +94,6 @@ body{
 /* ===============painting======================= */
 
 .painting {
-   
 }
 
 .painting__body {
@@ -217,7 +211,6 @@ body{
 } 
 /* ===============sun====================== */
 
-
 .sun-day {
    position: relative;
    top: 20px;
@@ -268,7 +261,6 @@ body{
    width: 20px;
    height: 100px;
    background-color: rgb(88, 39, 10);
-   transform-style: preserve-3d;
    transform: rotateX(-80deg) translateZ(0px);
    animation-name: wood;
    animation-timing-function: linear;
@@ -338,9 +330,9 @@ body{
    100%{
       box-shadow: #2d2302d0 -30px 0px 17px 0px;
    }
-   }
+}
 
-   /* ------------cube------------ */
+/* ------------cube------------ */
 
 .cube-3d-body{
    perspective: 300px;
@@ -364,7 +356,7 @@ body{
    animation-timing-function:  cubic-bezier(0.445, 0.05, 0.55, 0.95);
    }
 
-   .face{
+.face{
    position: absolute;
    width: 100px;
    height: 100px;
@@ -372,7 +364,7 @@ body{
    border: 3px solid #878484;
    }
 
-   .circle{
+.circle{
    position: absolute;
    border-radius: 50%;
    width: 100px; 
@@ -387,34 +379,34 @@ body{
    animation-iteration-count: infinite;
 }
 
-   .wind-front {
+.wind-front {
    transform: rotate(0deg) translateZ(-50px);
    width: 100px;
    height: 100px;
    }
 
-   .wind-right {
-   transform: rotateY(90deg) translate(0px) translateZ(50px);
+.wind-right {
+   transform: rotateY(90deg) translateZ(50px);
    width: 100px;
    height: 100px;
    }
-   .wind-left {
-   transform: rotateY(-90deg) translate(0px) translateZ(50px);
+.wind-left {
+   transform: rotateY(-90deg) translateZ(50px);
    width: 100px;
    height: 100px;
    }
-   .wind-top {
-   transform: rotateX(90deg) translate(0px) translateZ(50px);
+.wind-top {
+   transform: rotateX(90deg) translateZ(50px);
    width: 100px;
    height: 100px;
    }
-   .wind-bottom {
-   transform: rotateX(-90deg) translate(0px) translateZ(50px);
+.wind-bottom {
+   transform: rotateX(-90deg) translateZ(50px);
    width: 100px;
    height: 100px;
    }
    
-   .cube-3d:hover{
+.cube-3d:hover{
    transform: scale(1.2);
    animation-play-state: paused;
    }
@@ -476,7 +468,6 @@ body{
    height: 80px;
    background: #0077cc;
    border-radius: 15px;
-   
 }
 .left-arm {
    top: 65px;
@@ -523,41 +514,26 @@ body{
 }
 
    @keyframes arm-left{
-   0%{
-
-   }
    100%{
       transform: rotate(140deg);
    }
 } 
 @keyframes arm-right{
-   0%{
-      
-   }
    100%{
       transform: rotate(-140deg);
    }
 }
 @keyframes leg-left{
-   0%{
-
-   }
    100%{
       transform: rotateX(-40deg);
    }
 }
 @keyframes leg-right{
-   0%{
-
-   }
    100%{
       transform: rotateX(40deg);
    }
 }
 @keyframes lego-man{
-   0%{
-
-   }
    50%{
       left: 200px;
       transform: rotateY(-10deg);
