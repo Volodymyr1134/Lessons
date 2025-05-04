@@ -1,4 +1,30 @@
 
+.painting__title {
+  text-align: center;
+  font-size: 10px;
+}
+.painting__title > img {
+  max-width: 250px;
+  text-align: center;
+  padding-left: 70px;
+}
+
+.painting__list {
+  width: 350px;
+  margin: 0 auto;
+  font-size: 16px;
+  padding-bottom: 20px;
+}
+.painting__list li {
+  list-style: upper-roman;
+  padding-left: 40px;
+}
+
+.painting__list li:not(:last-child) {
+  margin-bottom: 10px;
+}
+
+/* =================================== */
 .wheel {
   position: absolute;
   top: -55px;

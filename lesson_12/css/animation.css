@@ -466,15 +466,15 @@
   box-shadow: 1px 2px 7px 0px black;
   transition: background-color 0.3s;
   transition: box-shadow 0.2s 0.3s;
-  transition: all 0.5s;
+  transition: all 0.3s;
 }
 
 .animation-button__link-01:hover{
   color: #ffffff;
   background-color: rgb(54, 211, 159);
   box-shadow: 0px 0px 1px 0px black;
-  transition: background-color 0.5s;
-  transition: box-shadow 0.2s 0.3s;
+  transition: background-color 0.3s;
+  transition: box-shadow 0.2s 0.2s;
 }
 /* ==================link-02================= */
 
@@ -504,4 +504,67 @@
   width: 20%;
   box-shadow: #2c2929 0px 0px 0px 0px;
   
+}
+
+/* ============link-03=================== */
+
+.animation-button__link-03 {
+  padding: 15px 50px;
+  color: white;
+  text-decoration: none;
+  border-radius: 7px;
+  background: linear-gradient(270deg, #ff6ec4, #7873f5, #4ade80);
+  background-size: 500% 550%;
+  animation: gradient 8s ease infinite;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 4px 5px rgba(0, 0, 0, 0.2);
+  z-index: 0;
+}
+
+.animation-button__link-03:hover {
+  transform: scale(1.03);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+/* ============link-04=================== */
+
+.animation-button__link-04 {
+  background: linear-gradient(to right, #5e3200, #d35400);
+  color: #fff;
+  padding: 15px 50px;
+  border: none;
+  border-radius: 12px;
+  animation: jump 2s infinite ease-in-out;
+  transition: all 0.4s ease;
+  text-shadow: 1px 1px 3px black;
+}
+
+.animation-button__link-04:hover {
+  transform: scale(1.1) rotate(-1deg);
+  box-shadow: 0 0 30px #f1c40f, inset 0 0 15px #f1c40f;
+  filter: brightness(1.2);
+  animation-play-state: paused;
+}
+
+@keyframes jump {
+  0%, 100% {
+    transform: translateY(0) scale(1);
+    box-shadow: 0 0 10px #f39c12, inset 0 0 5px #f39c12;
+  }
+  50% {
+    transform: translateY(-6px) scale(1.05);
+    box-shadow: 0 0 20px #f1c40f, inset 0 0 8px #f1c40f;
+  }
 }

@@ -440,7 +440,7 @@ body{
    left: 50px;
    width: 80px;
    height: 200px;
-   animation: lego-man 10s  alternate infinite;
+   animation: lego-man 10s ease-in-out alternate infinite;
 }
 
 .head {
@@ -534,13 +534,17 @@ body{
    }
 }
 @keyframes lego-man{
+   0%, 30%{
+      left: 50px;
+      bottom: 50px;
+   }
    50%{
-      left: 200px;
+      left: 100px;
       transform: rotateY(-10deg);
    }
    100%{
       left: 900px;
-      bottom: 200px;
+      bottom: 220px;
       transform: rotateY(10deg);
    }
 }
