@@ -230,9 +230,6 @@ body{
 
 @keyframes sun{
 
-   0%{
-   }
-
    100%{
       box-shadow: inset #2d2302d0 -100px 0px 10px 0px;
       left: 70px;
@@ -241,7 +238,6 @@ body{
 } 
 
 /* ================painting==================== */
-
 
 .asphalt{
    position: absolute;
@@ -273,7 +269,8 @@ body{
    position: absolute;
    width: 70px;
    height: 60px;
-   background: radial-gradient(circle at 40% 40%, #a8e6a3 0%,
+   background: radial-gradient(circle at 40% 40%,
+   #a8e6a3 0%,
    #4caf50 40%,
    #2e7d32 80%,
    #1b5e20 100%
@@ -421,8 +418,6 @@ body{
 }
 
    @keyframes cube{
-   0%{
-   }
    50%{
       top: 0px;
    }

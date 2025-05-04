@@ -9,7 +9,7 @@
 .animation__title{
   width: 300px;
   margin: 0 auto;
-  border: 1px solid (255, 0, 0, 0.349);
+  border: 1px solid;
   border-radius: 7px;
   padding: 20px;
   text-align: center;
@@ -76,9 +76,7 @@
 }
 
 @keyframes circle-02{
-  0%{
 
-  }
   50%{
     top: 20px;
     width: 220px;
@@ -90,9 +88,7 @@
   }
 }
 @keyframes item-01{
-  0%{
 
-  }
   50%{
     width: 90px;
     height: 90px;
