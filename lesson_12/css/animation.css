@@ -278,12 +278,11 @@
 .animation-text__text {
   height: 49px;
   width: 100%;
-  overflow: visible;
   padding: 7px;
   position: relative;
-  border: dashed 1px black;
+  border: dotted 2px black;
   font-size: 23px;
-  line-height: 1.5;
+  line-height: 1.6;
   background-color: rgb(170, 186, 184);
 }
 .animation-text__text:not(:first-child){
@@ -292,8 +291,8 @@
 
 .animation-text__text--text-01{
   animation-name: text-01;
-  animation-duration: 2s;
-  animation-timing-function: steps(10);
+  animation-duration: 3s;
+  animation-timing-function: steps(15);
   animation-iteration-count: infinite;
   overflow: hidden;
 }
@@ -364,11 +363,13 @@
 .animation-text__text--text-04{
   background-color: black;
   height: 120px;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  padding: 0;
 }
 
 .smoke{
   margin: 0 auto;
-  font-weight: 700;
+  font-weight: 500;
   font-size: 70px;
   text-align: center;
 }
@@ -434,6 +435,7 @@
 
 .animation-button {
   padding: 50px 0px;
+  overflow: hidden;
 }
 
 .animation-button__title {
@@ -443,6 +445,7 @@
 }
 
 .animation-button__items { 
+  
 }
 
 .animation-button__item {
@@ -481,7 +484,7 @@
 .animation-button__link-02::before{
   content: "hover";
   text-align: center;
-  padding: 13px;
+  padding: 15px;
   position: absolute;
   z-index: 2;
   top: 0;
@@ -562,5 +565,50 @@
   50% {
     transform: translateY(-6px) scale(1.05);
     box-shadow: 0 0 20px #f1c40f, inset 0 0 8px #f1c40f;
+    border-radius: 7px;
+  }
+}
+
+/* ============link-05=================== */
+
+.animation-button__item--link-05{
+  overflow: clip;
+} 
+
+.animation-button__link-05 {
+  position: relative;
+  z-index: 1;
+  color: #1a1919;
+  padding: 15px 50px;
+  border-radius: 7px;
+  background-color: #bcc6b3;
+}
+
+
+.animation-button__link-05::before{
+  position: absolute;
+  z-index: 2;
+  top: 85%;
+  left: -85%;
+  content: "";
+  height: 100%;
+  width: 100%;
+  border-radius: 7px;
+  background-color: #30b416;
+  animation: link-05 0.8s linear infinite;
+  transition: top 0.7s ease 0s, left 0.7s ease;
+  opacity: 0.8;
+}
+
+.animation-button__link-05:hover::before{
+  top: -100%;
+  left: 0%;
+  transition: top 0.8s ease 0.3s, left 0.3s ease;
+  animation-play-state: paused;
+}
+
+@keyframes link-05{
+  100%{
+    background-color: #d35400;
   }
 }
