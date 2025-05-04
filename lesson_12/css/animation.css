@@ -264,9 +264,6 @@
   padding: 20px 0px;
 }
 
-.animation-text__container {
-}
-
 .animation-text__title {
   padding: 20px;
   color: rgb(14, 21, 14);
@@ -307,7 +304,6 @@
 }
 
 /* ===============text-02===================== */
-
 
 .animation-text__text--text-02 span{
   display: inline-block;
@@ -355,7 +351,7 @@
 @keyframes text-03{
 
   100%{
-    transform: translateX(250%);
+    transform: translateX(330%);
   }
 }
 /* ==============text-04======================= */
