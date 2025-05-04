@@ -20,10 +20,13 @@
                            <a href="#home-id" class="sub-menu__link">Home page</a>
                         </li>
                         <li class="sub-menu__item">
-                           <a href="#transform-id" class="sub-menu__link">Transform 2D</a>
+                           <a href="#animation-id" class="sub-menu__link">Анімації та переходи</a>
                         </li>
                         <li class="sub-menu__item">
-                           <a href="#transform-3d-id" class="sub-menu__link">Transform 3D</a>
+                           <a href="#animation-text-id" class="sub-menu__link">Анімація тексту</a>
+                        </li>
+                        <li class="sub-menu__item">
+                           <a href="#animation-button-id" class="sub-menu__link">Анімація кнопок</a>
                         </li>
                         <li class="sub-menu__item">
                            <a href="#alfa-romeo-id" class="sub-menu__link">Alfa Romeo</a>
@@ -37,13 +40,13 @@
                      <a class="list-menu__link" href="#home-id">Home page</a>
                   </li>
                   <li class="list-menu__item">
-                     <a class="list-menu__link" href="#footer-id">Footer</a>
+                     <a class="list-menu__link" href="#alfa-romeo-id">Alfa Romeo</a>
                   </li>
                </ul>
    </header>
    <main id="home-id" class="page">
       <section class="animation">
-         <div class="animation__container">
+         <div id="animation-id" class="animation__container">
                <div class="animation__wrapper-title">
                <h1 class="animation__title">Анімації та переходи в CSS</h1></div>
             <div class="cube-3d-body">
@@ -96,9 +99,9 @@
             </div>
          </div>
       </section>
-      <section class="animation-text">
+      <section id="animation-text-id" class="animation-text">
          <div class="animation-text__container">
-            <h2 class="animation-text__title">Анімація тексту</h2>
+            <h2  class="animation-text__title">Анімація тексту</h2>
             <p class="animation-text__text animation-text__text--text-01">
                Text animation, the possible and the impossible.
             </p>
@@ -118,7 +121,29 @@
             </p>
          </div>
       </section>
-      <section class="painting">
+      <section id="animation-button-id" class="animation-button">
+         <div class="animation-button__container">
+            <h2 class="animation-button__title">Анімація кнопок</h2>
+            <div class="animation-button__items">
+               <div class="animation-button__item">
+                  <a class="animation-button__link animation-button__link-01" href="#">I'm a button</a>
+               </div>
+               <div class="animation-button__item">
+                  <a class="animation-button__link animation-button__link-02" href="#">I'm a button</a>
+               </div>
+               <div class="animation-button__item">
+                  <a class="animation-button__link animation-button__link-03" href="#">I'm a button</a>
+               </div>
+               <div class="animation-button__item">
+                  <a class="animation-button__link animation-button__link-04" href="#">I'm a button</a>
+               </div>
+               <div class="animation-button__item">
+                  <a class="animation-button__link animation-button__link-05" href="#">I'm a button</a>
+               </div>
+            </div>
+         </div>
+      </section>
+      <section id="alfa-romeo-id" class="painting">
          <div class="painting__container">
             <div class="painting__body">
                <div class="cloud-scene">
@@ -254,7 +279,7 @@
    </main>
    <footer id="footer-id" class="footer">
       <div class="footer__container">
-         <h3 class="title">5.05.2022</h3>
+         <p class="footer__data">6.05.2022</p>
       </div>
    </footer>
    </div>

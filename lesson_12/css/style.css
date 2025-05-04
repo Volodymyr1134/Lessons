@@ -552,3 +552,18 @@ body{
 .lego-man:hover * {
    animation-play-state: paused;
 }
+
+
+/* =========footer============= */
+
+.footer {
+}
+
+.footer__data {
+   font-family: Georgia, 'Times New Roman', Times, serif;
+   text-align: right;
+   padding: 30px 100px;
+   background-color: #d7e7e9;
+   border-radius: 7px;
+   font-size: 23px;
+}
