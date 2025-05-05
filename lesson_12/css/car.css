@@ -157,6 +157,7 @@
   animation-play-state: paused;
 }
 
+
 /* =======================cars-3d================================ */
 
 .cars-3d {
@@ -248,6 +249,18 @@
   transform: rotate(-2deg);
   height: 1px;
   background-color: rgba(34, 34, 34, 0.4862745098);
+}
+.doors__3d::after {
+  content: "";
+  position: absolute;
+  z-index: 3;
+  top: -16px;
+  left: 30px;
+  width: 25px;
+  height: 20px;
+  background-color: #242222fa;
+  border-radius: 23px 5px 7px 0px;
+  box-shadow: rgba(255, 255, 255, 0.562) 2px -1px 5px 0px;
 }
 .doors__glass {
   position: absolute;

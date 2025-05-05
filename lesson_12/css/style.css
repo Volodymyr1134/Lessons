@@ -539,7 +539,7 @@ body{
    }
    100%{
       left: 900px;
-      bottom: 220px;
+      bottom: 210px;
       transform: rotateY(10deg);
    }
 }
@@ -551,7 +551,6 @@ body{
 .lego-man:hover * {
    animation-play-state: paused;
 }
-
 
 /* =========footer============= */
 
