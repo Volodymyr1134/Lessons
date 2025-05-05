@@ -335,7 +335,7 @@
 .animation-text__text--text-03 span{
   display: inline-block;
   animation-name: text-03;
-  animation-duration: 10s;
+  animation-duration: 12s;
   animation-delay: 0.5s;
   animation-timing-function: linear;
   animation-iteration-count: infinite;
@@ -349,6 +349,9 @@
 }
 
 @keyframes text-03{
+  0%{
+    transform: translateX(-100%);
+  }
 
   100%{
     transform: translateX(330%);
