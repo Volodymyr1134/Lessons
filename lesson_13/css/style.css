@@ -163,15 +163,16 @@ body{
    flex-wrap: wrap;
 }
 
-.item-advantages--width{
+.item-advantages--block{
    max-width: 515px;
-   display: flex;
    flex-direction: column;
    gap: 20px;
    padding: 98px 0px 67px 0px;
 }
 
 .item-advantages--slider{
+   display: flex;
+   align-items: center;
    flex: 1 1 550px;
    max-width: 764px;
 }
