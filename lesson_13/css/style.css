@@ -1,7 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap');
 @import url("reset.css");
 
-
 .wrapper {
 	overflow: clip;
 	min-height: 100%;
@@ -33,7 +32,7 @@ body{
 }
 
 .icon-sticky{
-   background: url(../img/favicon2-icon.png) center / 60px no-repeat;
+   background: url(../img/favicon2-icon.png) center / 100% no-repeat;
    width: 60px;
    height: 60px;
    position: fixed;
@@ -46,7 +45,8 @@ body{
 
 .header{
    text-align: center;
-   padding: 10px;
+   padding: 20px;
+   font-size: 18px;
 }
 
 /* ===============met-our======================= */
@@ -87,7 +87,7 @@ body{
 }
 
 .item-met-our__image {
-   overflow: hidden;
+   overflow: clip;
    min-height: 266px;
 }
 .item-met-our__image img{
@@ -97,7 +97,6 @@ body{
    transform: scale(1.05);
 }
 .item-met-our__image {
-   transition: 0.5s;
    display: flex;
    justify-content: center;
    align-items: center;
@@ -164,6 +163,7 @@ body{
 }
 
 .item-advantages--block{
+   display: flex;
    max-width: 515px;
    flex-direction: column;
    gap: 20px;
@@ -183,10 +183,10 @@ body{
 }
 
 .item-advantages--slider a::before{
+   content: "";
    position: absolute;
    top: 0;
    left: 0;
-   content: "";
    z-index: 2;
    width: 100%;
    height: 100%;
@@ -238,8 +238,9 @@ body{
    width: 29px;
    height: 29px;
    gap: 15px;
-   background: url(../img/advantages-icon.svg) 0 0 / 100% no-repeat;
+   background: url(../img/advantages-icon.svg) center / 100% no-repeat;
 }
+
 /* ===========academy================== */
 
 .academy {
@@ -279,7 +280,7 @@ body{
 }
 
 .academy__img{
-   animation: academy 1.5s linear infinite alternate-reverse;
+   animation: academy 1.5s linear infinite alternate;
 }
 @keyframes academy{
    0%{
@@ -293,13 +294,15 @@ body{
 
 .footer__container {
    display: flex;
-   justify-content: end;
+   justify-content: flex-end;
 }
 
 .footer__data {
    font-family: Georgia, 'Times New Roman', Times, serif;
-   padding: 30px 50px;
+   text-align: right;
+   padding: 30px 20px;
    background-color: #d7e7e9;
    border-radius: 7px;
    font-size: 23px;
+   font-weight: 600;
 }
