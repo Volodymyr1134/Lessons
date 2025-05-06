@@ -69,13 +69,16 @@ body{
 .met-our__items {
    display: flex;
    flex-wrap: wrap;
+   justify-content: center;
    gap: 20px;
 }
 
 .item-met-our {
    display: flex;
    flex-direction: column;
-   flex: 1 1 340px;
+   max-width: 386px;
+   min-height: 300px;
+   flex: 1 1 320px;
    padding: 20px;
    gap: 16px 0px ;
    background-color: white;
@@ -88,7 +91,6 @@ body{
 
 .item-met-our__image {
    overflow: clip;
-   min-height: 266px;
 }
 .item-met-our__image img{
    transition: 0.5s;
