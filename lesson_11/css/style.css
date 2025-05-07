@@ -170,7 +170,7 @@ body{
    transform: rotate(70deg);
 } 
 
-.line-sun:hover{
+.alfa-romeo__sun:hover .line-sun{
    transform: rotateY(-360deg) scale(1.7);
    opacity: 0;
 }
@@ -389,7 +389,7 @@ body{
 /* ================================================= */
 
 .doors-3d{
-   perspective: 600px;
+   perspective: 700px;
    perspective-origin: left;
    position: absolute;
    left: 355px;
@@ -399,10 +399,12 @@ body{
    width: 190px;
    background:url(../img/111.png) left / cover no-repeat;
    border-radius: 65% 0% 17% 5%;
+   transform: translateZ(400px);
 }
 
 .doors-3d__item{
    position: absolute;
+   z-index: 1;
    left:-353px;
    bottom: 0px;
    transform:translate(354px);
@@ -411,7 +413,6 @@ body{
    background-color: rgb(216, 0, 0);
    border:solid 2px black;
    border-radius: 0% 0% 17% 5%;
-   z-index: 2;
    transition:all 1s;
 }
 .doors-3d__item::after{
@@ -580,11 +581,11 @@ body{
    opacity: 1;
    padding-left: 15px;
 }
-.content-footer:hover{
+.footer:hover .content-footer{
    background: url(../img/ukraine.png) 47% center no-repeat;
    background-color: #1e817787;
    color: white;
    padding-left: 570px;
-   transform: rotateY(-30deg);
+   transform: rotateY(-30deg) translateZ(10px);
    border-radius: 0px 100px 100px 0px;
 }
