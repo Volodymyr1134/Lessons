@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="zxx">
+   <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link rel="stylesheet" href="css/fonts.css">
+      <link rel="shortcut icon" href="img/alfa-romeo-1.svg" type="image/svg+xml">
+      <link rel="stylesheet" href="css/style.css">
+      <title>Lesson_14</title>
+   </head>
+   <body>
+   <div class="wrapper">
+      <div class="icon-sticky"></div>
+   <!-- <header class="header">
+               <ul class="header__list list-menu">
+                  <li class="list-menu__item">
+                     <a  class="list-menu__link" href="#">Price</a>
+                     <ul class="sub-menu">
+                        <li class="sub-menu__item">
+                           <a href="#home-id" class="sub-menu__link">Home page</a>
+                        </li>
+                        <li class="sub-menu__item">
+                           <a href="#animation-id" class="sub-menu__link">Анімації та переходи</a>
+                        </li>
+                        <li class="sub-menu__item">
+                           <a href="#animation-text-id" class="sub-menu__link">Анімація тексту</a>
+                        </li>
+                        <li class="sub-menu__item">
+                           <a href="#animation-button-id" class="sub-menu__link">Анімація кнопок</a>
+                        </li>
+                        <li class="sub-menu__item">
+                           <a href="#alfa-romeo-id" class="sub-menu__link">Alfa Romeo</a>
+                        </li>
+                        <li class="sub-menu__item">
+                           <a href="#footer-id" class="sub-menu__link">Footer</a>
+                        </li>
+                     </ul>
+                  </li>
+                  <li class="list-menu__item">
+                     <a class="list-menu__link" href="#home-id">Home page</a>
+                  </li>
+                  <li class="list-menu__item">
+                     <a class="list-menu__link" href="#alfa-romeo-id">Alfa Romeo</a>
+                  </li>
+               </ul>
+   </header> -->
+   <main id="home-id" class="page">
+      <section class="info-form">
+         <div class="info-form__container">
+            <h1 class="info-form__title">HTML форми та атрибути</h1>
+            <div class="info-form__items">
+               <div class="info-form__list list-item">
+                  <h2 class="list-item__title">form</h2>
+                  <h3>Атрибути</h3>
+                     <ul>
+                        <li>
+                           <mark>action:</mark> вказує URL-адресу для надсилання даних форми.
+                        </li>
+                        <li>
+                           <mark>method:</mark> - метод передачі даних 
+                           GET (за замовченням) - безпосередньо в адресному рядку
+                           POST - приховано.
+                        </li>
+                        <li>
+                           <mark>enctype:</mark> 	кодування даних під час відправки на сервер.
+                           Для передачі файлів 
+                           використовуємо - multipart/form-data
+                           Детальніше: 
+                           <a href="https://www.w3schools.com/tags/att_form_enctype.asp">https://www.w3schools.com/tags/att_form_enctype.asp</a>
+                        </li>
+                     </ul>
+               </div>
+               <div class="info-form__list list-item">
+                  <h2 class="list-item__title">input</h2>
+                     <h3>Атрибути</h3>
+                     <ul>
+                        
+                        <li>
+                           <mark>name</mark> - ім'я поля (даних)
+                        </li>
+                        <li>
+                           <mark>value</mark> - значення поля (дані)
+                        </li>
+                        <li>
+                           <mark>autocomplete</mark> - дозволяє (за замовченням) / забороняє (значення off) автозаповнення поля
+                        </li>
+                        <li>
+                           <mark>required</mark> - обо'язково для заповнення
+                        </li>
+                        <li>
+                           <mark>maxlength</mark>- максимальна кількість символів доступних для вводу
+                        </li>
+                        <li>
+                           <mark>placeholder</mark> - підпис поля
+                        </li>
+                        <li>
+                           <mark>placeholder</mark> - підпис поля
+                        </li>
+                        <li>
+                           <mark>minlength</mark> - вимога до мінімальної кількості символів. працює в парі з required
+                        </li>
+                        <li><mark>checked</mark> (для деяких типів) - вибраний за замовченням</li>
+                        <li><mark>disabled</mark> - поле перестає бути доступним для користування, данні передані не будуть</li>
+                        <li><mark>pattern</mark> - можливість вказувати регулярні вирази</li>
+                     </ul>
+               </div>
+               <div class="info-form__list list-item">
+                  <h2 class="list-item__title">label</h2>
+                     <h3>Атрибути</h3>
+                     <ul>
+                        <li>
+                           <mark>label</mark> асоціює текстову мітку з полем форми, що робить форму більш доступною. Аттрибут "for" прив'язує мітку до конкретного input через його id.
+                        </li>
+                     </ul>
+               </div>
+            </div>
+         </div>
+      </section>
+      <section class="checkout">
+         <div class="checkout__container">
+               <form action="#" method="get" class="billing__form" enctype="multipart/form-data">
+                  <h2 class="billing__title">Billing Information</h2>
+                  <div class="billing-information">
+                     <div class="billing-information__items">
+                        <div class="billing-information__item">
+                           <label class="billing-information__label" for="first-name">First name</label>
+                           <input class="billing-information__input" id="first-name" tabindex="1" required placeholder="Your first name" name="form[first-name]"type="text">
+                        </div>
+                        <div class="billing-information__item">
+                           <label class="billing-information__label" for="last-name">Last name</label>
+                           <input  class="billing-information__input" id="last-name" tabindex="2" required placeholder="Your last name" name="form[last-name]" type="text">
+                        </div>
+                        <div class="billing-information__item">
+                           <label class="billing-information__label" for="company-name">Company Name<strong>(optional)</strong></label>
+                           <input class="billing-information__input" id="company-name" tabindex="3" placeholder="Company name" name="form[company-Name]" type="text">
+                        </div>
+                     </div>
+                        <div class="billing-information__items">
+                           <div class="billing-information__item">
+                              <label class="billing-information__label" for="street-address">Street Address</label>
+                              <input class="billing-information__input" id="street-address" tabindex="4" placeholder="Company name" name="form[]" type="text">
+                           </div>
+                        </div>
+                        <div class="billing-information__items">
+                           <div class="billing-information__item">
+                              <label class="billing-information__label" id="country"
+                                 for="country">Country / Region</label>
+                              <div class="billing-information__select-wrapper">
+                                 <select tabindex="5" required class="billing-information__select"
+                                 name="country/region" id="country/region">
+                                    <option disabled selected value="">Select</option>
+                                    <option value="ukraine">Ukraine</option>
+                                    <option value="us">United States</option>
+                                    <option value="belgium">Belgium</option>
+                                    <option value="japan">Japan</option>
+                                    <option value="uk">United Kingdom</option>
+                                 </select>
+                              </div>
+                           </div>
+                           <div class="billing-information__item">
+                              <label class="billing-information__label" for="country">States</label>
+                              <div class="billing-information__select-wrapper">
+                                 <select class="billing-information__select" tabindex="6" name="country/region" id="country/region">
+                                    <option disabled selected value="">Selects</option>
+                                    <option value="kyiv">Київська область</option>
+                                    <option value="lviv">Львівська область</option>
+                                    <option value="odesa">Одеська область</option>
+                                    <option value="zaporizhzhia">Запорізька область</option>
+                                    <option disabled>──────────────</option>
+                                    <option value="california">California</option>
+                                    <option value="texas">Texas</option>
+                                    <option value="new_york">New York</option>
+                                 </select>
+                              </div>
+                           </div>
+                           <div class="billing-information__item">
+                              <label class="billing-information__label" for="zip">Zip Code</label>
+                                 <input class="billing-information__input" id="zip" tabindex="7" 
+                                 placeholder="Zip Code"
+                                 name="form[zip]"
+                                 type="text">
+                           </div>
+                     </div>
+                     <div class="billing-information__items">
+                           <div class="billing-information__item">
+                           <label class="billing-information__label" for="email">Email</label>
+                           <input class="billing-information__input" id="email" tabindex="8" required placeholder="Email Address" name="form[]"  type="email">
+                        </div>
+                        <div class="billing-information__item">
+                           <label class="billing-information__label" for="tel">Phone</label>
+                           <input  class="billing-information__input" id="tel" tabindex="2" required placeholder="Phone number" name="form[]" type="tel">
+                        </div>
+                     </div>
+                     <div class="billing-information__items billing-information__items--checkbox">
+                        <input class="billing-information__input-checkbox" type="checkbox"  id="checkbox" name="form[]">
+                        <label class="billing-information__label billing-information__label--checkbox" name="form[]" for="checkbox">Ship to a different address</label>
+                     </div>
+                     <div class="billing-information__items billing-information__items--line">
+                        <div class="billing-information__line"></div>
+                     </div>
+                     <h2 class="billing__title">Additional Info</h2>
+                        <div class="billing-information__items">
+                           <div class="billing-information__item">
+                              <label class="billing-information__label" for="order-notes">Order Notes (Optional)</label>
+                              <textarea class="billing-information__textarea" placeholder="Notes about your order, e.g. special notes for delivery" name="form[]"  id="order-notes"></textarea>
+                           </div>
+                        </div>
+                  </div>
+               </form>
+         </div>
+      </section>
+   </main>
+   <footer id="footer-id" class="footer">
+      <div class="footer__container">
+         <p class="footer__data">11 . 05 . 2025</p>
+      </div>
+   </footer>
+   </div>
+   </body>
+</html>
