@@ -102,6 +102,7 @@
                         <li><mark>checked</mark> (для деяких типів) - вибраний за замовченням</li>
                         <li><mark>disabled</mark> - поле перестає бути доступним для користування, данні передані не будуть</li>
                         <li><mark>pattern</mark> - можливість вказувати регулярні вирази</li>
+                        <li><a href="https://www.w3schools.com/html/html_form_input_types.asp">Усі типи https://www.w3schools.com/html/html_form_input_types.asp </a></li>
                      </ul>
                </div>
                <div class="info-form__list list-item">
@@ -124,15 +125,15 @@
                      <div class="billing-information__items">
                         <div class="billing-information__item">
                            <label class="billing-information__label" for="first-name">First name</label>
-                           <input class="billing-information__input" id="first-name" tabindex="1" required placeholder="Your first name" name="form[first-name]"type="text">
+                           <input class="billing-information__input" id="first-name" tabindex="1" required placeholder="Your first name" name="form[]"type="text">
                         </div>
                         <div class="billing-information__item">
                            <label class="billing-information__label" for="last-name">Last name</label>
-                           <input  class="billing-information__input" id="last-name" tabindex="2" required placeholder="Your last name" name="form[last-name]" type="text">
+                           <input  class="billing-information__input" id="last-name" tabindex="2" required placeholder="Your last name" name="form[]" type="text">
                         </div>
                         <div class="billing-information__item">
                            <label class="billing-information__label" for="company-name">Company Name<strong>(optional)</strong></label>
-                           <input class="billing-information__input" id="company-name" tabindex="3" placeholder="Company name" name="form[company-Name]" type="text">
+                           <input class="billing-information__input" id="company-name" tabindex="3" placeholder="Company name" name="form[]" type="text">
                         </div>
                      </div>
                         <div class="billing-information__items">
@@ -147,7 +148,7 @@
                                  for="country">Country / Region</label>
                               <div class="billing-information__select-wrapper">
                                  <select tabindex="5" required class="billing-information__select"
-                                 name="country/region" id="country/region">
+                                 name="form[]" id="country/region">
                                     <option disabled selected value="">Select</option>
                                     <option value="ukraine">Ukraine</option>
                                     <option value="us">United States</option>
@@ -160,7 +161,7 @@
                            <div class="billing-information__item">
                               <label class="billing-information__label" for="country">States</label>
                               <div class="billing-information__select-wrapper">
-                                 <select class="billing-information__select" tabindex="6" name="country/region" id="country/region">
+                                 <select class="billing-information__select" tabindex="6" name="form[]" id="country/region">
                                     <option disabled selected value="">Selects</option>
                                     <option value="kyiv">Київська область</option>
                                     <option value="lviv">Львівська область</option>
@@ -177,12 +178,12 @@
                               <label class="billing-information__label" for="zip">Zip Code</label>
                                  <input class="billing-information__input" id="zip" tabindex="7" 
                                  placeholder="Zip Code"
-                                 name="form[zip]"
+                                 name="form[]"
                                  type="text">
                            </div>
                      </div>
                      <div class="billing-information__items">
-                           <div class="billing-information__item">
+                        <div class="billing-information__item">
                            <label class="billing-information__label" for="email">Email</label>
                            <input class="billing-information__input" id="email" tabindex="8" required placeholder="Email Address" name="form[]"  type="email">
                         </div>
