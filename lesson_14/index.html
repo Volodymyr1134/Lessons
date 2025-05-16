@@ -11,43 +11,13 @@
    <body>
    <div class="wrapper">
       <div class="icon-sticky"></div>
-   <!-- <header class="header">
-               <ul class="header__list list-menu">
-                  <li class="list-menu__item">
-                     <a  class="list-menu__link" href="#">Price</a>
-                     <ul class="sub-menu">
-                        <li class="sub-menu__item">
-                           <a href="#home-id" class="sub-menu__link">Home page</a>
-                        </li>
-                        <li class="sub-menu__item">
-                           <a href="#animation-id" class="sub-menu__link">Анімації та переходи</a>
-                        </li>
-                        <li class="sub-menu__item">
-                           <a href="#animation-text-id" class="sub-menu__link">Анімація тексту</a>
-                        </li>
-                        <li class="sub-menu__item">
-                           <a href="#animation-button-id" class="sub-menu__link">Анімація кнопок</a>
-                        </li>
-                        <li class="sub-menu__item">
-                           <a href="#alfa-romeo-id" class="sub-menu__link">Alfa Romeo</a>
-                        </li>
-                        <li class="sub-menu__item">
-                           <a href="#footer-id" class="sub-menu__link">Footer</a>
-                        </li>
-                     </ul>
-                  </li>
-                  <li class="list-menu__item">
-                     <a class="list-menu__link" href="#home-id">Home page</a>
-                  </li>
-                  <li class="list-menu__item">
-                     <a class="list-menu__link" href="#alfa-romeo-id">Alfa Romeo</a>
-                  </li>
-               </ul>
-   </header> -->
+   <header class="header">
+      <h1 class="header__title">Lesson_14</h1>
+   </header>
    <main id="home-id" class="page">
       <section class="info-form">
          <div class="info-form__container">
-            <h1 class="info-form__title">HTML форми та атрибути</h1>
+            <h2 class="info-form__title">HTML форми та атрибути</h2>
             <div class="info-form__items">
                <div class="info-form__list list-item">
                   <h2 class="list-item__title">form</h2>
@@ -149,9 +119,9 @@
       </section>
       <section class="checkout">
          <div class="checkout__container">
-               <form action="#" method="get" class="billing__form" enctype="multipart/form-data">
+               <form action="#" method="get" class="billing-form" enctype="multipart/form-data">
                   <div class="billing-information">
-                     <h2 class="billing__title">Billing Information</h2>
+                     <h2 class="billing-information__title">Billing Information</h2>
                      <div class="billing-information__items">
                         <div class="billing-information__item">
                            <label class="billing-information__label" for="first-name">First name</label>
@@ -174,7 +144,7 @@
                         </div>
                         <div class="billing-information__items">
                            <div class="billing-information__item">
-                              <label class="billing-information__label" id="country"
+                              <label class="billing-information__label"
                                  for="id-region">Country / Region</label>
                               <div class="billing-information__select-wrapper">
                                  <select tabindex="5" required class="billing-information__select"
@@ -189,9 +159,9 @@
                               </div>
                            </div>
                            <div class="billing-information__item">
-                              <label class="billing-information__label" for="country">States</label>
+                              <label class="billing-information__label" for="states-id">States</label>
                               <div class="billing-information__select-wrapper">
-                                 <select class="billing-information__select" tabindex="6" name="form[]" id="country/region">
+                                 <select class="billing-information__select" tabindex="6" name="form[]" id="states-id">
                                     <option disabled selected value="">Selects</option>
                                     <option value="kyiv">Київська область</option>
                                     <option value="lviv">Львівська область</option>
@@ -223,15 +193,15 @@
                         </div>
                      </div>
                      <div class="billing-information__items">
-                        <label tabindex="10" class="billing-information__label billing-information__label--checkbox" name="form[]" for="checkbox-id">
-                              <input class="billing-information__input-checkbox" type="checkbox"  id="checkbox-id" name="form[]">
+                        <label tabindex="10" class="billing-information__label billing-information__label--checkbox" name="form[]" 
+                              <input class="billing-information__input-checkbox" type="checkbox" name="form[]">
                            <span class="billing-information__checkbox-label">Ship to a different address</span>
                         </label>
                      </div>
                      <div class="billing-information__items billing-information__items--line">
                         <div class="billing-information__line"></div>
                      </div>
-                     <h2 class="billing__title">Additional Info</h2>
+                     <h2 class="billing-information__title">Additional Info</h2>
                         <div class="billing-information__items">
                            <div class="billing-information__item">
                               <label class="billing-information__label" for="order-notes">Order Notes (Optional)</label>
@@ -301,7 +271,7 @@
                         </li>
                      </ul>
                      </div>
-                     <button class="payment-method__btn" tabindex="19" type="submit">Place Order</button>
+                     <button class="payment-method-btn" tabindex="19" type="submit">Place Order</button>
                   </div>
                </form>
          </div>

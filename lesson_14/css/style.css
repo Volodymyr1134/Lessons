@@ -33,9 +33,10 @@ body{
 }
 
 .icon-sticky{
-   background: url(../img/favicon2-icon.png) center / 67px no-repeat;
-   width: 67px;
-   height: 67px;
+   background: url(../img/favicon2-icon.png) center / 60px no-repeat;
+   opacity: 0.8;
+   width: 60px;
+   height: 60px;
    position: fixed;
    bottom: 10px;
    right: 10px;
@@ -44,11 +45,12 @@ body{
 
 /* ==============header========================= */
 .header{
-   position: fixed;
-   width: 100%;
-   z-index: 100;
 }
-
+.header__title{
+   text-align: center;
+   padding: 20px;
+   font-size: 23px;
+}
 /* ==========info-form=============== */
 
 .info-form {
@@ -64,7 +66,7 @@ body{
    display: inline-flex;
    flex-direction: column;
    gap: 20px;
-   padding: 10px;
+   padding: 30px 20px;
 }
 .list-item__title{
    font-size: 23px;
@@ -109,7 +111,7 @@ body{
    padding: 32px 0px 80px 0px;
    background-color: #FFF;
 }
-.billing__form{
+.billing-form{
    display: flex;
    gap: 24px;
    align-items: start;
@@ -120,7 +122,7 @@ body{
    line-height: 1.5;
 }
 
-.billing__title{
+.billing-information__title{
    color: #1A1A1A;
    font-size: 24px;
    font-weight: 500;
@@ -213,7 +215,6 @@ body{
    background: url(../img/check.svg) center no-repeat;
 }
 .billing-information__label--checkbox{
-   display: flex;
 }
 .billing-information__checkbox-label{
    display: flex;
@@ -222,6 +223,7 @@ body{
 }
 .billing-information__label--checkbox:focus-visible{
    outline: solid 1px #00B207;
+   border-radius: 6px;
 }
 
 .billing-information__checkbox-label::before{
@@ -399,7 +401,7 @@ body{
 }
 
 /* ==============btn===================== */
-.payment-method__btn{
+.payment-method-btn{
    margin-top: 12px;
    width: 100%;
    padding: 16px 40px;
@@ -410,10 +412,10 @@ body{
    color: #FFF;
    transition: all 0.3s;
 }
-.payment-method__btn:hover{
+.payment-method-btn:hover{
    background: #038207;
 }
-.payment-method__btn:focus-visible{
+.payment-method-btn:focus-visible{
    outline: solid 2px #038207;
 }
 /* =========footer============= */
