@@ -45,11 +45,43 @@ body{
 
 /* ==============header========================= */
 .header{
-}
-.header__title{
-   text-align: center;
    padding: 20px;
+   display: flex;
+   justify-content: center;
+}
+.header__link{
+   padding: 5px 10px;
    font-size: 23px;
+   border-radius: 6px;
+   position: relative;
+   
+}
+
+.header__link:hover::before{
+   animation-play-state: paused;
+   background-color: #e9efd8;
+}
+
+.header__link::before {
+   content: "";
+   position: absolute;
+   inset: -3px;
+   border: 2px dashed green;
+   border-radius: 8px;
+   z-index: -1;
+   animation: dash-spin 2s linear alternate infinite ;
+   background-color: white;
+   transition: all 0.3s;
+}
+
+@keyframes dash-spin {
+   0% {
+      transform:translate(5%);
+      border: 2px dashed rgb(156, 73, 177);
+   }
+   100% {
+      transform: translate(-5%);
+   }
 }
 /* ==========info-form=============== */
 
