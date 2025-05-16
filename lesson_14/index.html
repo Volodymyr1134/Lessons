@@ -149,7 +149,7 @@
                               <div class="billing-information__select-wrapper">
                                  <select tabindex="5" required class="billing-information__select"
                                  name="form[]" id="id-region">
-                                    <option disabled selected value="">Select</option>
+                                    <option value="" disabled selected hidden>Select</option>
                                     <option value="ukraine">Ukraine</option>
                                     <option value="us">United States</option>
                                     <option value="belgium">Belgium</option>
@@ -161,8 +161,8 @@
                            <div class="billing-information__item">
                               <label class="billing-information__label" for="states-id">States</label>
                               <div class="billing-information__select-wrapper">
-                                 <select class="billing-information__select" tabindex="6" name="form[]" id="states-id">
-                                    <option disabled selected value="">Selects</option>
+                                 <select class="billing-information__select" tabindex="6" required name="form[]" id="states-id">
+                                    <option value="" disabled selected hidden>Selects</option>
                                     <option value="kyiv">Київська область</option>
                                     <option value="lviv">Львівська область</option>
                                     <option value="odessa">Одеська область</option>
@@ -216,14 +216,18 @@
                            <a class="order__link" tabindex="12" href="#"><img class="order__img"  src="img/product-01.jpg" alt="Green Capsicum">
                               <span>Green Capsicum</span>
                            </a>
-                           <input class="order__quantity" placeholder="x5" tabindex="13" value="x5" name="form[]" type="number">
+                           <label class="order__label" for="">x
+                           <input class="order__quantity" placeholder="5" tabindex="13" value="x5" name="form[]" type="number">
+                           </label>
                            <div class="order__price">$70.00</div>
                         </li>
                         <li class="order__list">
                            <a class="order__link" href="#" tabindex="14"><img  class="order__img" src="img/product-02.jpg" alt="Red Capsicum">
                               <span>Red Capsicum</span>
                            </a>
-                           <input class="order__quantity" placeholder="x1" tabindex="15" value="x1" name="form[]" type="number">
+                           <label class="order__label" for="">x
+                           <input class="order__quantity" placeholder="1" tabindex="15" value="x1" name="form[]" type="number">
+                           </label>
                            <div class="order__price">$14.00</div>
                         </li>
                      </ul>

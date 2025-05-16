@@ -218,6 +218,7 @@ body{
    appearance: none;
 }
 
+
 .billing-information__select-wrapper::after {
    content: "";
    position: absolute;
@@ -296,9 +297,10 @@ body{
 }
 
 .order__img{
-   width: 60px;
-   height: 60px;
-   overflow: clip;
+   width: 58px;
+   height: 58px;
+   padding: 2px;
+   overflow: hidden;
 }
 .order__title {
    font-size: 20px;
@@ -318,13 +320,21 @@ body{
 .order__link{
    display: flex;
    align-items: center;
+   transition: all 0.3s;
+}
+.order__link:hover{
+   color: #00B207;
 }
 .order__link span{
    padding-left: 6px;
 }
-.order__quantity{
-   width: 40px;
+.order__label{
    flex-grow: 1;
+}
+.order__quantity{
+   width: 60px;
+   padding: 0px 12px;
+   margin-left: -12px;
 }
 .order__quantity::placeholder{
    color: black;
