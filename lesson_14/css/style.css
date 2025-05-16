@@ -254,7 +254,7 @@ body{
 /* ==========Order Summery================= */
 
 .order {
-   flex: 1 0 424px;
+   flex: 1 1 424px;
    padding: 24px;
    border-radius: 8px;
    border: 1px solid #E6E6E6;
@@ -266,6 +266,7 @@ body{
 .order__img{
    width: 60px;
    height: 60px;
+   overflow: clip;
 }
 .order__title {
    font-size: 20px;
@@ -281,15 +282,33 @@ body{
 .order__list:last-child{
    margin-bottom: 12px;
 }
-.order__text  {
+
+.order__link{
+   display: flex;
+   align-items: center;
+}
+.order__link span{
+   padding-left: 6px;
 }
 .order__quantity{
+   width: 40px;
    flex-grow: 1;
+}
+.order__quantity::placeholder{
+   color: black;
 }
 .order__price {
    font-size: 14px;
    font-weight: 500;
 }
+
+.order__link:focus-visible, 
+.order__quantity:focus-visible,
+.payment-method__label:focus-visible{
+   outline: solid 1px #00B207;
+   border-radius: 6px;
+}
+
 /* ==============total========================= */
 .order__total-items {
 }
@@ -391,6 +410,13 @@ body{
    font-size: 16px;
    font-weight: 600;
    color: #FFF;
+   transition: all 0.3s;
+}
+.payment-method__btn:hover{
+   background: #038207;
+}
+.payment-method__btn:focus-visible{
+   outline: solid 2px #038207;
 }
 /* =========footer============= */
 
