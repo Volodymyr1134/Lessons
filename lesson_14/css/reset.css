@@ -63,5 +63,5 @@ textarea {
 	appearance: none;
 }
 label {
-	display: block;
+	display: inline-block;
 }

@@ -66,7 +66,7 @@
                            Для передачі файлів 
                            використовуємо - multipart/form-data
                            Детальніше: 
-                           <a href="https://www.w3schools.com/tags/att_form_enctype.asp">https://www.w3schools.com/tags/att_form_enctype.asp</a>
+                           <a target="_blank" href="https://www.w3schools.com/tags/att_form_enctype.asp">https://www.w3schools.com/tags/att_form_enctype.asp</a>
                         </li>
                      </ul>
                </div>
@@ -94,15 +94,12 @@
                            <mark>placeholder</mark> - підпис поля
                         </li>
                         <li>
-                           <mark>placeholder</mark> - підпис поля
-                        </li>
-                        <li>
                            <mark>minlength</mark> - вимога до мінімальної кількості символів. працює в парі з required
                         </li>
                         <li><mark>checked</mark> (для деяких типів) - вибраний за замовченням</li>
                         <li><mark>disabled</mark> - поле перестає бути доступним для користування, данні передані не будуть</li>
                         <li><mark>pattern</mark> - можливість вказувати регулярні вирази</li>
-                        <li><a href="https://www.w3schools.com/html/html_form_input_types.asp">Усі типи https://www.w3schools.com/html/html_form_input_types.asp </a></li>
+                        <li><a target="_blank" href="https://www.w3schools.com/html/html_form_input_types.asp"><mark>type=""</mark> Усі типи https://www.w3schools.com/html/html_form_input_types.asp </a></li>
                      </ul>
                </div>
                <div class="info-form__list list-item">
@@ -114,14 +111,37 @@
                         </li>
                      </ul>
                </div>
+               <div class="info-form__list list-item">
+                  <h2 class="list-item__title">textarea</h2>
+                     <h3>Тег</h3>
+                        <li>
+                           <mark>textarea - ввід багаторядкового тексту</mark> 
+                        </li>
+                     </ul>
+               </div>
+               <div class="info-form__list list-item">
+                  <h2 class="list-item__title">button</h2>
+                     <h3>Атрибут <mark>type=""</mark></h3>
+                     <ul>
+                        <li>
+                           "button" - кнопка нічого не робить :)
+                        </li>
+                        <li>
+                           "reset" - обнуляє (скидає) поля вводу у формі. Має знаходитись в середині тегу form.
+                        </li>
+                        <li>
+                           "submit" - (за замовченням) відправляє форму. Має знаходитись в середині тегу form.
+                        </li>
+                     </ul>
+               </div>
             </div>
          </div>
       </section>
       <section class="checkout">
          <div class="checkout__container">
                <form action="#" method="get" class="billing__form" enctype="multipart/form-data">
-                  <h2 class="billing__title">Billing Information</h2>
                   <div class="billing-information">
+                     <h2 class="billing__title">Billing Information</h2>
                      <div class="billing-information__items">
                         <div class="billing-information__item">
                            <label class="billing-information__label" for="first-name">First name</label>
@@ -165,7 +185,7 @@
                                     <option disabled selected value="">Selects</option>
                                     <option value="kyiv">Київська область</option>
                                     <option value="lviv">Львівська область</option>
-                                    <option value="odesa">Одеська область</option>
+                                    <option value="odessa">Одеська область</option>
                                     <option value="zaporizhzhia">Запорізька область</option>
                                     <option disabled>──────────────</option>
                                     <option value="california">California</option>
@@ -185,16 +205,18 @@
                      <div class="billing-information__items">
                         <div class="billing-information__item">
                            <label class="billing-information__label" for="email">Email</label>
-                           <input class="billing-information__input" id="email" tabindex="8" required placeholder="Email Address" name="form[]"  type="email">
+                           <input class="billing-information__input" id="email" tabindex="8" required placeholder="Email Address" name="form[]" type="email">
                         </div>
                         <div class="billing-information__item">
                            <label class="billing-information__label" for="tel">Phone</label>
-                           <input  class="billing-information__input" id="tel" tabindex="2" required placeholder="Phone number" name="form[]" type="tel">
+                           <input  class="billing-information__input" id="tel" tabindex="9" required placeholder="Phone number" name="form[]" type="tel">
                         </div>
                      </div>
-                     <div class="billing-information__items billing-information__items--checkbox">
-                        <input class="billing-information__input-checkbox" type="checkbox"  id="checkbox" name="form[]">
-                        <label class="billing-information__label billing-information__label--checkbox" name="form[]" for="checkbox">Ship to a different address</label>
+                     <div class="billing-information__items">
+                        <label tabindex="10" class="billing-information__label billing-information__label--checkbox" name="form[]" for="checkbox">
+                              <input class="billing-information__input-checkbox" type="checkbox"  id="checkbox" name="form[]">
+                           <span class="billing-information__checkbox-label">Ship to a different address</span>
+                        </label>
                      </div>
                      <div class="billing-information__items billing-information__items--line">
                         <div class="billing-information__line"></div>
@@ -203,9 +225,77 @@
                         <div class="billing-information__items">
                            <div class="billing-information__item">
                               <label class="billing-information__label" for="order-notes">Order Notes (Optional)</label>
-                              <textarea class="billing-information__textarea" placeholder="Notes about your order, e.g. special notes for delivery" name="form[]"  id="order-notes"></textarea>
+                              <textarea class="billing-information__textarea" tabindex="11" placeholder="Notes about your order, e.g. special notes for delivery" name="form[]"  id="order-notes"></textarea>
                            </div>
                         </div>
+                  </div>
+                  <div class="order">
+                     <h2 class="order__title">Order Summery</h2>
+                     <ul >
+                        <li class="order__list">
+                           <a href="#"><img class="order__img" tabindex="12" src="img/product-01.jpg" alt="Green Capsicum">
+                           </a>
+                           <a class="order__text" href="#">
+                                 Green Capsicum
+                           </a>
+                           <div class="order__quantity">x5</div>
+                           <div class="order__price">$70.00</div>
+                        </li>
+                        <li class="order__list">
+                           <a href="#"><img tabindex="13" class="order__img" src="img/product-02.jpg" alt="Red Capsicum">
+                           </a>
+                           <a class="order__text" href="#">
+                                 Red Capsicum
+                           </a>
+                           <div class="order__quantity">x1</div>
+                           <div class="order__price">$14.00</div>
+                        </li>
+                     </ul>
+                     <ul class="order__total-items">
+                        <li class="order__total-item item-total">
+                           <div class="item-total__text">
+                              Subtotal:
+                           </div>
+                           <div class="item-total__total-amount">84.00$</div>
+                        </li>
+                        <li class="order__total-item item-total">
+                           <div class="item-total__text">
+                              Shipping:
+                           </div>
+                           <div class="item-total__total-amount">Free</div>
+                        </li>
+                        <li class="order__total-item item-total item-total--paddimg">
+                           <div class="item-total__text">
+                              Total:
+                           </div>
+                           <div class="item-total__total-amount item-total__total-amount--font-weight
+                           ">$84.00</div>
+                        </li>
+                     </ul>
+                     <div class="payment-method">
+                        <h2 class="payment-method__title">Payment Method</h2>
+                     <ul class="payment-method__list">
+                        <li >
+                           <label  class="payment-method__radio" for="radio-cash">
+                              <input checked class="payment-method__input" name="form[payment]" id="radio-cash" type="radio">
+                              <span tabindex="14" class="payment-method__label">Cash on Delivery</span>
+                           </label>
+                        </li>
+                        <li >
+                           <label  class="payment-method__radio" for="radio-paypal">
+                              <input class="payment-method__input" name="form[payment]" id="radio-paypal" type="radio">
+                              <span tabindex="15" class="payment-method__label">Paypal</span>
+                           </label>
+                        </li>
+                        <li >
+                           <label  class="payment-method__radio payment-method__radio--disabled" for="radio-amazon">
+                              <input disabled class="payment-method__input" name="form[payment]" id="radio-amazon" type="radio">
+                              <span tabindex="16" class="payment-method__label payment-method__label--disabled">Amazon Pay</span>
+                           </label>
+                        </li>
+                     </ul>
+                     </div>
+                     <button class="payment-method__btn" tabindex="17" type="submit">Place Order</button>
                   </div>
                </form>
          </div>
