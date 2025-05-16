@@ -4,7 +4,7 @@
       <meta charset="UTF-8">
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <link rel="stylesheet" href="css/fonts.css">
-      <link rel="shortcut icon" href="img/alfa-romeo-1.svg" type="image/svg+xml">
+      <link rel="shortcut icon" href="img/logo.svg" type="image/svg+xml">
       <link rel="stylesheet" href="css/style.css">
       <title>Lesson_14</title>
    </head>
@@ -114,6 +114,7 @@
                <div class="info-form__list list-item">
                   <h2 class="list-item__title">textarea > select > option > optgroup</h2>
                      <h3>Тег</h3>
+                     <ul>
                         <li>
                            <mark>textarea</mark> - ввід багаторядкового тексту 
                         </li>
@@ -154,7 +155,7 @@
                      <div class="billing-information__items">
                         <div class="billing-information__item">
                            <label class="billing-information__label" for="first-name">First name</label>
-                           <input class="billing-information__input" id="first-name" tabindex="1" required placeholder="Your first name" name="form[]"type="text">
+                           <input class="billing-information__input" id="first-name" tabindex="1" required placeholder="Your first name" name="form[]" type="text">
                         </div>
                         <div class="billing-information__item">
                            <label class="billing-information__label" for="last-name">Last name</label>
@@ -174,10 +175,10 @@
                         <div class="billing-information__items">
                            <div class="billing-information__item">
                               <label class="billing-information__label" id="country"
-                                 for="country">Country / Region</label>
+                                 for="id-region">Country / Region</label>
                               <div class="billing-information__select-wrapper">
                                  <select tabindex="5" required class="billing-information__select"
-                                 name="form[]" id="country/region">
+                                 name="form[]" id="id-region">
                                     <option disabled selected value="">Select</option>
                                     <option value="ukraine">Ukraine</option>
                                     <option value="us">United States</option>
@@ -222,8 +223,8 @@
                         </div>
                      </div>
                      <div class="billing-information__items">
-                        <label tabindex="10" class="billing-information__label billing-information__label--checkbox" name="form[]" for="checkbox">
-                              <input class="billing-information__input-checkbox" type="checkbox"  id="checkbox" name="form[]">
+                        <label tabindex="10" class="billing-information__label billing-information__label--checkbox" name="form[]" for="checkbox-id">
+                              <input class="billing-information__input-checkbox" type="checkbox"  id="checkbox-id" name="form[]">
                            <span class="billing-information__checkbox-label">Ship to a different address</span>
                         </label>
                      </div>
