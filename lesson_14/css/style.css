@@ -134,8 +134,8 @@ body:has(.switcher__input:checked) {
 /* ==========info-form=============== */
 
 .info-form {
-
 }
+
 .info-form__title {
    font-size: 23px;
    font-weight: 600;
@@ -294,15 +294,18 @@ body:has(.switcher__input:checked) {
 .billing-information__checkbox-label::before{
    background: url(../img/check.svg) center no-repeat;
 }
+
 .billing-information__label--checkbox{
    display: flex;
    gap: 6px;
 }
+
 .billing-information__checkbox-label{
    display: flex;
    gap: 6px;
    align-items: center;
 }
+
 .billing-information__input-checkbox:focus-visible + 
 .billing-information__checkbox-label{
    outline: solid 1px #00B207;
@@ -368,6 +371,7 @@ body:has(.switcher__input:checked) {
 
 .order__link{
    transition: all 0.3s;
+   padding:2px;
 }
 .order__link:hover{
    color: #00B207;
@@ -378,14 +382,17 @@ body:has(.switcher__input:checked) {
 .order__label{
    flex-grow: 1;
 }
+
 .order__quantity{
    width: 60px;
    padding: 0px 12px;
    margin-left: -12px;
 }
+
 .order__quantity::placeholder{
    color: black;
 }
+
 .order__price {
    font-size: 14px;
    font-weight: 500;
