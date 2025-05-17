@@ -381,7 +381,7 @@ body:has(.switcher__input:checked) {
 .order__quantity{
    width: 60px;
    padding: 0px 12px;
-   margin-left: -12px;
+   margin-left: -17px;
 }
 .order__quantity::placeholder{
    color: black;
