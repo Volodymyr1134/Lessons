@@ -12,7 +12,11 @@
    <div class="wrapper">
       <div class="icon-sticky"></div>
    <header class="header">
-      <a href="#id-form" class="header__link">Checkout</a>
+      <a href="#id-form" class="header__link">homework</a>
+            <span>Я змінюю колір фону body -</span>
+            <label class="switcher" title="Я це вмію!)"> 
+               <input class="switcher__input"  name="background-color-body" type="checkbox">
+            </label>
    </header>
    <main id="home-id" class="page">
       <section class="info-form">
@@ -193,9 +197,9 @@
                         </div>
                      </div>
                      <div class="billing-information__items">
-                        <label tabindex="10" class="billing-information__label billing-information__label--checkbox" name="form[]" 
-                              <input class="billing-information__input-checkbox" type="checkbox" name="form[]">
-                           <span class="billing-information__checkbox-label">Ship to a different address</span>
+                        <label  class="billing-information__label billing-information__label--checkbox" name="form[]">
+                              <input tabindex="10" class="billing-information__input-checkbox" type="checkbox"  name="form[]">
+                              <span class="billing-information__checkbox-label">Ship to a different address</span>
                         </label>
                      </div>
                      <div class="billing-information__items billing-information__items--line">
@@ -256,21 +260,21 @@
                         <h2 class="payment-method__title">Payment Method</h2>
                      <ul class="payment-method__list">
                         <li >
-                           <label  class="payment-method__radio" for="radio-cash">
-                              <input checked class="payment-method__input" name="form[payment]" id="radio-cash" type="radio">
-                              <span tabindex="16" class="payment-method__label">Cash on Delivery</span>
+                           <label class="payment-method__radio" for="radio-cash">
+                              <input tabindex="16" checked class="payment-method__input" name="form[payment]" id="radio-cash" type="radio">
+                              <span class="payment-method__label">Cash on Delivery</span>
                            </label>
                         </li>
                         <li >
-                           <label  class="payment-method__radio" for="radio-paypal">
-                              <input class="payment-method__input" name="form[payment]" id="radio-paypal" type="radio">
-                              <span tabindex="17" class="payment-method__label">Paypal</span>
+                           <label class="payment-method__radio" for="radio-paypal">
+                              <input tabindex="17" class="payment-method__input" name="form[payment]" id="radio-paypal" type="radio">
+                              <span class="payment-method__label">Paypal</span>
                            </label>
                         </li>
                         <li >
-                           <label  class="payment-method__radio payment-method__radio--disabled" for="radio-amazon">
-                              <input disabled class="payment-method__input" name="form[payment]" id="radio-amazon" type="radio">
-                              <span tabindex="18" class="payment-method__label payment-method__label--disabled">Amazon Pay</span>
+                           <label class="payment-method__radio payment-method__radio--disabled" for="radio-amazon">
+                              <input tabindex="18" disabled class="payment-method__input" name="form[payment]" id="radio-amazon" type="radio">
+                              <span class="payment-method__label payment-method__label--disabled">Amazon Pay</span>
                            </label>
                         </li>
                      </ul>

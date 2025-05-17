@@ -48,13 +48,18 @@ body{
    padding: 20px;
    display: flex;
    justify-content: center;
+   align-items: center;
+}
+.header span{
+   padding: 20px;
+   font-size: 18px;
+   font-weight: 600;
 }
 .header__link{
    padding: 5px 10px;
    font-size: 23px;
    border-radius: 6px;
    position: relative;
-   
 }
 
 .header__link:hover::before{
@@ -82,6 +87,49 @@ body{
    100% {
       transform: translate(-5%);
    }
+}
+
+/* ============switcher=============== */
+
+.switcher {
+   position: relative;
+   width: 60px;
+   height: 30px;
+   border-radius: 15px;
+   background-color: rgba(49, 107, 107, 0.571);
+}
+.switcher::before{
+   position: absolute;
+   top: 0;
+   left: 0;
+   content: "";
+   width: 30px;
+   height: 30px;
+   border-radius: 50%;
+   background-color: rgb(107, 186, 118);
+   transition: all 0.3s;
+   box-shadow: inset 0px 0px 10px 3px rgba(0, 0, 0, 0.651);
+}
+
+.switcher:has(input:checked)::before{
+   left: 100%;
+   transform: translate(-100%);
+   background-color: rgba(255, 0, 0, 0.937);
+}
+
+.switcher:has(input:focus-visible){
+   outline:  solid 2px rgb(22, 147, 26);
+   outline-offset: 4px;
+}
+
+.switcher__input{
+   width: 0;
+   height: 0;
+   opacity: 0;
+}
+
+body:has(.switcher-input:checked) {
+   background-color: rgb(195, 205, 195);
 }
 /* ==========info-form=============== */
 
@@ -218,7 +266,6 @@ body{
    appearance: none;
 }
 
-
 .billing-information__select-wrapper::after {
    content: "";
    position: absolute;
@@ -248,15 +295,19 @@ body{
    background: url(../img/check.svg) center no-repeat;
 }
 .billing-information__label--checkbox{
+   display: flex;
+   gap: 6px;
 }
 .billing-information__checkbox-label{
    display: flex;
    gap: 6px;
    align-items: center;
 }
-.billing-information__label--checkbox:focus-visible{
+.billing-information__input-checkbox:focus-visible + 
+.billing-information__checkbox-label{
    outline: solid 1px #00B207;
    border-radius: 6px;
+   outline-offset: 4px;
 }
 
 .billing-information__checkbox-label::before{
@@ -297,10 +348,8 @@ body{
 }
 
 .order__img{
-   width: 58px;
-   height: 58px;
-   padding: 2px;
-   overflow: hidden;
+   width: 60px;
+   height: 60px;
 }
 .order__title {
    font-size: 20px;
@@ -318,8 +367,6 @@ body{
 }
 
 .order__link{
-   display: flex;
-   align-items: center;
    transition: all 0.3s;
 }
 .order__link:hover{
@@ -346,9 +393,11 @@ body{
 
 .order__link:focus-visible, 
 .order__quantity:focus-visible,
-.payment-method__label:focus-visible{
+.payment-method__label:focus-visible
+{
    outline: solid 1px #00B207;
    border-radius: 6px;
+   outline-offset: -2px;
 }
 
 /* ==============total========================= */
@@ -406,6 +455,7 @@ body{
 .payment-method__label{
    display: flex;
    column-gap: 6px;
+   cursor: pointer;
 }
 
 .payment-method__radio span{
@@ -422,6 +472,11 @@ body{
 
 .payment-method__input:checked + .payment-method__label::before {
    background: radial-gradient(circle at center, #00B207 5px, #ffffff 6px);
+}
+.payment-method__input:focus-visible + .payment-method__label{
+   outline: solid 1px #00B207;
+   border-radius: 6px;
+   outline-offset: 4px;
 }
 
 .payment-method__label::before{
@@ -459,6 +514,7 @@ body{
 }
 .payment-method-btn:focus-visible{
    outline: solid 2px #038207;
+   outline-offset: 3px;
 }
 /* =========footer============= */
 
