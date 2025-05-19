@@ -271,7 +271,7 @@ body{
    }
 }
 
-@media (max-width: 379.98px){
+@media (max-width: 319.98px){
    .item-product{
       flex: 0 1 calc(100% + 1px);
    }
