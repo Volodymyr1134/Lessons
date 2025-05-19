@@ -101,17 +101,17 @@ body{
    display: flex;
    flex-direction: wrap;
    padding: 32px 0px 30px 0px;
-   justify-content: center;
    flex-wrap: wrap;
 }
 
 .item-product {
+   position: relative;
+   margin: 0 -1px -1px 0;
    border: 1px solid #E6E6E6;
    position: relative;
-   flex: 0 1 calc(100% / 5);
+   flex: 0 1 calc(20% + 1px);
    transition:all 0.5s;
 }
-
 
 .item-product__link-img {
    padding: 5px;
@@ -143,7 +143,6 @@ body{
    transition: all 0.3s;
 }
 
-
 .item-product__price {
    color:#1A1A1A;
    font-size: 16px;
@@ -169,7 +168,7 @@ body{
    left: 16px;
    border-radius: 4px;
    background: #EA4B48;
-   z-index: 2;
+   z-index: 3;
 }
 
 .item-product__like{
@@ -186,7 +185,7 @@ body{
    border-radius: 50%;
    visibility: hidden;
    opacity: 0;
-   z-index: 2;
+   z-index: 3;
 }
 .item-product__like svg{
    width: 100%;
@@ -206,7 +205,7 @@ body{
    border-radius: 50%;
    visibility: hidden;
    opacity: 0;
-   z-index: 2;
+   z-index: 3;
 }
 .item-product__eye svg{
    width: 100%;
@@ -246,17 +245,23 @@ body{
    box-shadow: 0px 0px 12px 0px #F2F2F2;
 }
 
-@media (max-width: 1200px){
+@media (max-width: 1250px){
    .item-product{
-      flex: 0 1 calc(100% / 4);
+      flex: 0 1 calc(25% + 1px);
    }
 }
-@media (max-width: 991.8px){
+@media (max-width: 930px){
+   .item-product{
+      flex: 0 1 calc(33.33% + 1px);
+   }
+}
+
+@media (max-width: 667.98px){
    .products__title {
    font-size: 27px;
 }
    .item-product{
-      flex: 0 1 calc(100% / 3);
+      flex: 0 1 calc(50% + 1px);
    }
    .item-product__eye,
    .item-product__like{
@@ -265,20 +270,19 @@ body{
       background-color: transparent;
    }
 }
-@media (max-width: 767.98px){
-   .item-product{
-      flex: 0 1 calc(100% / 2);
-      max-width: 260px;
-   }
-}
+
 @media (max-width: 379.98px){
    .item-product{
-      flex: 0 1 calc(100% / 1);
-      max-width: 100%;
+      flex: 0 1 calc(100% + 1px);
    }
 }
 
 @media (any-hover: hover){
+   .item-product:hover{
+   border: 1px solid #2C742F;
+   box-shadow: 0px 0px 12px 0px rgba(32, 181, 38, 0.32);
+   z-index: 2;
+}
    .products__link:hover::before{
    width: 100%;
    }
