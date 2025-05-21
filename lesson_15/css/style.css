@@ -199,7 +199,7 @@ body{
 .item-product__like{
    position: absolute;
    top: 20px;
-   right: 16px;
+   right: 12px;
    width: 42px;
    height: 40px;
    fill: #ffffff;
@@ -221,7 +221,7 @@ body{
    width: 42px;
    height: 42px;
    top: 68px;
-   right: 16px;
+   right: 12px;
    fill: #ffffff;
    color: black;
    border: solid 1px #F2F2F2;
@@ -246,7 +246,7 @@ body{
 .item-product__basket{
    flex-shrink: 0;
    align-self: flex-end;
-   transform: translate( -12px, -4px);
+   transform: translateY( -12px);
    cursor: pointer;
    width: 42px;
    height: 42px;
@@ -282,10 +282,10 @@ body{
       flex: 0 1 calc(33.33% + 1px);
    }
    .products {
-   padding: 15px 0px;
+      
 }
 .products__items {
-   padding: 25px 0px 15px 0px;
+   padding: 25px 0px 10px 0px;
 }
 }
 
@@ -320,12 +320,9 @@ body{
    flex-direction: column;
    gap: 10px;
 }
-.item-product__content{
-   padding: 10px 5px;
-}
 }
 
-@media (max-width: 350px){
+@media (max-width: 360px){
    .item-product{
       flex: 0 1 calc(100% + 1px);
    }
@@ -338,7 +335,7 @@ body{
 }
 }
 
-@media (max-width: 520px) and (min-width: 350px){
+@media (max-width: 520px) and (min-width: 360px){
    .item-product__basket{
    align-self: auto;
    transform: translate(0, 0);
@@ -386,7 +383,7 @@ body{
 
 .news {
    background-color: #fff;
-   padding: 30px  0 60px 0;
+   padding-bottom: 60px;
 }
 
 .news__title {
@@ -571,7 +568,7 @@ body{
    font-size: 25px;
 }
 .news {
-   padding: 15px  0 30px 0;
+   padding-bottom: 30px;
 }
 
 .icon-sticky{
