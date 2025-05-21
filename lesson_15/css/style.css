@@ -322,7 +322,7 @@ body{
 }
 }
 
-@media (max-width: 360px){
+@media (max-width: 340px){
    .item-product{
       flex: 0 1 calc(100% + 1px);
    }
@@ -335,7 +335,7 @@ body{
 }
 }
 
-@media (max-width: 520px) and (min-width: 360px){
+@media (max-width: 520px) and (min-width: 340px){
    .item-product__basket{
    align-self: auto;
    transform: translate(0, 0);
