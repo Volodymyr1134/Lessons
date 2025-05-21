@@ -23,7 +23,7 @@ body{
    line-height: 1.2;
    font-weight: 400;
    font-size: 14px;
-   background-color: #efefef;
+   background-color: #252722;
 }
 
 [class*="__container"] {
@@ -44,9 +44,24 @@ body{
 
 /* ==============header========================= */
 .header{
-   position: fixed;
+   display: flex;
+   justify-content: center;
+   gap: 10px;
    width: 100%;
    z-index: 100;
+   color: white;
+   background: url(../img/fon-header.jpg);
+}
+.header > p {
+   padding: 10px 0px;
+   align-self: flex-end;
+}
+.header__title{
+   font-size: 24px;
+   font-weight: 600;
+   padding: 30px 0px;
+   letter-spacing: 5px;
+
 }
 /* ============products=================== */
 
@@ -114,6 +129,7 @@ body{
 .item-product__link-img {
    padding: 5px;
    width: 100%;
+   position: relative;
 }
 
 .item-product__img {
@@ -185,8 +201,8 @@ body{
    z-index: 3;
 }
 .item-product__like svg{
-   width: 100%;
-   height: 100%;
+   width: 20px;
+   height: 21px;
 }
 .item-product__eye {
    position: absolute;
@@ -216,6 +232,7 @@ body{
    }
 
 .item-product__basket{
+   flex-shrink: 0;
    margin-right: 4px;
    cursor: pointer;
    width: 42px;
@@ -257,9 +274,13 @@ body{
    .products__title {
    font-size: 27px;
 }
+
+
+
    .item-product{
       flex: 0 1 calc(50% + 1px);
    }
+
    .item-product__eye,
    .item-product__like{
       visibility: visible;
@@ -270,10 +291,15 @@ body{
 
 @media (max-width: 400px){
    .item-product{
-      flex: 0 1 calc(100% + 1px);
+      flex: 0 1 calc(50% + 1px);
    }
+   .item-product__content {
+   flex-direction: column;
+   gap: 10px;
+}
 }
 /* =================hover========================== */
+
 @media (any-hover: hover){
    .item-product:hover{
    border: 1px solid #2C742F;
@@ -308,13 +334,26 @@ body{
    color: white;
 }
 }
+/* =============product-mobile===================== */
+
+@media (min-width: 667.98px){
+   .item-product__content--mobile {
+}
+
+.item-product__content--mobile {
+
+}
+}
+
 /* =============latest News===================== */
 
 .news {
+   background-color: #fff;
+   padding: 30px  0 60px 0;
 }
 
 .news__title {
-   padding: 30px 0px 32px 0px;
+   margin-bottom: 32px;
    color:  #1A1A1A;
    text-align: center;
    font-size: 32px;
@@ -325,12 +364,18 @@ body{
    display: flex;
    flex-wrap: wrap;
    gap: 24px;
-   border-radius: 0px 0px 8px 8px;
-   border: 1px solid #E6E6E6;
 }
 
 .news__item {
+   display: flex;
+   flex-direction: column;
    flex: 0 1 calc(33.33% - 16px);
+   border-radius: 0px 0px 8px 8px;
+   border: 1px solid #E6E6E6;
+   transition: box-shadow 0.3s;
+}
+.news__item:hover{
+   box-shadow: 0px 20px 50px 0px rgba(0, 0, 0, 0.08);
 }
 
 .images-link{
@@ -339,7 +384,6 @@ body{
    position: relative;
    border-radius: 8px 8px 0px 0px;
    background-color: lightgray;
-   
 }
 .images-link:hover img{
    scale: 1.05;
@@ -380,15 +424,18 @@ body{
    letter-spacing: 0.36px;
    text-transform: uppercase;
 }
-/* ================================ */
+/* =============news__content=================== */
 
 
 .news__content {
    padding: 24px;
+   display: flex;
+   flex-direction: column;
+   flex-grow: 1;
 }
+
 .news__content-top {
    display: inline-flex;
-   align-items: center;
    gap: 16px;
    line-height: 1.5;
    color: #4D4D4D;
@@ -425,7 +472,8 @@ body{
    height: 18px;
 }
 
-.top-content__info {
+.top-content__text {
+   flex-grow: 1;
    color: #1A1A1A;
    font-size: 18px;
    font-weight: 500;
@@ -435,6 +483,7 @@ body{
 }
 
 .top-content-link {
+   align-self: start;
    color: #00B207;
    font-size: 16px;
    font-weight: 600;
@@ -450,7 +499,7 @@ body{
 .top-content-link::before{
    position: absolute;
    left: 0;
-   bottom: 0;
+   bottom: -3px;
    content: "";
    width: 0%;
    height: 1px;
@@ -458,7 +507,7 @@ body{
    transition: width 0.3s;
 }
 
-.top-content__info:hover{
+.news__item:hover .top-content__info{
    color: #2C742F;
 
 }
@@ -475,6 +524,10 @@ body{
 .news__item {
    flex: 0 1 calc(100% - 16px);
 }
+
+.icon-sticky{
+   display: none;
+}
 }
 
 /* =========footer============= */
@@ -483,9 +536,10 @@ body{
 }
 
 .footer__data {
+   color: white;
    font-family: Georgia, 'Times New Roman', Times, serif;
    text-align: right;
-   padding: 30px 100px;
+   padding: 30px 50px;
    border-radius: 7px;
    font-size: 23px;
 }
