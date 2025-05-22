@@ -132,7 +132,7 @@ body{
    width: 100%;
    text-align: center;
    aspect-ratio: 254 / 230;
-   background: url(../img/off-photo.webp) center / 150px no-repeat;
+   background: url(../img/off-photo.webp) center / 70% no-repeat;
 }
 
 .item-product__img {
@@ -426,7 +426,7 @@ body{
    text-align: center;
    overflow: clip;
    position: relative;
-   background: url(../img/off-photo.webp) center / 150px no-repeat;
+   background: url(../img/off-photo.webp) center / 70% no-repeat;
 }
 
 .news__images-link img{
