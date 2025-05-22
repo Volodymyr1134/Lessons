@@ -260,7 +260,7 @@ body{
    width: 100vmax;
    height: 100vh;
    object-fit: cover;
-   object-position: 56%;
+   object-position: 51.7%;
 }
 
 .transforming__title {
@@ -311,6 +311,7 @@ body{
    }
    .transforming__btn{
       padding: 14px 20px;
+      font-size: 17px;
    }
 }
 
@@ -323,7 +324,7 @@ body{
 .footer__data {
    font-family: Georgia, 'Times New Roman', Times, serif;
    text-align: right;
-   padding: 30px 100px;
+   padding: 30px 70px;
    border-radius: 7px;
    font-size: 23px;
 }
