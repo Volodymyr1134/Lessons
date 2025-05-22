@@ -342,6 +342,8 @@ body{
    .item-product__basket{
    align-self: auto;
    transform: translate(0, 0);
+   width: 90%;
+   border-radius: 7px;
 }
 }
 
@@ -560,7 +562,6 @@ body{
 @media (max-width: 1200px){
 .news__item {
    flex: 0 1 calc(100% / 2 - ((24px * (2 - 1)) / 2));
-   
 }
 }
 @media (max-width: 667.98px){
