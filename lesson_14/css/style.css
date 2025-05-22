@@ -323,6 +323,10 @@ body:has(.switcher__input:checked) {
    border-radius: 4px;
    vertical-align: middle;
    background: url(../img/check.svg) center no-repeat;
+   transition: border 0.3s;
+}
+.billing-information__checkbox-label:hover::before{
+   border: solid 1px #00B207;
 }
 
 .billing-information__input-checkbox:checked + 
