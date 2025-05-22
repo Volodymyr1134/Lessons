@@ -334,9 +334,6 @@ body{
    flex-direction: row;
    gap: 0px;
 }
-.item-product__content{
-   padding: 10px 5px;
-}
    .item-product__basket{
    align-self: auto;
    transform: translate(0, 0);
