@@ -44,11 +44,12 @@ body{
 
 /* ==============header========================= */
 .header {
+   width: 100%;
    padding: 28px 0px 25px 0px;
    background-color: rgb(240 223 211);
    transition: all 0.3s;
-   position: relative;
-   z-index:  10000;
+   position: fixed;
+   z-index:  100;
 }
 .header__items {
    display: flex;
@@ -206,7 +207,7 @@ body{
 
 .header__burger-body{
    position: fixed;
-   overflow: auto;
+   overflow: hidden;
    top: 0;
    left: 0;
    z-index: 3;
@@ -253,7 +254,6 @@ body{
 
 .transforming__picture {
    position: relative;
-   top: -97px;
 }
 
 .transforming__picture img{
