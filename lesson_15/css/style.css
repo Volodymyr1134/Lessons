@@ -271,6 +271,7 @@ body{
    stroke: white;
    box-shadow: 0px 0px 12px 0px #F2F2F2;
 }
+/* ==================media-max-width============================ */
 
 @media (max-width: 1250px){
    .item-product{
@@ -318,7 +319,7 @@ body{
 @media (max-width: 520px){
    .item-product{
       flex: 0 1 calc(50% + 1px);
-   }
+}
    .item-product__content {
    flex-direction: column;
    gap: 10px;
@@ -336,18 +337,25 @@ body{
 .item-product__content{
    padding: 10px 5px;
 }
+   .item-product__basket{
+   align-self: auto;
+   transform: translate(0, 0);
+}
 }
 
 @media (max-width: 520px) and (min-width: 340px){
    .item-product__basket{
    align-self: auto;
    transform: translate(0, 0);
-   width: 90%;
+   width: 80%;
    border-radius: 7px;
+}
+.item-product__content{
+   text-align: center;
 }
 }
 
-/* =================hover========================== */
+/* =================media-hover========================== */
 
 @media (any-hover: hover){
    .item-product:hover{
