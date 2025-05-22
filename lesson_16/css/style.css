@@ -253,13 +253,14 @@ body{
 
 .transforming__picture {
    position: relative;
+   top: -97px;
 }
 
 .transforming__picture img{
-   width: 100vmax;
+   width: 100vw;
    height: 100vh;
    object-fit: cover;
-   object-position: 51.7%;
+   object-position: 51.7% 20%;
 }
 
 .transforming__title {
