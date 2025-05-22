@@ -1,0 +1,243 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap');
+@import url("reset.css");
+
+.wrapper {
+	overflow: clip;
+	min-height: 100%;
+   display: flex;
+   flex-direction: column;
+}
+.wrapper > main{
+   flex-grow: 1;
+}
+
+html{
+   scroll-behavior: smooth;
+}
+
+.page {
+}
+
+body{
+   font-family: "Montserrat", serif;
+   line-height: 1.2;
+   font-weight: 400;
+   font-size: 14px;
+   background-color: #efefef;
+}
+
+[class*="__container"] {
+	max-width: 1230px; /*1200px + 30px */
+	margin: 0 auto;
+	padding: 0px 15px;
+}
+
+.icon-sticky{
+   background: url(../img/favicon2-icon.png) center / 67px no-repeat;
+   width: 67px;
+   height: 67px;
+   position: fixed;
+   bottom: 10px;
+   right: 10px;
+   z-index: 23;
+}
+
+/* ==============header========================= */
+.header {
+   padding: 28px 0px 25px 0px;
+   background-color: rgb(240 223 211);
+   transition: all 0.3s;
+   position: relative;
+   z-index:  10000;
+}
+.header__items {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   gap: 10px;
+   transition: all 0.3s;
+   white-space: nowrap;
+}
+
+.header__logo {
+   position: relative;
+   z-index: 5;
+   display: flex;
+   align-items: center;
+   flex-shrink: 0;
+   gap: 6px;
+}
+
+.header__img {
+   aspect-ratio: 44 / 44;
+   object-fit: contain;
+}
+
+.header__logo > span {
+   color: #000;
+   font-size: 18px;
+   font-weight: 700;
+   line-height: 1.5;
+   text-transform: uppercase;
+}
+.header__menu {
+}
+
+.header__list {
+   display: flex;
+   justify-content: center;
+   gap: 30px;
+   
+}
+.header__link {
+   color: #000;
+   font-size: 13px;
+   font-weight: 500;
+   line-height: 1.5;
+   text-transform: uppercase;
+}
+
+.header__link-get-quote{
+   position: relative;
+   z-index: 5;
+   display: flex;
+   padding: 8px 30px;
+   justify-content: center;
+   align-items: center;
+   color: #FFF;
+   font-size: 16px;
+   font-weight: 500;
+   line-height: 1.5;
+   gap: 8px;
+   border-radius: 999px;
+   background: #F26522;
+   box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.05);
+   transition: background 0.3s;
+}
+.header__link-get-quote::after{
+   content: "";
+   width: 24px;
+   height: 24px;
+   background: url(../img/arrow.svg) center no-repeat;
+}
+.header__link-get-quote:hover{
+   background: #ba4f1d;
+}
+
+@media (max-width:930px){
+   .header__list{
+      gap: 15px;
+      flex-wrap: wrap;
+   }
+}
+@media (max-width:880px){
+.header__logo > span {
+   display: none;
+}
+}
+@media (max-width:600px){
+   .header__list{
+      display:none;
+   }
+   .header__logo > span {
+   display:inline-block;
+}
+}
+@media (max-width:480px){
+.header__logo > span{
+   display: none;
+}
+
+}
+@media (max-width:600px){
+.header__items{
+   justify-content: space-around;
+}
+}
+
+/* ===========burger================= */
+
+@media (max-width:600px){
+.header__burger{
+	display: block;
+	width: 30px;
+	height: 18px;
+	position: relative;
+   z-index: 4;
+   flex-shrink: 0;
+}
+
+.header__burger::before,
+.header__burger::after,
+.header__burger span {
+	position: absolute;
+	content: "";
+	width: 100%;
+	height: 2px;
+	left: 0;
+	transition: all 0.3s;
+	background: #ba4f1d;
+	}
+
+.header__burger::before{
+   top: 0;
+}
+.header__burger::after{
+   top: 100%;
+}
+.header__burger span{
+   top: 50%;
+   }
+
+.burger-open span{
+   width: 0%;
+   }
+
+.burger-open .header__burger::before {
+   transform: rotate(45deg);
+   top: 50%;
+   }
+.burger-open .header__burger::after {
+   transform: rotate(-45deg);
+   top: 50%;
+   }
+
+.header__burger-body{
+   position: fixed;
+   overflow: auto;
+   top: 0;
+   left: 0;
+   z-index: 3;
+   width: 100%;
+   height: 100%;
+   background-color: rgb(240 223 211);
+   opacity: 0;
+   visibility: hidden;
+}
+.header__burger-body .header__list{
+   display: flex;
+   align-items: center;
+   flex-direction: column;
+   font-size: 24px;
+}
+.header__burger-body .header__link{
+   font-size: 24px;
+}
+}
+.burger-open .header__burger-body{
+   padding-top: 100px;
+   opacity: 1;
+   visibility: visible;
+}
+/* =========footer============= */
+
+.footer {
+}
+
+.footer__data {
+   font-family: Georgia, 'Times New Roman', Times, serif;
+   text-align: right;
+   padding: 30px 100px;
+   border-radius: 7px;
+   font-size: 23px;
+}
