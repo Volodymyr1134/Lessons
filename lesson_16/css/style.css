@@ -260,6 +260,7 @@ body{
    width: 100vmax;
    height: 100vh;
    object-fit: cover;
+   object-position: 56%;
 }
 
 .transforming__title {
