@@ -48,7 +48,6 @@ body{
 .header{
    position: fixed;
    width: 100%;
-   transition: all 0.3s;
    z-index:  100;
    background: rgba(255, 255, 255, 0.60);
    backdrop-filter: blur(3.6505258789px);
@@ -63,7 +62,6 @@ body{
    gap: 10px;
    transition: all 0.3s;
    transition: all 0.5s;
-   
 }
 
 .header__logo {
@@ -73,6 +71,7 @@ body{
    align-items: center;
    flex-shrink: 0;
    gap: 6px;
+   white-space: nowrap;
 }
 
 .header__img {
@@ -104,7 +103,6 @@ body{
    line-height: 1.5;
    text-transform: uppercase;
    transition: text-decoration 0.3s;
-   white-space: nowrap;
 }
 
 @media (any-hover: hover){
@@ -234,12 +232,15 @@ body{
    opacity: 0;
    transition: all 0.5s;
    border-top: 1px solid #f264225b;
-   background: #f5f7fff5;
+   background: rgba(245, 247, 255, 0.937);
 }
+.burger-open .header{
+   background: rgba(245, 247, 255, 0.937);
+}
+
 
 .header__burger-body .header__list{
    display: flex;
-   align-items: stretch;
    align-content: center;
    flex-direction: column;
    padding: 0px 10px;
