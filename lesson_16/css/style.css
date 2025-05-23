@@ -50,8 +50,8 @@ body{
    width: 100%;
    transition: all 0.3s;
    z-index:  100;
-   background-color: rgba(245, 221, 205, 0.941);
-   
+   background: rgba(255, 255, 255, 0.60);
+   backdrop-filter: blur(3.6505258789px);
 }
 
 .header__items {
@@ -62,8 +62,8 @@ body{
    padding-bottom: 25px;
    gap: 10px;
    transition: all 0.3s;
-   white-space: nowrap;
    transition: all 0.5s;
+   
 }
 
 .header__logo {
@@ -104,6 +104,7 @@ body{
    line-height: 1.5;
    text-transform: uppercase;
    transition: text-decoration 0.3s;
+   white-space: nowrap;
 }
 
 @media (any-hover: hover){
@@ -131,6 +132,7 @@ body{
    background: #F26522;
    box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.05);
    transition: background 0.3s;
+   white-space: nowrap;
 }
 .header__link-get-quote::after{
    content: "";
@@ -182,7 +184,7 @@ body{
    flex-shrink: 0;
 }
 .header__items{
-      padding-top: 18px;
+   padding-top: 18px;
    padding-bottom: 15px;
 }
 
@@ -222,31 +224,33 @@ body{
 }
 
 .header__burger-body{
-   position: fixed;
-   overflow: auto;
-   top: 77px;
+   position: absolute;
+   top: 100%;
    padding-top: 50px;
    left: -75%;
    z-index: 3;
    width: 75%;
-   height: 100%;
-   background-color: rgba(245, 221, 205, 0.962);
+   height: 100vh;
    opacity: 0;
    transition: all 0.5s;
+   border-top: 1px solid #f264225b;
+   background: rgba(242, 219, 205, 0.931);
+   backdrop-filter: blur(113.6500015258789px);
+
 }
 
 .header__burger-body .header__list{
    display: flex;
-   flex-wrap: wrap;
-   overflow: auto;
    align-items: stretch;
    align-content: center;
    flex-direction: column;
+   padding: 0px 10px;
    font-size: 24px;
    gap: 30px;
 }
 .header__burger-body .header__link{
    font-size: 24px;
+   white-space: wrap;
 }
 body.burger-open {
    overflow: hidden;
@@ -268,6 +272,8 @@ body.burger-open {
 
 .transforming__items {
    position: absolute;
+   overflow: auto;
+   height: 720px;
    top: 97px;
    left: 50%;
    transform: translateX(-50%);
@@ -277,18 +283,17 @@ body.burger-open {
    flex-direction: column;
    align-items: center;
    gap: 24px;
-   z-index: 22;
+   z-index: 2;
 }
 
 .transforming__picture {
-   position: relative;
 }
 
 .transforming__picture img{
    width: 100vw;
    height: 100vh;
    object-fit: cover;
-   object-position: 51.7% 20%;
+   object-position: 51.7% 0%;
 }
 
 .transforming__title {
