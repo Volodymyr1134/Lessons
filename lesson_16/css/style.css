@@ -234,7 +234,7 @@ body{
    opacity: 0;
    transition: all 0.5s;
    border-top: 1px solid #f264225b;
-   background: rgba(255, 255, 255, 0.936);
+   background: #f5f7fff5;
 }
 
 .header__burger-body .header__list{
