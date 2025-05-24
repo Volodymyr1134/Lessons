@@ -237,7 +237,7 @@ body{
    opacity: 0;
    transition: all 0.5s;
    border-top: 1px solid #f264225b;
-   background: rgba(245, 247, 255, 0.937);
+   background: rgba(245, 247, 255, 0.971);
 }
 
 .header__burger-body .header__list{
@@ -252,7 +252,7 @@ body{
    font-size: 24px;
 }
 .burger-open .header{
-   background: rgba(245, 247, 255, 0.937);
+   background: rgba(245, 247, 255, 0.732);
 }
 
 body.burger-open {
