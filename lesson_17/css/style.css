@@ -103,6 +103,8 @@ body{
    font-family: "KoPubBatang-Regular", serif;
    background: url(../img/off-photo.webp) center / 100% no-repeat;
    aspect-ratio: 374 / 378;
+   overflow: hidden;
+   
 }
 
 .flower-catalog__img-link img {
@@ -110,10 +112,13 @@ body{
    height: 100%;
    aspect-ratio: 374 / 378;
    object-fit: cover;
+   
 }
-.flower-catalog__img-link--height img{
+.flower-catalog__img-link img{
    aspect-ratio: 401 / 427;
+   transition: scale 0.3s;
 }
+
 .info-price {
    display: flex;
    justify-content: space-between;
@@ -190,6 +195,9 @@ body{
    gap: 15px;
 }
 @media (any-hover: hover) {
+   .flower-catalog__img-link:hover img{
+   scale: 1.03;
+}
    .flower-catalog__link-open-more:hover span{
    padding: 10px 30px;
    background-color: #dbccbad1;
