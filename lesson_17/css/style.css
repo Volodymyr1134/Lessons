@@ -67,7 +67,7 @@ body{
 
 .flower-catalog__title {
    padding-top: 52px;
-   padding-bottom: 71px;
+   padding-bottom: 65px;
    color: #000;
    font-family: "KoPubBatang-Light";
    font-size: 60px;
@@ -111,7 +111,9 @@ body{
    aspect-ratio: 374 / 378;
    object-fit: cover;
 }
-
+.flower-catalog__img-link--height img{
+   aspect-ratio: 401 / 427;
+}
 .info-price {
    display: flex;
    justify-content: space-between;
