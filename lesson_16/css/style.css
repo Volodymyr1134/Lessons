@@ -111,6 +111,7 @@ body{
 @media (any-hover: hover){
    .header__link:hover{
    text-decoration: underline;
+   text-underline-offset: 4px;
 }
 .header__link-get-quote:hover{
    background: #ba4f1d;
@@ -350,7 +351,10 @@ body.burger-open {
       font-size: 17px;
    }
 }
-
+.section-text__container p {
+   padding: 20px 5px;
+   font-size: 16px;
+}
 /* =========footer============= */
 
 .footer {
