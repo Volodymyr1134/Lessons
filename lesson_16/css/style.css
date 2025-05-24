@@ -72,7 +72,7 @@ body{
 .header__img {
    aspect-ratio: 1 / 1;
    object-fit: cover;
-   animation: logo-2d 5s infinite linear;
+   animation: logo-2d 10s infinite linear;
 }
 
 @keyframes logo-2d{
