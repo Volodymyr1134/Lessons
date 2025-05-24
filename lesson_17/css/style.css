@@ -78,7 +78,7 @@ body{
    margin-bottom: 50px;
 }
 
-.flower-catalog__list {
+.flower-catalog__list-grid {
    display: grid;
    grid-template-columns: repeat(auto-fill, minmax(370px,1fr));
 	grid-auto-rows: 1fr;
@@ -152,9 +152,9 @@ body{
 /* =============open-more=================== */
 
 .flower-catalog__link-open-more{
-   max-width: 203px;
+   min-width: 203px;
    min-height: 62px; 
-   display: flex;
+   display: inline-flex;
    justify-content: center;
    align-items: center;
    color: #2C2C2C;
@@ -163,7 +163,8 @@ body{
    line-height: 1.37;
    background: #F8F3EC;
    border: 1px solid #DBCCBA;
-   overflow: hidden;
+   padding: 0px 10px;
+   transition: all 0.4s;
 }
 .flower-catalog__link-open-more span{
    display: inline-flex;
@@ -172,28 +173,34 @@ body{
    padding: 9px 30px;
    gap: 10px;
    background-color: #DBCCBA;
-   transition: all 0.2s;
+   transition: all 0.4s;
+   overflow: hidden;
 }
 .flower-catalog__link-open-more span::after{
    content: "";
    width: 23px;
    height: 14px;
    background: url(../img/flower/arrow.svg) center no-repeat; 
-   transition: scale 0.2s;
 }
-.flower-catalog__link-open-more span:hover{
-   padding: 10px 27px;
-   background-color: #dbccbad1;
-   box-shadow: 0px 0px 2px 0px;
-   gap: 20px;
-}
+
 .flower-catalog__link-open-more span:active{
-   padding: 10px 27px;
+   padding: 10px 30px;
    background-color: #DBCCBA;
    box-shadow:inset 0px 0px 2px 0px;
    gap: 15px;
 }
-
+@media (any-hover: none) {
+   .flower-catalog__link-open-more span:hover{
+   padding: 10px 30px;
+   background-color: #dbccbad1;
+   box-shadow: 0px 0px 2px 0px;
+   border-radius: 0px 20px 20px 0px;
+   gap: 15px;
+}
+.flower-catalog__link-open-more:hover{
+   border-radius: 0px 30px 30px 0px;
+}
+}
 /* =========media================ */
 
 @media (max-width: 1150px){
@@ -212,7 +219,7 @@ flex-direction: column-reverse;
    flex: 1 1 50%;
    align-self: flex-start;
 }
-   .flower-catalog__list {
+   .flower-catalog__list-grid {
    padding: 0px 30px;
 }
 .flower-catalog__list-flex{
@@ -234,7 +241,7 @@ flex-direction: column-reverse;
    font-size: 50px;
    font-weight: 300;
 }
-   .flower-catalog__list {
+   .flower-catalog__list-grid {
    padding: 0px 20px;
 }
 .flower-catalog__list-flex{
@@ -255,7 +262,7 @@ flex-direction: column-reverse;
 .flower-catalog {
    padding: 20px 0px 20px 0px;
 }
-   .flower-catalog__list {
+   .flower-catalog__list-grid {
    grid-template-columns: 1fr;
    padding: 0px 32px;
 }
@@ -274,7 +281,7 @@ flex-direction: column-reverse;
 }
 
 @media (max-width: 380px){
-   .flower-catalog__list {
+   .flower-catalog__list-grid {
    padding: 0px 16px;
 }
 .flower-catalog__list-flex{
