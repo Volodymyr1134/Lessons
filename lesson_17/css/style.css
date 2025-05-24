@@ -55,6 +55,7 @@ body{
 
 .flower-catalog {
    background: #F8F3EC;
+   padding: 89px 0px 100px 0px;
 }
 .flower-catalog__container {
    display: flex;
@@ -71,6 +72,10 @@ body{
    font-family: "KoPubBatang-Light";
    font-size: 60px;
    font-weight: 300;
+}
+
+.flower-catalog__list-flex {
+   margin-bottom: 50px;
 }
 
 .flower-catalog__list {
@@ -142,8 +147,9 @@ body{
    text-underline-offset: 3px;
 }
 
+/* =============open-more=================== */
+
 .flower-catalog__link-open-more{
-   margin-top: 50px;
    max-width: 203px;
    min-height: 62px; 
    display: flex;
@@ -157,8 +163,6 @@ body{
    border: 1px solid #DBCCBA;
    overflow: hidden;
 }
-/* =============open-more=================== */
-
 .flower-catalog__link-open-more span{
    display: inline-flex;
    justify-content: center;
@@ -188,14 +192,18 @@ body{
    gap: 15px;
 }
 
-/* ========================== */
+/* =========media================ */
 
 @media (max-width: 1150px){
+   .flower-catalog {
+   padding: 25px 0px 35px 0px;
+}
 .flower-catalog__container {
 flex-direction: column-reverse;
 }
 .flower-catalog__list-flex{
    display:flex;
+   margin-bottom: 40px;
    gap: 30px;
 }
 .flower-catalog__list-flex li{
@@ -216,8 +224,11 @@ flex-direction: column-reverse;
 }
 
 @media (max-width: 900px){
+      .flower-catalog {
+   padding: 25px 0px 35px 0px;
+}
 .flower-catalog__title {
-   padding: 42px 23px;
+   padding: 42px 20px;
    font-size: 50px;
    font-weight: 300;
 }
@@ -230,12 +241,18 @@ flex-direction: column-reverse;
 }
 @media (max-width: 700px){
 .flower-catalog__title {
-   font-size:38px;
+   font-size: 40px;
    font-weight: 300;
-   padding: 30px 30px;
+   padding: 30px 20px;
+}
+.flower-catalog__list-flex{
+   margin-bottom: 30px;
 }
 }
 @media (max-width: 500px){
+.flower-catalog {
+   padding: 20px 0px 20px 0px;
+}
    .flower-catalog__list {
    grid-template-columns: 1fr;
    padding: 0px 32px;
@@ -262,8 +279,8 @@ flex-direction: column-reverse;
    padding: 0px 16px;
 }
 .flower-catalog__title {
-   font-size:23px;
-   padding: 20px 10px;
+   font-size:25px;
+   padding: 20px 16px;
 }
 }
 /* =========footer============= */
