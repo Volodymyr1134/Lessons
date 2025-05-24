@@ -189,8 +189,8 @@ body{
    box-shadow:inset 0px 0px 2px 0px;
    gap: 15px;
 }
-@media (any-hover: none) {
-   .flower-catalog__link-open-more span:hover{
+@media (any-hover: hover) {
+   .flower-catalog__link-open-more:hover span{
    padding: 10px 30px;
    background-color: #dbccbad1;
    box-shadow: 0px 0px 2px 0px;
