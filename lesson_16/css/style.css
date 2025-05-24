@@ -99,19 +99,20 @@ body{
 .header__item{
 }
 
-.header__link {
+.header__item .header__link {
    color: #000;
    font-size: 13px;
    font-weight: 500;
    line-height: 1.5;
    text-transform: uppercase;
    transition: text-decoration 0.3s;
-}
+} 
 
 @media (any-hover: hover){
-   .header__link:hover{
+.header__item .header__link:hover{
    text-decoration: underline;
    text-underline-offset: 4px;
+   text-decoration-color: #ba4f1d;
 }
 .header__link-get-quote:hover{
    background: #ba4f1d;
