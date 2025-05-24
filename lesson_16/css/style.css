@@ -70,7 +70,7 @@ body{
 }
 
 .header__img {
-   aspect-ratio: 1 / 1;
+   aspect-ratio: 44 / 44;
    object-fit: cover;
    animation: logo-2d 10s infinite linear;
 }
@@ -82,7 +82,7 @@ body{
 }
 
 .header__logo > span {
-   flex: 1 1 160px;
+   flex: 0 0 161px;
    color: #000;
    font-size: 18px;
    font-weight: 700;
@@ -143,7 +143,7 @@ body{
    background: url(../img/arrow.svg) center no-repeat;
 }
 
-@media (max-width:930px){
+@media (max-width:950px){
    .header__list{
       gap: 15px;
       flex-wrap: wrap;
@@ -156,7 +156,7 @@ body{
 }
 }
 
-@media (max-width:702px){
+@media (max-width:720px){
 .header__list{
    display:none;
 }
@@ -176,7 +176,7 @@ body{
 
 /* ===========burger================= */
 
-@media (max-width:702px){
+@media (max-width:720px){
 .header__burger{
 	display: block;
 	width: 30px;
