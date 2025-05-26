@@ -62,41 +62,39 @@ body{
 .flower-catalog__container {
 }
 
-.flower-catalog__title {
+.flower-catalog__list-grid {
+   display: grid;
+   grid-template-columns: 33.33% auto auto;
+   grid-auto-rows: auto;
+   column-gap: 28px;
+}
+
+.flower-catalog__list-grid .flower-catalog__item{
+   grid-row: span 2;
+}
+.flower-catalog__list-grid .flower-catalog__title{
    padding-top: 52px;
-   padding-bottom: 37px;
+   padding-bottom: 57px;
    color: #000;
    font-family: "KoPubBatang-Light";
    font-size: 60px;
    font-weight: 300;
-}
-
-.flower-catalog__list-grid {
-   display: grid;
-   grid-template-columns: 33.33% auto auto;
-   grid-template-rows: auto auto 1fr 24% auto;
-   gap: 28px;
-}
-.flower-catalog__list-grid .flower-catalog__title{
    grid-column: span 2;
    grid-row: span 1;
 }
 
-.flower-catalog__list-grid li{
-   grid-row: span 2;
-}
-
-.flower-catalog__list-grid li:last-child{
-   grid-row-start: 5;
+.flower-catalog__list-grid .flower-catalog__link{
+   padding-top: 50px;
+   padding-bottom: 20px;
+   grid-row-start: span 5;
 }
 
 .flower-catalog__item {
    display: grid;
    grid-template-columns: repeat(auto-fill, minmax(220px,1fr));
-   grid-auto-rows: auto;
    grid-template-rows: auto 1fr auto;
    align-self: self-start;
-   row-gap: 14px;
+   padding-bottom: 10px;
 }
 
 .flower-catalog__img-link {
@@ -108,7 +106,7 @@ body{
    color: #000000;
    font-family: "KoPubBatang-Regular", serif;
    background: url(../img/off-photo.webp) center / 100% no-repeat;
-   aspect-ratio: 374 / 378;
+   aspect-ratio: 370 / 380;
    overflow: hidden;
 }
 
@@ -123,12 +121,16 @@ body{
    aspect-ratio: 401 / 427;
 }
 
-
 .info-price {
+   padding-top: 5px;
    display: grid;
    grid-template-columns: 1fr auto auto;
-   align-items: end;
-   gap: 18.7px;
+   align-items: center;
+   color: #2C2C2C;
+   font-family: "KoPubBatang-Regular", serif;
+   font-size: 20px;
+   gap: 5px;
+   line-height: 1.1;
 }
 
 .info-price__title-link {
@@ -139,21 +141,29 @@ body{
    text-underline-offset: 5px;
 }
 
-.info-price__like {
+.info-price__like,
+.info-price__basket{
+   transition: 0.4s;
+   border:#dbccba00 solid 2px;
+   border-radius: 50%;
+   padding: 5px;
 }
-
-.info-price__basket {
+.info-price__like:hover,
+.info-price__basket:hover {
+   border: #DBCCBA solid 2px;
+   background: #ece7e0;
 }
 
 .flower-catalog__link-price{
    justify-self: start;
-   padding-bottom: 10px;
    color: #4E4E4E;
    font-family:"Carme", serif;
    font-weight: 400;
    font-size: 18px;
    transition: all 0.3s;
 }
+
+
 .flower-catalog__link-price:hover{
    text-decoration: underline;
    text-underline-offset: 3px;
@@ -194,18 +204,18 @@ body{
    scale: 1.03;
 }
 .flower-catalog__link-open-more:hover{
-   box-shadow: inset 0px 0px 2px 0px;
+   box-shadow: inset 0px 0px 3px 0px;
 }
 }
 /* =========media================ */
 
 @media (max-width: 1200px){
-.flower-catalog__title {
+.flower-catalog__list-grid .flower-catalog__title {
    font-size: 55px;
 }
 }
 @media (max-width: 1070px){
-.flower-catalog__title {
+.flower-catalog__list-grid .flower-catalog__title {
    font-size: 45px;
 }
 }
@@ -214,19 +224,23 @@ body{
    .flower-catalog {
    padding: 25px 0px 35px 0px;
 }
+.flower-catalog__list-grid .flower-catalog__title{
+   padding-top: 32px;
+   padding-bottom: 30px;
+}
    .flower-catalog__list-grid {
    padding: 0px 30px;
    grid-template-columns: auto auto;
    grid-template-rows: auto;
    gap: 28px;
 }
-.flower-catalog__list-grid li{
+.flower-catalog__list-grid .flower-catalog__item{
    grid-row: span 1;
 }
-.flower-catalog__list-grid li:nth-child(1){
+.flower-catalog__list-grid .flower-catalog__item:nth-child(1){
    grid-row-start: 3;
 }
-.flower-catalog__list-grid li:last-child{
+.flower-catalog__list-grid .flower-catalog__item:last-child{
    grid-row-start: auto;
 }
 }
@@ -235,13 +249,14 @@ body{
 .flower-catalog__list-grid {
    padding: 0px 10px;
 }
-.flower-catalog__title {
+.flower-catalog__list-grid .flower-catalog__title {
    font-size: 40px;
-   padding: 30px 0px;
+   padding-top: 20px;
+   padding-bottom: 20px;
 }
 }
 @media (max-width: 640px){
-.flower-catalog__title {
+.flower-catalog__list-grid .flower-catalog__title {
    font-size: 35px;
 }
 }
@@ -256,14 +271,15 @@ body{
 .flower-catalog {
    padding: 20px 0px 20px 0px;
 }
-.flower-catalog__title {
+.flower-catalog__list-grid .flower-catalog__title {
    font-size: 30px;
-}
-.flower-catalog__list-grid .flower-catalog__title{
    grid-column: span 1;
 }
 .flower-catalog__img-link {
    aspect-ratio: 300 / 376;
+}
+.flower-catalog__list-grid .flower-catalog__link{
+   padding-top: 20px;
 }
 .flower-catalog__link-open-more{
    display: grid;
@@ -275,9 +291,6 @@ body{
 
 @media (max-width: 380px){
    .flower-catalog__list-grid {
-   padding: 0px 16px;
-}
-.flower-catalog__list-flex{
    padding: 0px 16px;
 }
 }
