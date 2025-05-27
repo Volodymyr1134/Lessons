@@ -132,7 +132,7 @@
   align-items: center;
 }
 
-.content-product__title {
+.content-product__title-link {
   color: #4D4D4D;
   line-height: 1.5;
 }
@@ -247,6 +247,14 @@
   stroke: white;
 }
 
+@media (max-width:970px){
+  .products-sale {
+  grid-column: span 2;
+}
+.products__list {
+  grid-template-rows: 32% 32%;
+}
+}
 @media (max-width:730px){
   .products-sale {
   grid-column: span 2;
@@ -286,7 +294,7 @@
 }
 .content-product__basket{
   margin: 0 auto;
-  width: 70%;
+  width: 80%;
   border-radius: 43px;
   background-color: #00B207;
   fill: #00B207;
