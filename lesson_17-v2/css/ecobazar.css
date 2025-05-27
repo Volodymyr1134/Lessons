@@ -281,7 +281,7 @@
   text-align: center;
 }
 .products__list {
-  grid-template-columns: repeat(auto-fill, minmax(150px,1fr));
+  grid-template-columns: repeat(auto-fill, minmax(140px,1fr));
   gap: 15px;
 }
 .content-product__basket{
@@ -303,7 +303,7 @@
 }
 }
 
-@media (max-width:359.98px){
+@media (max-width:349.98px){
     .products-sale {
   grid-column: span 1;
 }
