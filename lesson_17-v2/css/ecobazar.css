@@ -145,6 +145,13 @@
 
 .content-product__rating {
 }
+.content-product__price-mobile{
+  display: none;
+  padding-top: 7px;
+  padding-bottom: 7px;
+  padding-left: 10px;
+  font-size: 14px;
+}
 
 .content-product__basket {
   cursor: pointer;
@@ -305,6 +312,12 @@
 }
 .content-product__rating {
   margin-bottom: 10px;
+}
+.content-product__rating {
+  display: none;
+}
+.content-product__price-mobile{
+  display: inline-block;
 }
 }
 
