@@ -139,7 +139,6 @@ body{
    width: 100%;
    height: 100%;
    object-fit: contain;
-   
 }
 
 .item-product__content {
@@ -346,7 +345,7 @@ body{
    align-self: auto;
    transform: translate(0, 0);
    width: 80%;
-   border-radius: 7px;
+   border-radius: 34px;
 }
 .item-product__content{
    text-align: center;
