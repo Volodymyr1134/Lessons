@@ -270,12 +270,9 @@
   .sale-products {
   grid-column: span 2;
 }
+}
 
-}
 @media (max-width:730px){
-  .sale-products {
-  grid-column: span 2;
-}
 .products__list {
   grid-template-rows: 250px auto;
 }
@@ -324,13 +321,11 @@
   font-size: 26px;
 }
 .content-product__rating {
-  margin-bottom: 10px;
-}
-.content-product__rating {
   display: none;
 }
 .content-product__mobile-rating{
   display: inline-block;
+  margin-bottom: 5px;
 }
 }
 
