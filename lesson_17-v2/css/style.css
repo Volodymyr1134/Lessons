@@ -107,7 +107,7 @@ body{
    font-weight: 700;
    color: #000000;
    font-family: "KoPubBatang-Regular", serif;
-   background: url(../img/off-photo.webp) center / 100% no-repeat;
+   background: url(../img/off-photo.png) center / 70% no-repeat;background-color: rgba(230, 230, 230, 0.785);
    aspect-ratio: 370 / 380;
    overflow: hidden;
 }
@@ -199,7 +199,7 @@ body{
    height: 14px;
    background: url(../img/flower/arrow.svg) center no-repeat;
 }
-
+/* =============hover=================== */
 @media (any-hover: hover) {
    .flower-catalog__img-link:hover img{
    scale: 1.03;
