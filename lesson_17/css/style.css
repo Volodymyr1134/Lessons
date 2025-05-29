@@ -1,6 +1,7 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Carme:wght@400&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+@import url("header.css");
 @import url("fonts.css");
 @import url("reset.css");
 @import url("ecobazar.css");
@@ -47,79 +48,6 @@ body{
    z-index: 23;
 }
 
-/* ==============header========================= */
-
-.header{
-   font-family:"Carme", serif;
-   font-weight: 400;
-   background-color: #fefefe;
-}
-
-.header__items {
-   background-color: rgba(244, 244, 244, 0.785);
-}
-.header__list {
-   padding: 15px;
-   display: flex;
-   justify-content: center;
-   gap: 30px;
-}
-
-.header__list > li:before{
-   content: "";
-   position: absolute;
-   top: 23px;
-   width: 1px;
-   height: 0;
-   background-color: rgba(199, 8, 8, 0.436);
-   box-shadow: 2px 0px 7px 0px rgba(218, 47, 84, 0.278);
-   transition: 0.3s;
-}
-
-.header__list > li > a{
-   display: flex;
-   justify-content: center;
-   padding: 10px 10px;
-   font-size: 20px;
-   font-weight: 700;
-   font-family:"KoPubBatang-Regular";
-   position: relative;
-}
-
-.header__list > li > a::after{
-   content: "";
-   position: absolute;
-   bottom: 7px;
-   width: 0%;
-   height: 1px;
-   background-color: rgba(199, 8, 8, 0.436);
-   box-shadow: 2px -7px 10px 0px rgba(218, 47, 84, 0.278);
-   transition: width 0.3s;
-}
-
-@media (any-hover: hover){
-   .header__list > li:hover:before{
-   height: 3.5%;
-}
-   .header__list > li > a:hover::after{
-   width: 100%;
-}
-}
-@media(max-width:700px){
-   .header__list {
-   gap: 15px;
-}
-.header__list > li > a{
-   padding: 15px 10px;
-   font-size: 17px;
-}
-}
-@media(max-width:500px){
-   .header__list {
-   gap: 5px;
-}
-}
-
 /* ============================== */
 
 .flower-catalog {
@@ -137,11 +65,12 @@ body{
 .flower-catalog__list-grid .flower-catalog__item{
    grid-row: span 2;
 }
+
 .flower-catalog__list-grid .flower-catalog__title{
    padding-top: 52px;
    padding-bottom: 57px;
    color: #000;
-   font-family: "KoPubBatang-Light";
+   font-family: "KoPubBatang-Light", serif;
    font-size: 60px;
    font-weight: 300;
    grid-column: span 2;
@@ -169,7 +98,7 @@ body{
    font-size: 32px;
    font-weight: 700;
    color: #000000;
-   font-family: "KoPubBatang-Regular", serif;
+   font-family: "KoPubBatang-Bold", serif;
    background: url(../img/off-photo.png) center / 70% no-repeat;background-color: rgba(230, 230, 230, 0.785);
    aspect-ratio: 370 / 380;
    overflow: hidden;
@@ -262,8 +191,10 @@ body{
    height: 14px;
    background: url(../img/flower/arrow.svg) center no-repeat;
 }
+
 /* =============hover=================== */
-@media (any-hover: hover) {
+
+@media (any-hover: hover), (pointer: fine) {
    .flower-catalog__img-link:hover img{
    scale: 1.03;
 }
@@ -271,6 +202,7 @@ body{
    box-shadow: inset 0px 0px 3px 0px;
 }
 }
+
 /* =========media================ */
 
 @media (max-width: 1200px){

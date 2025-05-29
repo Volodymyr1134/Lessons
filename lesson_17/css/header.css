@@ -1,0 +1,81 @@
+
+.header{
+  font-weight: 700;
+  font-family:"KoPubBatang-Regular";
+  background-color: #fefefe;
+}
+
+  .header__title{
+  font-size: 18px;
+  text-align: center;
+  padding: 5px;
+  border: dashed 1px rgba(149, 13, 13, 0.778);
+}
+
+  .header__items {
+  background-color: rgba(244, 244, 244, 0.785);
+  }
+  .header__list {
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+}
+
+.header__list li {
+  position: relative;
+}
+
+  .header__list > li:before{
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 1px;
+  height: 0;
+  background-color: rgba(199, 8, 8, 0.436);
+  box-shadow: 2px 0px 7px 0px rgba(218, 47, 84, 0.278);
+  transition: 0.3s;
+}
+
+  .header__list > li > a{
+  display: flex;
+  justify-content: center;
+  padding: 10px 10px;
+  font-size: 20px;
+  position: relative;
+}
+
+  .header__list > li > a::after{
+  content: "";
+  position: absolute;
+  bottom: 7px;
+  width: 0%;
+  height: 1px;
+  background-color: rgba(199, 8, 8, 0.436);
+  box-shadow: 2px -7px 10px 0px rgba(218, 47, 84, 0.278);
+  transition: width 0.3s;
+}
+
+  @media (any-hover: hover), (pointer: fine){
+.header__list > li:hover:before{
+  height: 83%;
+}
+.header__list > li > a:hover::after{
+  width: 100%;
+}
+}
+@media(max-width:700px){
+.header__list {
+  gap: 15px;
+}
+.header__list > li > a{
+  padding: 15px 10px;
+  font-size: 17px;
+}
+}
+  @media(max-width:500px){
+.header__list {
+  gap: 5px;
+}
+}
