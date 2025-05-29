@@ -59,35 +59,64 @@ body{
    background-color: rgba(244, 244, 244, 0.785);
 }
 .header__list {
-   padding: 10px;
+   padding: 15px;
    display: flex;
    justify-content: center;
    gap: 30px;
 }
+
+.header__list > li:before{
+   content: "";
+   position: absolute;
+   top: 23px;
+   width: 2px;
+   height: 0px;
+   background-color: rgba(199, 8, 8, 0.436);
+   box-shadow: 2px 0px 7px 0px rgba(218, 47, 84, 0.278);
+   transition: 0.3s;
+}
+
 .header__list > li > a{
    display: flex;
    justify-content: center;
-   padding: 15px 10px;
+   padding: 10px 10px;
    font-size: 25px;
    font-family:"KoPubBatang-Regular";
    position: relative;
 }
-.header__list > li > a::before{
+
+.header__list > li > a::after{
    content: "";
    position: absolute;
-   bottom: 10px;
+   bottom: 7px;
    width: 0%;
-   height: 2px;
-   background-color: rgb(199, 8, 8);
+   height: 1px;
+   background-color: rgba(199, 8, 8, 0.436);
+   box-shadow: 2px -7px 10px 0px rgba(218, 47, 84, 0.278);
    transition: width 0.3s;
 }
 
 @media (any-hover: hover){
-   .header__list > li > a:hover:before{
+   .header__list > li:hover:before{
+   height: 34px;
+}
+   .header__list > li > a:hover::after{
    width: 100%;
 }
-   .header__list > li > a:hover{
-   color: #494848;
+}
+@media(max-width:700px){
+   .header__list {
+   gap: 15px;
+}
+.header__list > li > a{
+   padding: 15px 10px;
+   font-size: 20px;
+
+}
+}
+@media(max-width:500px){
+   .header__list {
+   gap: 5px;
 }
 }
 
