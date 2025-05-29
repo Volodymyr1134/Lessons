@@ -5,19 +5,25 @@
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <link rel="shortcut icon" href="img/logo.svg" type="image/svg+xml">
       <link rel="stylesheet" href="css/style.css">
-      <title>Lesson_16</title>
+      <title>Lesson_17</title>
    </head>
    <body>
    <div class="wrapper">
       <div class="icon-sticky"></div>
    <header class="header">
+      <div class="header__container">
+         <ul class="header__list">
+            <li><a href="#id-flower">Flowers catalog</a></li>
+            <li><a href="#products-id">Products</a></li>
+            <li><a href="#footer-id">Footer</a></li>
+         </ul>
+      </div>
    </header>
    <main id="home-id" class="page">
-      <section class="flower-catalog">
+      <section id="id-flower" class="flower-catalog">
          <div class="flower-catalog__container">
-            <div class="flower-catalog__items">
-               <ul class="flower-catalog__list-flex">
-                  <li class="flower-catalog__item">
+               <div class="flower-catalog__list-grid">
+                  <div class="flower-catalog__item">
                      <a href="#" class="flower-catalog__img-link flower-catalog__img-link--height">
                         <img src="img/flower/flower_01.jpg" alt="Flowers">
                      </a>
@@ -25,47 +31,19 @@
                         <h2 class="info-price__title-link">
                            <a class="info-price__link" href="#">Enchanted Petals</a>
                         </h2>
-                        <div>
                            <button type="button" class="info-price__like">
                               <img src="img/flower/like.svg" alt="like">
                            </button>
                            <button type="button" class="info-price__basket">
                               <img src="img/flower/basket.svg" alt="basket">
                            </button>
-                        </div>
                      </div>
                      <button class="flower-catalog__link-price" type="button">70 Euro</button>
-                  </li>
-                  <li class="flower-catalog__item">
-                     <a href="#" class="flower-catalog__img-link flower-catalog__img-link--height">
-                        <img src="img/flower/flower_02.jpg" alt="Flowers">
-                     </a>
-                     <div class="flower-catalog__info info-price">
-                        <h2 class="info-price__title-link">
-                           <a class="info-price__link" href="#">Floral Harmony</a>
-                        </h2>
-                        <div>
-                           <button type="button" class="info-price__like">
-                              <img src="img/flower/like.svg" alt="like">
-                           </button>
-                           <button type="button" class="info-price__basket">
-                              <img src="img/flower/basket.svg" alt="basket">
-                           </button>
-                        </div>
-                     </div>
-                     <button class="flower-catalog__link-price" type="button">80 Euro</button>
-                  </li>
-               </ul>
-               <a target="_blank" class="flower-catalog__link-open-more" href="#">
-                  <span>Open More</span>
-               </a>
-            </div>
-            <div class="flower-catalog__items">
-               <h1 class="flower-catalog__title">
-                  Catalog of Floral Delights for Every Occasion
-               </h1>
-               <ul class="flower-catalog__list-grid">
-                  <li class="flower-catalog__item">
+                  </div>
+                  <h2 class="flower-catalog__title">
+                     Catalog of Floral Delights for Every Occasion
+                  </h2>
+                  <div class="flower-catalog__item">
                      <a href="#" class="flower-catalog__img-link">
                         <img src="img/flower/flower_03.jpg" alt="Flowers">
                      </a>
@@ -73,18 +51,16 @@
                         <h2 class="info-price__title-link">
                            <a class="info-price__link" href="#">Whispering Meadows</a>
                         </h2>
-                        <div>
                            <button type="button" class="info-price__like">
                               <img src="img/flower/like.svg" alt="like">
                            </button>
                            <button type="button" class="info-price__basket">
                               <img src="img/flower/basket.svg" alt="basket">
                            </button>
-                        </div>
                      </div>
                      <button class="flower-catalog__link-price" type="button">45 Euro</button>
-                  </li>
-                  <li class="flower-catalog__item">
+                  </div>
+                  <div class="flower-catalog__item">
                      <a href="#" class="flower-catalog__img-link">
                         <img src="img/flower/flower_04.jpg" alt="Flowers">
                      </a>
@@ -92,18 +68,33 @@
                         <h2 class="info-price__title-link">
                            <a class="info-price__link" href="#">Serene Bliss</a>
                         </h2>
-                        <div>
                            <button type="button" class="info-price__like">
                               <img src="img/flower/like.svg" alt="like">
                            </button>
                            <button type="button" class="info-price__basket">
                               <img src="img/flower/basket.svg" alt="basket">
                            </button>
-                        </div>
                      </div>
                      <button class="flower-catalog__link-price" type="button">60 Euro</button>
-                  </li>
-                  <li class="flower-catalog__item">
+                  </div>
+                  <div class="flower-catalog__item">
+                     <a href="#" class="flower-catalog__img-link flower-catalog__img-link--height">
+                        <img src="img/flower/flower_02.jpg" alt="Flowers">
+                     </a>
+                     <div class="flower-catalog__info info-price">
+                        <h2 class="info-price__title-link">
+                           <a class="info-price__link" href="#">Floral Harmony</a>
+                        </h2>
+                           <button type="button" class="info-price__like">
+                              <img src="img/flower/like.svg" alt="like">
+                           </button>
+                           <button type="button" class="info-price__basket">
+                              <img src="img/flower/basket.svg" alt="basket">
+                           </button>
+                     </div>
+                     <button class="flower-catalog__link-price" type="button">80 Euro</button>
+                  </div>
+                  <div class="flower-catalog__item">
                      <a href="#" class="flower-catalog__img-link">
                         <img src="img/flower/flower_05.jpg" alt="Flowers">
                      </a>
@@ -111,18 +102,16 @@
                         <h2 class="info-price__title-link">
                            <a class="info-price__link" href="#">Springtime Serenade</a>
                         </h2>
-                        <div>
                            <button type="button" class="info-price__like">
                               <img src="img/flower/like.svg" alt="like">
                            </button>
                            <button type="button" class="info-price__basket">
                               <img src="img/flower/basket.svg" alt="basket">
                            </button>
-                        </div>
                      </div>
                      <button class="flower-catalog__link-price" type="button">65 Euro</button>
-                  </li>
-                  <li class="flower-catalog__item">
+                  </div>
+                  <div class="flower-catalog__item">
                      <a href="#" class="flower-catalog__img-link">
                         <img src="img/flower/flower_06.jpg" alt="Flowers">
                      </a>
@@ -130,25 +119,501 @@
                         <h2 class="info-price__title-link">
                            <a class="info-price__link" href="#">Blooming Splendor</a>
                         </h2>
-                        <div>
                            <button type="button" class="info-price__like">
                               <img src="img/flower/like.svg" alt="like">
                            </button>
                            <button type="button" class="info-price__basket">
                               <img src="img/flower/basket.svg" alt="basket">
                            </button>
-                        </div>
                      </div>
                      <button class="flower-catalog__link-price" type="button">50 Euro</button>
+                  </div>
+                  <div class="flower-catalog__link">
+                     <a target="_blank" class="flower-catalog__open-more-link"href="#"><span>Open More</span>
+                     </a>
+                  </div>
+               </div>
+         </div>
+      </section>
+      <section id="products-id" class="products">
+         <div class="products__box">
+            <h2 class="products__title">
+               PRODUCTS<strong>Our Featured Products</strong>
+            </h2>
+               <ul class="products__list">
+                  <li class="products__item sale-products">
+                     <img class="sale-products__img" src="img/ecobazar/01-fon.jpg" alt="sale-fon">
+                     <div class="sale-products__info">
+                        <h3 class="sale-products__title">Summer Sale</h3>
+                        <p class="sale-products__sub-title">75% off</p>
+                           <a class="sale-products__link" href="#">
+                                 Shop Now
+                              <div class="sale-products__arrow"><svg><use href="css/sprites.svg#id-arrow"></use></svg>
+                              </div>
+                           </a>
+                     </div>
+                  </li>
+                  <li class="products__item">
+                     <a class="products__link-img" href="#">
+                        <img src="img/ecobazar/02.jpg" alt="Chanise Cabbage">
+                     </a>
+                        <div class="products__action">
+                           <button type="button" class="products__like">
+                              <svg><use href="css/sprites.svg#id-like"></use></svg>
+                           </button>
+                           <button type="button" class="products__eye">
+                              <svg><use href="css/sprites.svg#id-eye"></use></svg>
+                           </button>
+                        </div>
+                     <div class="products__content content-product">
+                        <div class="content-product__wrap-grid">
+                           <a class="content-product__title-link" href="#">
+                              <h3>
+                                 Chanise Cabbage
+                              </h3>
+                           </a>
+                           <div class="content-product__price">
+                              $14.99<span class="content-product__mobile-rating">4<img src="img/ecobazar/star-on.svg" alt="star-icon-on"></span>
+                           </div>
+                           <div class="content-product__rating">
+                                 <span><img src="img/ecobazar/star-on.svg" alt="star-on"></span>
+                                 <span><img src="img/ecobazar/star-on.svg" alt="star-on"></span>
+                                 <span><img src="img/ecobazar/star-on.svg" alt="star-on"></span>
+                                 <span><img src="img/ecobazar/star-on.svg" alt="star-on"></span>
+                                 <span><img src="img/ecobazar/star-disabled.svg" alt="star"></span>
+                              </div>
+                        </div>
+                        <button type="button" class="content-product__basket basket">
+                        <svg><use href="css/sprites.svg#id-basket"></use></svg>
+                        </button>
+                     </div>
+                  </li>
+                  <li class="products__item">
+                     <a class="products__link-img" href="#">
+                        <img src="img/ecobazar/04.jpg" alt="Green Lettuce">
+                     </a>
+                        <div class="products__action">
+                           <button type="button" class="products__like">
+                              <svg><use href="css/sprites.svg#id-like"></use></svg>
+                           </button>
+                           <button type="button" class="products__eye">
+                              <svg><use href="css/sprites.svg#id-eye"></use></svg>
+                           </button>
+                        </div>
+                     <div class="products__content content-product">
+                        <div class="content-product__wrap-grid">
+                           <a class="content-product__title-link" href="#">
+                              <h3 >
+                                 Green Lettuce
+                              </h3>
+                           </a>
+                           <div class="content-product__price">
+                              $14.99<span class="content-product__mobile-rating">4<img src="img/ecobazar/star-on.svg" alt="star-icon-on"></span>
+                           </div>
+                           <div class="content-product__rating">
+                                 <span><img src="img/ecobazar/star-on.svg" alt="star-on"></span>
+                                 <span><img src="img/ecobazar/star-on.svg" alt="star-on"></span>
+                                 <span><img src="img/ecobazar/star-on.svg" alt="star-on"></span>
+                                 <span><img src="img/ecobazar/star-on.svg" alt="star-on"></span>
+                                 <span><img src="img/ecobazar/star-disabled.svg" alt="star"></span>
+                              </div>
+                           </div>
+                        <button type="button" class="content-product__basket basket">
+                        <svg><use href="css/sprites.svg#id-basket"></use></svg>
+                        </button>
+                     </div>
+                  </li>
+                  <li class="products__item">
+                     <a class="products__link-img" href="#">
+                        <img src="img/ecobazar/02.jpg" alt="Green Chili">
+                     </a>
+                        <div class="products__action">
+                           <button type="button" class="products__like">
+                              <svg><use href="css/sprites.svg#id-like"></use></svg>
+                           </button>
+                           <button type="button" class="products__eye">
+                              <svg><use href="css/sprites.svg#id-eye"></use></svg>
+                           </button>
+                        </div>
+                     <div class="products__content content-product">
+                        <div class="content-product__wrap-grid">
+                           <a class="content-product__title-link" href="#">
+                              <h3>
+                                 Green Chili
+                              </h3>
+                           </a>
+                           <div class="content-product__price">
+                              $14.99<span class="content-product__mobile-rating">4<img src="img/ecobazar/star-on.svg" alt="star-icon-on"></span>
+                           </div>
+                           <div class="content-product__rating">
+                                 <span><img src="img/ecobazar/star-on.svg" alt="star-on"></span>
+                                 <span><img src="img/ecobazar/star-on.svg" alt="star-on"></span>
+                                 <span><img src="img/ecobazar/star-on.svg" alt="star-on"></span>
+                                 <span><img src="img/ecobazar/star-on.svg" alt="star-on"></span>
+                                 <span><img src="img/ecobazar/star-disabled.svg" alt="star"></span>
+                              </div>
+                           </div>
+                        <button type="button" class="content-product__basket basket">
+                        <svg><use href="css/sprites.svg#id-basket"></use></svg>
+                        </button>
+                     </div>
+                  </li>
+                  <li class="products__item">
+                     <a class="products__link-img" href="#">
+                        <img src="img/ecobazar/05.jpg" alt="Corn">
+                     </a>
+                        <div class="products__action">
+                           <button type="button" class="products__like">
+                              <svg><use href="css/sprites.svg#id-like"></use></svg>
+                           </button>
+                           <button type="button" class="products__eye">
+                              <svg><use href="css/sprites.svg#id-eye"></use></svg>
+                           </button>
+                        </div>
+                     <div class="products__content content-product">
+                        <div class="content-product__wrap-grid">
+                           <a class="content-product__title-link" href="#">
+                              <h3 >
+                                 Corn
+                              </h3>
+                           </a>
+                           <div class="content-product__price">
+                              $14.99<span class="content-product__mobile-rating">4<img src="img/ecobazar/star-on.svg" alt="star-icon-on"></span>
+                           </div>
+                           <div class="content-product__rating">
+                                 <span><img src="img/ecobazar/star-on.svg" alt="star-on"></span>
+                                 <span><img src="img/ecobazar/star-on.svg" alt="star-on"></span>
+                                 <span><img src="img/ecobazar/star-on.svg" alt="star-on"></span>
+                                 <span><img src="img/ecobazar/star-on.svg" alt="star-on"></span>
+                                 <span><img src="img/ecobazar/star-disabled.svg" alt="star"></span>
+                           </div>
+                           </div>
+                        <button type="button" class="content-product__basket basket">
+                        <svg><use href="css/sprites.svg#id-basket"></use></svg>
+                        </button>
+                     </div>
                   </li>
                </ul>
+         </div>
+      </section>
+      <section class="products-bottom">
+         <div class="products-bottom__box">
+            <div class="products-bottom__items">
+               <div class="products-bottom__selection">
+                  <h2 class="products-bottom__caption">
+                     Hot Deals
+                  </h2>
+                  <div class="products-bottom__item product-card">
+                     <a class="product-card__img" href="#">
+                        <img src="img/ecobazar/selection-01.jpg" alt="Green Apple">
+                     </a>
+                     <div class="product-card__content">
+                        <a class="product-card__title-link" href="#">
+                           <h3>
+                              Green Apple
+                           </h3>
+                        </a>
+                        <div class="product-card__hover-link products">
+                           <button type="button" class="products__basket basket">
+                              <svg><use href="css/sprites.svg#id-basket"></use></svg>
+                           </button>
+                           <button type="button" class="products__eye">
+                              <svg><use href="css/sprites.svg#id-eye"></use></svg>
+                           </button>
+                           <button type="button" class="products__like">
+                              <svg><use href="css/sprites.svg#id-like"></use></svg>
+                           </button>
+                        </div>
+                        <div class="product-card__price">$14.99</div>
+                        <div class="product-card__rating">
+                           <span><img src="img/ecobazar/star-on.svg" alt="star-on"></span>
+                           <span><img src="img/ecobazar/star-on.svg" alt="star-on"></span>
+                           <span><img src="img/ecobazar/star-on.svg" alt="star-on"></span>
+                           <span><img src="img/ecobazar/star-on.svg" alt="star-on"></span>
+                           <span><img src="img/ecobazar/star-disabled.svg" alt="star"></span>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="products-bottom__item product-card">
+                     <a class="product-card__img" href="#">
+                        <img src="img/ecobazar/selection-02.jpg" alt="Indian Malta">
+                     </a>
+                     <div class="product-card__content">
+                        <a class="product-card__title-link" href="#">
+                           <h3>
+                              Indian Malta
+                           </h3>
+                        </a>
+                        <div class="product-card__hover-link products">
+                           <button type="button" class="products__basket basket">
+                              <svg><use href="css/sprites.svg#id-basket"></use></svg>
+                           </button>
+                           <button type="button" class="products__eye">
+                              <svg><use href="css/sprites.svg#id-eye"></use></svg>
+                           </button>
+                           <button type="button" class="products__like">
+                              <svg><use href="css/sprites.svg#id-like"></use></svg>
+                           </button>
+                        </div>
+                        <div class="product-card__price">$14.99</div>
+                        <div class="product-card__rating">
+                           <span><img src="img/ecobazar/star-on.svg" alt="star-on"></span>
+                           <span><img src="img/ecobazar/star-on.svg" alt="star-on"></span>
+                           <span><img src="img/ecobazar/star-on.svg" alt="star-on"></span>
+                           <span><img src="img/ecobazar/star-on.svg" alt="star-on"></span>
+                           <span><img src="img/ecobazar/star-disabled.svg" alt="star"></span>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="products-bottom__item product-card">
+                     <a class="product-card__img" href="#">
+                        <img src="img/ecobazar/selection-03.jpg" alt="Green Lettuce">
+                     </a>
+                     <div class="product-card__content">
+                        <a class="product-card__title-link" href="#">
+                           <h3>
+                              Green Lettuce
+                           </h3>
+                        </a>
+                           <div class="product-card__hover-link products">
+                           <button type="button" class="products__basket basket">
+                              <svg><use href="css/sprites.svg#id-basket"></use></svg>
+                           </button>
+                           <button type="button" class="products__eye">
+                              <svg><use href="css/sprites.svg#id-eye"></use></svg>
+                           </button>
+                           <button type="button" class="products__like">
+                              <svg><use href="css/sprites.svg#id-like"></use></svg>
+                           </button>
+                        </div>
+                        <div class="product-card__price">$14.99</div>
+                        <div class="product-card__rating">
+                           <span><img src="img/ecobazar/star-on.svg" alt="star-on"></span>
+                           <span><img src="img/ecobazar/star-on.svg" alt="star-on"></span>
+                           <span><img src="img/ecobazar/star-on.svg" alt="star-on"></span>
+                           <span><img src="img/ecobazar/star-on.svg" alt="star-on"></span>
+                           <span><img src="img/ecobazar/star-disabled.svg" alt="star"></span>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <div class="products-bottom__selection">
+                  <h2 class="products-bottom__caption">
+                     Hot Deals
+                  </h2>
+                  <div class="products-bottom__item product-card">
+                     <a class="product-card__img" href="#">
+                        <img src="img/ecobazar/selection-04.jpg" alt="Eggplant">
+                     </a>
+                     <div class="product-card__content">
+                        <a class="product-card__title-link" href="#">
+                           <h3>
+                              Eggplant
+                           </h3>
+                        </a>
+                        <div class="product-card__hover-link products">
+                           <button type="button" class="products__basket basket">
+                              <svg><use href="css/sprites.svg#id-basket"></use></svg>
+                           </button>
+                           <button type="button" class="products__eye">
+                              <svg><use href="css/sprites.svg#id-eye"></use></svg>
+                           </button>
+                           <button type="button" class="products__like">
+                              <svg><use href="css/sprites.svg#id-like"></use></svg>
+                           </button>
+                        </div>
+                        <div class="product-card__price">$14.99</div>
+                        <div class="product-card__rating">
+                           <span><img src="img/ecobazar/star-on.svg" alt="star-on"></span>
+                           <span><img src="img/ecobazar/star-on.svg" alt="star-on"></span>
+                           <span><img src="img/ecobazar/star-on.svg" alt="star-on"></span>
+                           <span><img src="img/ecobazar/star-on.svg" alt="star-on"></span>
+                           <span><img src="img/ecobazar/star-disabled.svg" alt="star"></span>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="products-bottom__item product-card">
+                     <a class="product-card__img" href="#">
+                        <img src="img/ecobazar/selection-05.jpg" alt="Red Capsicum">
+                     </a>
+                     <div class="product-card__content">
+                        <a class="product-card__title-link" href="#">
+                           <h3>
+                              Red Capsicum
+                           </h3>
+                        </a>
+                        <div class="product-card__hover-link products">
+                           <button type="button" class="products__basket basket">
+                              <svg><use href="css/sprites.svg#id-basket"></use></svg>
+                           </button>
+                           <button type="button" class="products__eye">
+                              <svg><use href="css/sprites.svg#id-eye"></use></svg>
+                           </button>
+                           <button type="button" class="products__like">
+                              <svg><use href="css/sprites.svg#id-like"></use></svg>
+                           </button>
+                        </div>
+                        <div class="product-card__price">$14.99</div>
+                        <div class="product-card__rating">
+                           <span><img src="img/ecobazar/star-on.svg" alt="star-on"></span>
+                           <span><img src="img/ecobazar/star-on.svg" alt="star-on"></span>
+                           <span><img src="img/ecobazar/star-on.svg" alt="star-on"></span>
+                           <span><img src="img/ecobazar/star-on.svg" alt="star-on"></span>
+                           <span><img src="img/ecobazar/star-disabled.svg" alt="star"></span>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="products-bottom__item product-card">
+                     <a class="product-card__img" href="#">
+                        <img src="img/ecobazar/selection-06.jpg" alt="Red Tomatos">
+                     </a>
+                     <div class="product-card__content">
+                        <a class="product-card__title-link" href="#">
+                           <h3>
+                              Red Tomatos
+                           </h3>
+                        </a>
+                           <div class="product-card__hover-link products">
+                           <button type="button" class="products__basket basket">
+                              <svg><use href="css/sprites.svg#id-basket"></use></svg>
+                           </button>
+                           <button type="button" class="products__eye">
+                              <svg><use href="css/sprites.svg#id-eye"></use></svg>
+                           </button>
+                           <button type="button" class="products__like">
+                              <svg><use href="css/sprites.svg#id-like"></use></svg>
+                           </button>
+                        </div>
+                        <div class="product-card__price">$14.99</div>
+                        <div class="product-card__rating">
+                           <span><img src="img/ecobazar/star-on.svg" alt="star-on"></span>
+                           <span><img src="img/ecobazar/star-on.svg" alt="star-on"></span>
+                           <span><img src="img/ecobazar/star-on.svg" alt="star-on"></span>
+                           <span><img src="img/ecobazar/star-on.svg" alt="star-on"></span>
+                           <span><img src="img/ecobazar/star-disabled.svg" alt="star"></span>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <div class="products-bottom__selection">
+                  <h2 class="products-bottom__caption">
+                     Hot Deals
+                  </h2>
+                  <div class="products-bottom__item product-card">
+                     <a class="product-card__img" href="#">
+                        <img src="img/ecobazar/selection-07.jpg" alt="Big Potatos">
+                     </a>
+                     <div class="product-card__content">
+                        <a class="product-card__title-link" href="#">
+                           <h3>
+                              Big Potatos
+                           </h3>
+                        </a>
+                        <div class="product-card__hover-link products">
+                           <button type="button" class="products__basket basket">
+                              <svg><use href="css/sprites.svg#id-basket"></use></svg>
+                           </button>
+                           <button type="button" class="products__eye">
+                              <svg><use href="css/sprites.svg#id-eye"></use></svg>
+                           </button>
+                           <button type="button" class="products__like">
+                              <svg><use href="css/sprites.svg#id-like"></use></svg>
+                           </button>
+                        </div>
+                        <div class="product-card__price">$14.99</div>
+                        <div class="product-card__rating">
+                           <span><img src="img/ecobazar/star-on.svg" alt="star-on"></span>
+                           <span><img src="img/ecobazar/star-on.svg" alt="star-on"></span>
+                           <span><img src="img/ecobazar/star-on.svg" alt="star-on"></span>
+                           <span><img src="img/ecobazar/star-on.svg" alt="star-on"></span>
+                           <span><img src="img/ecobazar/star-disabled.svg" alt="star"></span>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="products-bottom__item product-card">
+                     <a class="product-card__img" href="#">
+                        <img src="img/ecobazar/selection-08.jpg" alt="Corn">
+                     </a>
+                     <div class="product-card__content">
+                        <a class="product-card__title-link" href="#">
+                           <h3>
+                              Corn
+                           </h3>
+                        </a>
+                        <div class="product-card__hover-link products">
+                           <button type="button" class="products__basket basket">
+                              <svg><use href="css/sprites.svg#id-basket"></use></svg>
+                           </button>
+                           <button type="button" class="products__eye">
+                              <svg><use href="css/sprites.svg#id-eye"></use></svg>
+                           </button>
+                           <button type="button" class="products__like">
+                              <svg><use href="css/sprites.svg#id-like"></use></svg>
+                           </button>
+                        </div>
+                        <div class="product-card__price">$14.99</div>
+                        <div class="product-card__rating">
+                           <span><img src="img/ecobazar/star-on.svg" alt="star-on"></span>
+                           <span><img src="img/ecobazar/star-on.svg" alt="star-on"></span>
+                           <span><img src="img/ecobazar/star-on.svg" alt="star-on"></span>
+                           <span><img src="img/ecobazar/star-on.svg" alt="star-on"></span>
+                           <span><img src="img/ecobazar/star-disabled.svg" alt="star"></span>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="products-bottom__item product-card">
+                     <a class="product-card__img" href="#">
+                        <img src="img/ecobazar/selection-09.jpg" alt="Fresh cauliflower">
+                     </a>
+                     <div class="product-card__content">
+                        <a class="product-card__title-link" href="#">
+                           <h3>
+                              Fresh cauliflower
+                           </h3>
+                        </a>
+                           <div class="product-card__hover-link products">
+                           <button type="button" class="products__basket basket">
+                              <svg><use href="css/sprites.svg#id-basket"></use></svg>
+                           </button>
+                           <button type="button" class="products__eye">
+                              <svg><use href="css/sprites.svg#id-eye"></use></svg>
+                           </button>
+                           <button type="button" class="products__like">
+                              <svg><use href="css/sprites.svg#id-like"></use></svg>
+                           </button>
+                        </div>
+                        <div class="product-card__price">$14.99</div>
+                        <div class="product-card__rating">
+                           <span><img src="img/ecobazar/star-on.svg" alt="star-on"></span>
+                           <span><img src="img/ecobazar/star-on.svg" alt="star-on"></span>
+                           <span><img src="img/ecobazar/star-on.svg" alt="star-on"></span>
+                           <span><img src="img/ecobazar/star-on.svg" alt="star-on"></span>
+                           <span><img src="img/ecobazar/star-disabled.svg" alt="star"></span>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <div class="products-bottom__hot-sale sale-products">
+                     <img class="sale-products__img sale-products__img--v2" src="img/ecobazar/02-fon-sale.jpg" alt="sale-fon">
+                     <div class="sale-products__info">
+                        <h3 class="sale-products__title">HOt Sale</h3>
+                        <p class="sale-products__sub-title sale-products__sub-title--margin">
+                           <strong>Save 37%</strong> on Every Order
+                        </p>
+                        <a class="sale-products__link" href="#">
+                              Shop Now
+                           <div class="sale-products__arrow"><svg><use href="css/sprites.svg#id-arrow"></use></svg>
+                           </div>
+                        </a>
+                     </div>
+               </div>
             </div>
          </div>
       </section>
    </main>
    <footer id="footer-id" class="footer">
       <div class="footer__container">
-         <p class="footer__data">24 . 05 . 2025</p>
+         <p class="footer__data">29 . 05 . 2025</p>
       </div>
    </footer>
    </div>
