@@ -61,9 +61,6 @@ body{
    padding: 89px 0px 100px 0px;
 }
 
-.flower-catalog__container {
-}
-
 .flower-catalog__list-grid {
    display: grid;
    grid-template-columns: 33.33% auto auto;
