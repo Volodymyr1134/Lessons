@@ -466,6 +466,7 @@
 
 @media (any-hover: none), (pointer: coarse) {
 .product-card__hover-link{
+  transform: translateX(100%);
   visibility: visible;
   opacity: 1;
 }
