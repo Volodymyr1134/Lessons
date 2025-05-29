@@ -192,7 +192,7 @@
 /* ==============products-sale===================== */
 
 .sale-products {
-  border: solid rgba(128, 128, 128, 0) 2px;
+  border: solid 1px #e6e6e63a;
   grid-template-rows: auto;
 }
 
