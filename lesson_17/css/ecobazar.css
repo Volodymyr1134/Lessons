@@ -473,6 +473,22 @@
 /* (any-hover: none) може не коректно працювати у деяких китайських телефонах 
 тому додано ще медіазапит (pointer: coarse) */
 
+
+
+/* ============================================= */
+@media (any-hover: hover), (pointer: fine) {
+.product-card:hover .product-card__price,
+.product-card:hover .product-card__rating{
+  visibility: hidden;
+  opacity: 1;
+}
+.product-card:hover .product-card__hover-link{
+  opacity: 1;
+  visibility:visible;
+  transform: translateX(0%);
+}
+}
+
 @media (any-hover: none), (pointer: coarse) {
 .product-card__hover-link{
   top: 50%;
@@ -489,21 +505,6 @@
 .product-card__hover-link .products__eye,
 .product-card__hover-link .products__like{
   display: none;
-}
-}
-
-/* ============================================= */
-@media (any-hover: hover), (pointer: fine) {
-.product-card:hover .product-card__price,
-.product-card:hover .product-card__rating{
-  visibility: hidden;
-  opacity: 1;
-}
-
-.product-card:hover .product-card__hover-link{
-  opacity: 1;
-  visibility:visible;
-  transform: translateX(0%);
 }
 }
 
