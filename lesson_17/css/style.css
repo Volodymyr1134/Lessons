@@ -190,6 +190,17 @@ body{
    width: 23px;
    height: 14px;
    background: url(../img/flower/arrow.svg) center no-repeat;
+   animation: arrow 1.3s ease-in-out infinite; 
+   
+}
+@keyframes arrow{
+   0%{
+      opacity: 0;
+   }
+   100%{
+      transform: translateX(40%);
+      
+   }
 }
 
 /* =============hover=================== */
