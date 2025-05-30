@@ -277,7 +277,7 @@ body{
 .flower-catalog__list-grid .flower-catalog__link{
    padding-top: 20px;
 }
-.flower-catalog__link-open-more{
+.flower-catalog__open-more-link{
    display: grid;
 }
 .icon-sticky{
