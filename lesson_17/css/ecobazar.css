@@ -405,7 +405,7 @@
 }
 
 .product-card{
-  flex: 0 0 118px;
+  flex: 1 0 118px;
   overflow: auto;
   display: flex;
   align-items: center;
