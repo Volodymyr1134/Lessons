@@ -1,9 +1,9 @@
 
 .header{
   padding-top: 10px;
-  font-weight: 700;
   font-family:"KoPubBatang-Regular";
   background-color: #fefefe;
+  letter-spacing: 0.3px;
 }
 
   .header__title{
