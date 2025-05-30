@@ -1,5 +1,6 @@
 
 .header{
+  padding-top: 10px;
   font-weight: 700;
   font-family:"KoPubBatang-Regular";
   background-color: #fefefe;
@@ -9,14 +10,13 @@
   font-size: 18px;
   text-align: center;
   padding: 5px;
-  border: dashed 1px rgba(149, 13, 13, 0.778);
 }
 
-  .header__items {
+.header__items {
   background-color: rgba(244, 244, 244, 0.785);
-  }
+}
+
   .header__list {
-  padding: 10px;
   display: flex;
   justify-content: center;
   gap: 30px;
@@ -59,7 +59,7 @@
 
   @media (any-hover: hover), (pointer: fine){
 .header__list > li:hover:before{
-  height: 83%;
+  height: 84%;
 }
 .header__list > li > a:hover::after{
   width: 100%;
