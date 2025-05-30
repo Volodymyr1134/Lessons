@@ -463,7 +463,7 @@
 .product-card__hover-link{
   position: absolute;
   display: flex;
-  visibility: auto;
+  visibility: hidden;
   opacity: 0;
   gap: 12px;
   transform: translateX(100%);
@@ -480,6 +480,11 @@
   right: 5px;
   visibility: visible;
   opacity: 1;
+}
+.product-card__hover-link .basket{
+  background-color: #00B207;
+  fill: #00B207;
+  color: white;
 }
 .product-card__hover-link .products__eye,
 .product-card__hover-link .products__like{
