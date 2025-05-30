@@ -481,7 +481,7 @@
   visibility: visible;
   opacity: 1;
 }
-.product-card__hover-link .basket{
+.basket{
   background-color: #00B207;
   fill: #00B207;
   color: white;
