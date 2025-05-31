@@ -86,6 +86,8 @@ body{
 /* ==========practice================ */
 
 .practice{
+   width: 100%;
+   min-width: 825px;
    font-family: Georgia, 'Times New Roman', Times, serif;
    font-size: 18px;
    letter-spacing: 1,5px;
