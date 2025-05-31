@@ -42,6 +42,7 @@
 
 .aside-ecobazar__input{
   border-radius: 6px;
+  appearance: none;
   padding: 14px 16px 14px 34px;
 }
 
