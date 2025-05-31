@@ -51,6 +51,7 @@ body{
 /* ============================== */
 
 .styled-table {
+   padding: 20px;
    overflow-x: auto;
    border-collapse: collapse;
    font-size: 16px;
