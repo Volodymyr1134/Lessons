@@ -28,11 +28,10 @@ body{
    line-height: 1.2;
    font-weight: 400;
    font-size: 14px;
-   background-color: #efefef;
 }
 
 [class*="__container"] {
-	max-width: 1230px; /*1200px + 30px */
+	max-width: 1350px; /*1320px + 30px */
 	margin: 0 auto;
 	padding-left: 15px;
    padding-right: 15px;
