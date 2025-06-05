@@ -162,10 +162,104 @@
 						</div>
 						<section class="header-info__form form-comments">
 							<form class="form-comments" action="#" enctype="multipart/form-data">
-								<label for="name">Full Name</label>
-								<input type="text" id="name" name="name">
+								<h2 class="form-comments__title title">Leave a Comment</h2>
+                <div class="form-comments__items">
+	                <div class="form-comments__item">
+										<label class="form-comments__label" for="name">
+											Full Name
+										</label>
+										<input class="form-comments__input" type="text" id="name" name="name" required>
+	                </div>
+	                <div class="form-comments__item">
+										<label class="form-comments__label" for="email">
+											Full Name
+										</label>
+										<input class="form-comments__input" type="email" id="email" name="email" required>
+	                </div>
+                </div>
+								<div class="form-comments__items">
+                  <div class="form-comments__item form-comments__item--textarea">
+										<label class="form-comments__label" for="textarea-com">
+											Message
+										</label>
+										<textarea class="form-comments__textarea" name="message" id="textarea-com" placeholder="Write your comment here…"></textarea>
+                  </div>
+								</div>
+								<div class="form-comments__items">
+									<div class="form-comments__item ">
+										<label class="form-comments__label form-comments__label--checkbox">
+										  <input class="form-comments__input" type="checkbox" name="checkbox" required>
+                      <span class="form-comments__label-span">
+											Save my name and email in this browser for the next time I comment.
+                      </span>
+										</label>
+	                </div>
+								</div>
+								<button class="form-comments__button" type="submit">
+									Post Comments
+								</button>
 							</form>
-							<div class="form-comments__"></div>
+							<article class="form-comments__peoples-comments comments-peoples">
+								<h2 class="comments-peoples__title">Comments</h2>
+								<figure class="comments-peoples__figure">
+									<img src="img/ecobazar/comments-01.jpg" alt="person">
+                    <div>
+											<figcaption class="comments-peoples__figcaption">
+												Annette Black • <time datetime="2021-04-26">26 Apr, 2021</time>
+											</figcaption>
+												<p>
+													In a nisi commodo, porttitor ligula consequat, tincidunt dui. Nulla volutpat, metus eu aliquam malesuada, elit libero venenatis urna, consequat maximus arcu diam non diam.
+												</p>
+                    </div>
+								</figure>
+								<figure class="comments-peoples__figure">
+									<img src="img/ecobazar/comments-02.jpg" alt="person">
+                    <div>
+											<figcaption class="comments-peoples__figcaption">
+												Annette Black • <time datetime="2021-04-24">24 Apr, 2021</time>
+											</figcaption>
+												<p>
+													Quisque eget tortor lobortis, facilisis metus eu, elementum est. Nunc sit amet erat quis ex convallis suscipit. Nam hendrerit, velit ut aliquam euismod, nibh tortor rutrum nisi, ac sodales nunc eros porta nisi. Sed scelerisque, est eget aliquam venenatis, est sem tempor eros.
+												</p>
+                    </div>
+								</figure>
+								<figure class="comments-peoples__figure">
+									<img src="img/ecobazar/comments-03.jpg" alt="person">
+                    <div>
+											<figcaption class="comments-peoples__figcaption">
+												Annette Black • <time datetime="2021-04-20">20 Apr, 2021</time>
+											</figcaption>
+												<p>
+													Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae.
+												</p>
+                    </div>
+								</figure>
+								<figure class="comments-peoples__figure">
+									<img src="img/ecobazar/comments-04.jpg" alt="person">
+                    <div>
+											<figcaption class="comments-peoples__figcaption">
+												Annette Black • <time datetime="2021-04-18">18 Apr, 2021</time>
+											</figcaption>
+												<p>
+													Pellentesque feugiat, nibh vel vehicula pretium, nibh nibh bibendum elit, a volutpat arcu dui nec orci. Aenean dui odio, ullamcorper quis turpis ac, volutpat imperdiet ex.
+												</p>
+                    </div>
+								</figure>
+								<figure class="comments-peoples__figure">
+									<img src="img/ecobazar/comments-05.jpg" alt="person">
+                    <div>
+											<figcaption class="comments-peoples__figcaption">
+												Annette Black • <time datetime="2021-04-7">7 Apr, 2021</time>
+											</figcaption>
+												<p>
+													Nulla molestie interdum ultricies. 
+												</p>
+                    </div>
+								</figure>
+							</article>
+								<a href="#" class="comments-peoples__btn">
+									Load More
+								</a>
 						</section>
 				</article>
 				<aside class="ecobazar__aside aside-ecobazar">
@@ -323,7 +417,6 @@
 						</div>
 					</section>
 				</aside>
-
 			</div>
 		</article>
   </main>
