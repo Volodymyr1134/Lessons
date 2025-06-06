@@ -101,6 +101,12 @@ body{
    letter-spacing: 1.5px;
    padding: 30px 0px;
 }
+
+.practice audio{
+   display: block;
+   margin: 0 auto;
+}
+
 .practice__title{
    font-size: 20px;
    text-align: center;

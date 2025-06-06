@@ -119,6 +119,27 @@
 .header-info__socials {
 }
 
+.header-info__link-social {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  color: #1A1A1A;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.header-info__link-social:hover {
+  background-color: #00B207;
+  color: #fff;
+}
+
+.header-info__link-social svg {
+  width: 18px;
+  height: 18px;
+  fill: currentColor;
+}
 /* =========================== */
 
 .header-info__img-block {
