@@ -63,7 +63,8 @@
   margin-bottom: -24px;
   padding: 8px 0px;
   display: flex;
-  column-gap: 16px;
+  flex-wrap: wrap;
+  gap: 16px;
 }
 
 .header-info__people-information {
@@ -78,6 +79,7 @@
 
 .header-info__content{
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
   gap: 15px;
