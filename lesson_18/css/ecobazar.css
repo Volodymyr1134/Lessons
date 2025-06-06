@@ -262,7 +262,7 @@
 .form-comments__items {
 flex-wrap: wrap;
 }
-.form-comments__item,{
+.form-comments__item{
   flex: 1 1 auto;
 }
 }
@@ -351,9 +351,12 @@ flex-wrap: wrap;
   border-radius: 43px;
   background: #00B207;
   color: white;
+  transition:background 0.3s;
 }
 
-
+.form-comments__button:hover{
+    background: #2C742F;
+}
 /* ============================= */
 
 .form-comments {
@@ -429,7 +432,6 @@ flex-wrap: wrap;
 .categories-top {
   padding-top: 20px;
   padding-bottom: 28px;
-
 }
 
 .aside-ecobazar__form {
