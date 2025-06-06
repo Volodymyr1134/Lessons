@@ -399,9 +399,8 @@ flex-wrap: wrap;
   line-height: 1.5; 
 }
 
-.comments-peoples__figcaption {
-  display: flex;
-  margin-bottom: 5px;
+.comments-peoples__figcaption p {
+  padding-top: 5px;
 }
 
 .comments-peoples__figcaption time {
