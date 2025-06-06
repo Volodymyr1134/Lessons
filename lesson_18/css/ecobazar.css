@@ -13,6 +13,9 @@
   .ecobazar__container{
     flex-wrap: wrap;
   }
+  .ecobazar__aside{
+    padding-top: 40px;
+  }
 }
 .ecobazar__aside {
 }
@@ -29,7 +32,7 @@
 
 
 .ecobazar__blog-detail {
-  flex: 0 1 872px;
+  flex: 1 1 872px;
 }
 .header-info {
   display: grid;
@@ -72,6 +75,7 @@
   font-weight: 500;
   line-height: 1.4;
 }
+
 .header-info__content{
   display: flex;
   justify-content: space-between;
@@ -80,18 +84,22 @@
   padding-bottom: 24px;
   box-shadow: 0px 1px 0px 0px #E5E5E5;
 }
+
 .header-info__blog-detail {
 }
+
 .detail-blog {
   display: flex;
   align-items: center;
   column-gap: 12px;
 }
+
 .detail-blog__image {
-  widows: 50px;
+  width: 50px;
   height: 50px;
   border-radius: 50%;
 }
+
 .detail-blog__figcaption {
 }
 .detail-blog__title {
@@ -128,6 +136,11 @@
   height: 100%;
   object-fit: cover;
 }
+@media (max-width:520px) {
+  .header-info__img-block {
+  flex-wrap: wrap;
+}
+}
 /* ================================= */
 
 .header-info__sidebar {
@@ -149,8 +162,10 @@
   padding-left: 56px;
   position: relative;
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
-  column-gap: 50px;
+  justify-content: center;
+  gap: 50px;
 }
 .banner__title {
   display: flex;
@@ -162,16 +177,19 @@
   text-transform: uppercase;
   margin-bottom: 16px;
 }
+
 .banner__title strong {
-color: #FFF;
-font-size: 36px;
-font-weight: 600;
+  color: #FFF;
+  font-size: 36px;
+  font-weight: 600;
 }
+
 .banner__link {
   display: flex;
   padding: 14px 32px;
   justify-content: center;
   align-items: center;
+  text-wrap: nowrap;
   gap: 12px;
   background-color: #00B207;
   color: white;
@@ -184,18 +202,20 @@ font-weight: 600;
 }
 
 .banner__sale {
+  flex-shrink: 0;
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
+  margin-right: 10px;
   width: 91px;
   height: 91px;
   border-radius: 50%;
   background-color: #1A1A1A;
 }
+
 .banner__sale span {
   color: #B3B3B3;
-  
   text-align: center;
   font-size: 11px;
   font-weight: 500;
@@ -203,6 +223,7 @@ font-weight: 600;
   letter-spacing: 0.33px;
   text-transform: uppercase;
 }
+
 .banner__sale mark {
   color: #FF8A00;
   background-color: transparent;
@@ -211,7 +232,17 @@ font-weight: 600;
   font-weight: 600;
   line-height: 1.1;
 }
-
+@media (max-width:460px) {
+.banner {
+  padding: 44px 20px;
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+}
 
 /* ========form-comments============ */
 
@@ -226,7 +257,14 @@ font-weight: 600;
   margin-bottom: 16px;
 }
 
+
+@media (max-width:720px) {
+.form-comments__items {
+flex-wrap: wrap;
+}
 .form-comments__item {
+  flex: 1 1 auto;
+}
 }
 
 .form-comments__label {
