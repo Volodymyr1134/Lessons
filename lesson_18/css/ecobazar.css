@@ -314,13 +314,13 @@ flex-wrap: wrap;
 	height: 0;
 }
 
-.form-comments__label-span{
+.form-comments__span-label{
   display: flex;
   gap: 6px;
   align-items: center;
 }
 
-.form-comments__label-span::before {
+.form-comments__span-label::before {
   content: ""; 
   align-self: flex-start;
   flex-shrink: 0;
@@ -332,11 +332,11 @@ flex-wrap: wrap;
   transition: background-color 0.3s;
 }
 
-.form-comments__input:checked + .form-comments__label-span::before {
+.form-comments__input:checked + .form-comments__span-label::before {
   background: url(../img/ecobazar/check.svg) center no-repeat;
   background-color: #00B207;
 }
-.form-comments__input:focus-visible + .form-comments__label-span{
+.form-comments__input:focus-visible + .form-comments__span-label{
   outline: solid 1px #00B207;
   outline-offset: 7px;
   border-radius: 6px;
@@ -406,7 +406,7 @@ flex-wrap: wrap;
   line-height: 1.5;
 }
 
-.comments-peoples__btn{
+.form-comments__btn{
   display: inline-flex;
   padding: 14px 32px;
   justify-content: center;
@@ -418,7 +418,7 @@ flex-wrap: wrap;
   font-weight: 600;
   transition: all 0.3s;
 }
-.comments-peoples__btn:hover{
+.form-comments__btn:hover{
   border: 2px solid #2C742F;
   color: #2C742F;
 }
