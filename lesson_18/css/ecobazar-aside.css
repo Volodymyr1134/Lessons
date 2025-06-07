@@ -159,7 +159,7 @@
 .added-recently__img-link {
   overflow: clip;
   align-self: flex-start;
-  flex: 0 1 100px;
+  flex: 0 0 100px;
   aspect-ratio: 100 / 77;
   border-radius: 6px;
   background-color: #8080807c;
