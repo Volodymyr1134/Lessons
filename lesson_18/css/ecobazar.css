@@ -59,6 +59,7 @@
   aspect-ratio: 872 / 600;
   object-fit: cover;
 }
+
 .header-info__comments {
   margin-bottom: -27px;
   padding: 8px 0px;
@@ -130,7 +131,7 @@
   height: 40px;
   border-radius: 50%;
   fill: #4D4D4D;
-  transition: background-color 0.3s, color 0.3s;
+  transition: background-color 0.3s;
 }
 
 .header-info__link-social:hover {
@@ -164,6 +165,12 @@
 @media (max-width:520px) {
   .header-info__img-block {
   flex-wrap: wrap;
+}
+.header-info__comments {
+  gap: 10px;
+}
+.header-info__title {
+  font-size: 25px;
 }
 }
 /* ================================= */
@@ -257,7 +264,7 @@
 }
 @media (max-width:460px) {
 .banner {
-  padding: 44px 20px;
+  padding: 44px 15px;
   position: relative;
   display: flex;
   flex-wrap: wrap;
@@ -442,7 +449,6 @@ flex-wrap: wrap;
 .comments-peoples__figcaption time {
   color: #999;
   line-height: 1.5;
-  
 }
 
 .form-comments__btn{
