@@ -67,7 +67,9 @@
   gap: 16px;
 }
 
-.header-info__people-information {
+.header-info__people-information span {
+  color: #808080;
+  line-height: 1.5; 
 }
 
 .header-info__title {
@@ -111,7 +113,7 @@
   line-height: 1.5;
   margin-bottom: 5px;
 }
-.detail-blog__title time {
+.detail-blog__figcaption time {
   color: #808080;
   font-size: 14px;
 }
@@ -126,19 +128,18 @@
   width: 40px;
   height: 40px;
   border-radius: 50%;
-  color: #1A1A1A;
+  fill: #4D4D4D;
   transition: background-color 0.3s, color 0.3s;
 }
 
 .header-info__link-social:hover {
   background-color: #00B207;
-  color: #fff;
+  fill: #fff;
 }
 
 .header-info__link-social svg {
   width: 18px;
   height: 18px;
-  fill: currentColor;
 }
 /* =========================== */
 
@@ -444,194 +445,5 @@ flex-wrap: wrap;
   border: 2px solid #2C742F;
   color: #2C742F;
 }
-/* ================================== */
-
-.aside-ecobazar {
-  flex: 1 1 400px;
-  font-family: "Poppins", serif;
-}
-
-.categories-top {
-  padding-top: 20px;
-  padding-bottom: 28px;
-}
-
-.aside-ecobazar__form {
-  border-bottom: solid 1px #E6E6E6;
-  padding-bottom: 28px;
-}
-
-.aside-ecobazar__label{
-  position: relative;
-  border-radius: 6px;
-  border: 1px solid #E6E6E6;
-}
-
-.aside-ecobazar__input{
-  border-radius: 6px;
-  appearance: none;
-  padding: 14px 16px 14px 34px;
-}
-
-.aside-ecobazar__input:focus-visible{
-  outline: 1px solid #00B207;
-}
-.aside-ecobazar__label::before {
-  content: "";
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  left: 10px;
-  width: 20px;
-  height: 20px;
-  background: url(../img/ecobazar-aside/search.svg) center no-repeat;
-}
-
-/* ===========Top-Categories================== */
-
-.categories-top__title {
-}
-.categories-top__list {
-  display: flex;
-  flex-direction: column;
-  gap: 16px;
-  border-bottom: solid 1px #E6E6E6;
-  padding-bottom: 20px;
-}
-
-.categories-top__link {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  color: #1A1A1A;
-  line-height: 1.5;
-  transition: text-decoration 0.3s;
-}
-.categories-top__link a:hover{
-  text-decoration: underline;
-  text-underline-offset: 5px;
-}
-
-.categories-top__item span{
-  color: #808080;
-}
-/* =============popular-tag=================== */
-
-.aside-ecobazar__popular-tag {
-  padding-bottom: 35px;
-  border-bottom: solid 1px #E6E6E6;
-}
-.aside-ecobazar__title {
-}
-
-.categories-items {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 8px;
-  padding-right: 10px;
-}
-
-.categories-item a {
-  padding: 6px 16px;
-  border-radius: 30px;
-  background: #F2F2F2;
-  transition: background 0.3s;
-}
-.categories-item a:hover {
-  background: #00B207;
-  color: white;
-}
-/* ===========gallery================== */
 
 
-.aside-ecobazar__gallery {
-}
-.gallery-our {
-  padding: 20px 0px 28px 0px;
-  border-bottom: solid 1px #E6E6E6;
-}
-.gallery-our__title {
-}
-.gallery-our__list {
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  gap: 8px;
-}
-.gallery-our__item{
-  flex: 1 0 94px;
-  max-width: 270px;
-}
-.gallery-our__item a {
-  overflow: hidden;
-  border-radius: 6px;
-  aspect-ratio: 94 / 94;
-  width: 100%;
-  height: 100%;
-}
-
-.gallery-our__item img {
-  object-fit: cover;
-  width: 100%;
-  height: 100%;
-  transition: scale 0.3s;
-}
-
-.gallery-our__item img:hover {
-  width: 100%;
-  height: 100%;
-  scale: 1.05;
-}
-
-/* ===========Recently-Added================== */
-
-.aside-ecobazar__recently-added {
-}
-.added-recently {
-  padding-top: 20px;
-}
-.added-recently__title {
-}
-
-.added-recently__items {
-  display: flex;
-  flex-direction: column;
-  gap: 16px;
-}
-
-.added-recently__item {
-  display: flex;
-  column-gap: 12px;
-  padding: 4px;
-}
-.added-recently__img-link {
-  overflow: clip;
-  align-self: flex-start;
-  flex: 0 1 100px;
-  aspect-ratio: 100 / 77;
-  border-radius: 6px;
-  background-color: #8080807c;
-}
-.added-recently__img-link img {
-  object-fit: cover;
-  transition: scale 0.3s;
-  width: 100%;
-  height: 100%;
-}
-.added-recently__img-link img:hover {
-  scale: 1.05;
-}
-
-.content-recently-added {
-  margin-bottom: 8px;
-}
-.content-recently-added__title {
-  color: #1A1A1A;
-  font-size: 16px;
-  font-weight: 500;
-  line-height: 1.5; 
-  transition: color 0.3s;
-}
-.content-recently-added__title:hover{
-  color: #4a4a4a;
-}
