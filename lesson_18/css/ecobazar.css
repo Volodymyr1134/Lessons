@@ -19,7 +19,9 @@
 }
 .ecobazar__aside {
 }
-/* ============================= */
+
+/* ==============title=============== */
+
 .title{
   color: #1A1A1A;
   font-size: 20px;
@@ -28,12 +30,13 @@
   padding-bottom: 4px;
   margin-bottom: 16px;
 }
-/* ===========blog-detail================ */
 
+/* ===========blog-detail================ */
 
 .ecobazar__blog-detail {
   flex: 1 1 872px;
 }
+
 .header-info {
   display: grid;
   gap: 24px;
@@ -48,6 +51,7 @@
   font-size: 18px;
   line-height: 1.5;
 }
+
 .header-info:first-child{
   color: #1A1A1A;
   font-size: 20px;
@@ -149,6 +153,7 @@
   display: flex;
   gap: 24px;
 }
+
 .header-info__pic {
   flex: 1 1 424px;
   aspect-ratio: 424 / 356;
@@ -157,13 +162,15 @@
   text-align: center;
   align-content: center;
 }
+
 .header-info__pic img {
   width: 100%;
   height: 100%;
   object-fit: cover;
 }
+
 @media (max-width:520px) {
-  .header-info__img-block {
+.header-info__img-block {
   flex-wrap: wrap;
 }
 .header-info__comments {
@@ -399,7 +406,7 @@ flex-wrap: wrap;
 .form-comments__button:hover{
   background: #2C742F;
 }
-/* ============================= */
+/* ===========comments-peoples================== */
 
 .form-comments {
 }
