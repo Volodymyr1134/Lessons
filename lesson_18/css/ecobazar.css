@@ -288,14 +288,13 @@
   gap: 16px;
   margin-bottom: 12px;
 }
-
+.form-comments__item{
+  flex: 1 1 auto;
+}
 
 @media (max-width:720px) {
 .form-comments__items {
 flex-wrap: wrap;
-}
-.form-comments__item{
-  flex: 1 1 auto;
 }
 }
 
@@ -315,7 +314,7 @@ flex-wrap: wrap;
 
 .form-comments__input {
   display: flex;
-  padding: 14px 311px 14px 16px;
+  padding: 14px 0px 14px 16px;
   border: 1px solid #E6E6E6;
   border-radius: 6px;
   color: #1A1A1A;
