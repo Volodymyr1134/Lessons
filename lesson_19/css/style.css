@@ -84,9 +84,9 @@ body{
    align-items: center;
    gap: 1.875rem;
    color: var(--colorMain);
-   overflow: clip;
+   overflow: auto;
    width: 100%;
-   height: 86.3svh;
+   height: calc(100svh - 5.625rem);
 }
 
 .practice__title {
