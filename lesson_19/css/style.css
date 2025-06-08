@@ -83,7 +83,7 @@ body{
    align-items: center;
    gap: 1.875rem;
    color: var(--colorMain);
-   overflow: clip;
+   overflow: auto;
    width: 100%;
    min-height: 100svh;
 }
