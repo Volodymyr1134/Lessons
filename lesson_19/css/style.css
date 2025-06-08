@@ -75,7 +75,7 @@ body{
 }
 
 .practice__header{
-   padding-top: 6.875rem;
+   padding-top: 8.125rem;
    text-align: center;
    display: flex;
    flex-direction: column;
@@ -85,8 +85,9 @@ body{
    color: var(--colorMain);
    overflow: clip;
    width: 100%;
-   height: calc(100svh);
+   min-height: 100svh;
 }
+
 
 .practice__title {
    font-size: clamp(25px, 7vw, 48px);

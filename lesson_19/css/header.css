@@ -5,7 +5,6 @@
   width: 100%;
   padding: 1.25rem 0px;
   color: white;
-  letter-spacing: .0437rem;
   height: 5.75rem;
 }
 
@@ -27,7 +26,7 @@
 }
 
 .header__list > li > a{
-  display: flex;
+  display: inline-flex;
   justify-content: center;
   text-wrap: nowrap;
   padding: .75rem 1.25rem;
