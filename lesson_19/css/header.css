@@ -2,21 +2,23 @@
 .header{
   position: sticky;
   width: 100%;
-  padding: 20px 20px;
+  padding: 1.25rem 0px;
   color: white;
-  letter-spacing: 0.7px;
+  letter-spacing: .0437rem;
+  height: 5.75rem;
 }
 
 .header__title{
-  font-size: 25px;
+  font-size: 1.5625rem;
   text-align: center;
-  padding: 5px;
+  padding: .3125rem;
 }
 
   .header__list {
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
-  gap: 40px;
+  gap: 2.5rem;
 }
 
 .header__list li {
@@ -27,8 +29,8 @@
   display: flex;
   justify-content: center;
   text-wrap: nowrap;
-  padding: 12px 20px;
-  font-size: 20px;
+  padding: .75rem 1.25rem;
+  font-size: 1.25rem;
   position: relative;
   border-radius: 1.8rem;
   border: 0.1rem solid rgba(255, 255, 255, 0.209);
@@ -38,9 +40,9 @@
 .header__list > li > a::after{
   content: "";
   position: absolute;
-  bottom: 0px;
-  width: 0%;
-  height: 1px;
+  bottom: 0;
+  width: 0;
+  height: .0625rem;
   background-color: rgb(171, 171, 213);
   box-shadow: 0px -4px 12px 1px rgb(55, 145, 162);
   transition: width 0.4s;
@@ -51,17 +53,17 @@
   width: 65%;
 }
 }
-@media(max-width:700px){
+@media(max-width:43.75em){
 .header__list {
-  gap: 15px;
+  gap: .9375rem;
 }
 .header__list > li > a{
-  padding: 15px 10px;
-  font-size: 17px;
+  padding: .9375rem .625rem;
+  font-size: 1.0625rem;
 }
 }
-  @media(max-width:500px){
+  @media(max-width:31.25em){
 .header__list {
-  gap: 5px;
+  gap: .3125rem;
 }
 }

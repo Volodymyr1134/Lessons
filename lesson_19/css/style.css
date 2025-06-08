@@ -24,7 +24,7 @@ body{
    font-family: "Cormorant", serif;
    line-height: 1.2;
    font-weight: 400;
-   font-size: 14px;
+   font-size: .875rem;
 }
 
 [class*="__container"] {
@@ -85,7 +85,7 @@ body{
    color: var(--colorMain);
    overflow: auto;
    width: 100%;
-   height: calc(100svh - 5.75rem);
+   height: calc(100svh - 5.7744rem);
 }
 
 .practice__title {
@@ -126,15 +126,14 @@ body{
    border-radius: .625rem;
    color: white;
    background-color: rgba(173, 163, 163, 0.515);
-   
 }
 
 .card__img-wrapper {
-   width: 7.5rem;
+   width: 7.5vmin;
    aspect-ratio: 1 / 1;
    clip-path: polygon(5% 5%, 95% 5%, 100% 88%, 97% 88%, 100% 100%, 75% 93%, 0 93%);
    animation: cat 3s linear alternate infinite;
-   overflow: hidden;
+   overflow: clip;
 }
 
 .card__img {
@@ -167,7 +166,7 @@ body{
 .footer__data {
    font-family: Georgia, 'Times New Roman', Times, serif;
    text-align: right;
-   padding: 30px 70px;
-   border-radius: 7px;
-   font-size: 23px;
+   padding: 1.875rem 4.375rem;
+   border-radius: .4375rem;
+   font-size: 1.4375rem;
 }
