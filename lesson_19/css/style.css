@@ -85,7 +85,7 @@ body{
    color: var(--colorMain);
    overflow: auto;
    width: 100%;
-   height: calc(100svh - 5.7744rem);
+   height: calc(100svh - 5.775rem);
 }
 
 .practice__title {
@@ -129,7 +129,7 @@ body{
 }
 
 .card__img-wrapper {
-   width: 7.5vmin;
+   max-width: 7.5vw;
    aspect-ratio: 1 / 1;
    clip-path: polygon(5% 5%, 95% 5%, 100% 88%, 97% 88%, 100% 100%, 75% 93%, 0 93%);
    animation: cat 3s linear alternate infinite;
