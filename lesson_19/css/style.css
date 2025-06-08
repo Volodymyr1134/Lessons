@@ -49,6 +49,8 @@ body{
 :root {
 	--colorMain: #f2f2f2;
 	--colorMain2: green;
+	--colorMain3: #681681;
+	--colorMain4: #dac931;
 }
 
 .practice__video-fon {
@@ -72,7 +74,6 @@ body{
 }
 
 .practice {
-   
 }
 .practice__container{
 
@@ -88,7 +89,7 @@ body{
    gap: 1.875rem;
    color: var(--colorMain);
    width: 100%;
-   max-height: 100svh;
+   height: 100svh;
    overflow: auto;
 }
 
@@ -161,7 +162,29 @@ body{
 .card__text {
    font-size: 1rem;
 }
+/* ===========practice-v3================== */
 
+.practice-v3 {
+}
+.practice-v3__container {
+   margin: 0 auto;
+   text-align: center;
+   writing-mode: sideways-lr;
+   background-color: #edebeb;
+}
+.practice-v3__title {
+   color: var(--colorMain2);
+}
+.practice-v3__text {
+   color: var(--colorMain3);
+}
+.practice-v3__img{
+   inline-size: 14.375rem;
+   object-fit: cover;
+   aspect-ratio: 1 / 1;
+   object-position: left;
+   clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+}
 
 /* =========footer============= */
 
