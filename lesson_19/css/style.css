@@ -72,6 +72,10 @@ body{
 }
 
 .practice {
+   
+}
+.practice__container{
+
 }
 
 .practice__header{
@@ -83,9 +87,9 @@ body{
    align-items: center;
    gap: 1.875rem;
    color: var(--colorMain);
-   overflow: auto;
    width: 100%;
-   min-height: 100svh;
+   max-height: 100svh;
+   overflow: auto;
 }
 
 

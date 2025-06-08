@@ -1,6 +1,8 @@
 
 .header{
   position: fixed;
+  top: 0;
+  left: 0;
   z-index: 10;
   width: 100%;
   padding: 1.25rem 0px;
@@ -33,8 +35,9 @@
   font-size: 1.25rem;
   position: relative;
   border-radius: 1.8rem;
-  border: 0.1rem solid rgba(255, 255, 255, 0.209);
-  background-color: rgba(4, 4, 4, 0.231);
+  border: 0.1rem solid rgba(255, 255, 255, 0.288);
+  background-color: rgba(4, 4, 4, 0.361);
+  backdrop-filter: blur(.25rem);
 }
 
 .header__list > li > a::after{
