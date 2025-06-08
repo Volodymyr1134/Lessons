@@ -75,7 +75,7 @@ body{
 }
 
 .practice__header{
-   padding-top: 3.125rem;
+   padding-top: 6.875rem;
    text-align: center;
    display: flex;
    flex-direction: column;
@@ -83,9 +83,9 @@ body{
    align-items: center;
    gap: 1.875rem;
    color: var(--colorMain);
-   overflow: auto;
+   overflow: clip;
    width: 100%;
-   height: calc(100svh - 5.775rem);
+   height: calc(100svh);
 }
 
 .practice__title {
@@ -129,7 +129,7 @@ body{
 }
 
 .card__img-wrapper {
-   max-width: 7.5vw;
+   width: 67%;
    aspect-ratio: 1 / 1;
    clip-path: polygon(5% 5%, 95% 5%, 100% 88%, 97% 88%, 100% 100%, 75% 93%, 0 93%);
    animation: cat 3s linear alternate infinite;
