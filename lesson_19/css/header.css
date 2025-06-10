@@ -10,6 +10,10 @@
   height: 5.75rem;
 }
 
+.header__container{
+}
+
+
 .header__title{
   font-size: 1.5625rem;
   text-align: center;
