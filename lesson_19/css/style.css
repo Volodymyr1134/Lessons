@@ -202,6 +202,11 @@ body{
    background-color: var(--colorMain4);
    height:clamp(1.563rem, 0.974rem + 2.94vw, 2.813rem) ;
 }
+.practice-v4 audio{
+   background-color: var(--colorMain3);
+   max-width: 250px;
+   border-radius: 20px;
+}
 .practice-v4 {
 }
 .practice-v4__container {
