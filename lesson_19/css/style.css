@@ -35,9 +35,9 @@ body{
 }
 
 .icon-sticky{
-   background: url(../img/favicon2-icon.png) center / 60px no-repeat;
-   width: 3.75rem;
-   height: 3.75rem;
+   background: url(../img/favicon2-icon.png) center / 2.5rem no-repeat;
+   width: 2.5rem;
+   height: 2.5rem;
    position: fixed;
    bottom: .625rem;
    right: .625rem;
@@ -130,7 +130,7 @@ body{
    gap: 1.25rem;
    border: solid .0625rem black;
    border-radius: .625rem;
-   color: white;
+   color: var(--colorMain);
    background-color: rgba(173, 163, 163, 0.515);
 }
 
@@ -170,7 +170,7 @@ body{
    margin: 0 auto;
    text-align: center;
    writing-mode: sideways-lr;
-   background-color: #edebeb;
+   background-color: var(--colorMain);
 }
 .practice-v3__title {
    color: var(--colorMain2);
